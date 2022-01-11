@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'open-sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: #16161a;
+    font-family:'open-sans'
+}
