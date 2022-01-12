@@ -58,18 +58,23 @@ a {
 
 .box-wrapper {
     display: flex;
+    height: 800px;
 }
-
 .welcomebox_one {
-    background-image: url(../images/halfopenlaptopp_crop.png);
-    background-size: cover;
+    background-image: url(../images/pexels-photo-2047905.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; flex: auto;
     width: 50%;
-    height: 100%;
 }
-
-.welcomebox_one
 
 .welcomebox_two {
+    background-color: #707070;
     width: 50%;
-    height: 100%;
+}
+
+.test {
+    background-image: url(../images/halfopenlaptopp_crop.png);
+    width: 100%;
+    height: 400px;
+
 }
