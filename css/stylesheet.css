@@ -3,8 +3,12 @@
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 
+h1, h2, h3, p {
+    color: white;
+}
+
 .slogan {
-    font-family: 'open-sans', sans-serif;
+    font-family: 'open-sans' sans-serif;
     color: white;
     margin-left: 10px;
 }
@@ -57,9 +61,15 @@ a {
 }
 
 .welcomebox_one {
-    flex: 3;
+    background-image: url(../images/halfopenlaptopp_crop.png);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
 }
 
+.welcomebox_one
+
 .welcomebox_two {
-    flex: 2;
+    width: 50%;
+    height: 100%;
 }
