@@ -64,9 +64,12 @@ a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
+    max-width: 650px;
 }
 
 .welcomebox_two {
     background-color: #707070;
     width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
 }
