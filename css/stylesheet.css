@@ -64,12 +64,27 @@ a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    max-width: 650px;
+    max-width: 850px;
 }
 
 .welcomebox_two {
-    background-color: #707070;
+    background-image: linear-gradient(#16161A,#707070);
     width: 100%;
-    margin-left: 25px;
+    margin-left: 100px;
     margin-right: 25px;
+    max-width: fit-content;
+}
+
+.welcometext {
+    margin: 60px;
+    font-size: 20px;
+}
+
+.online-players {
+    text-align: center;
+    font-size: 60px;
+}
+.button-big {
+    background-color: #16161A;
+    border: solid 2px white;
 }
