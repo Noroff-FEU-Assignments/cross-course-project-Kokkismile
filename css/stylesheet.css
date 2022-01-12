@@ -3,47 +3,63 @@
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+.slogan {
+    font-family: 'open-sans', sans-serif;
+    color: white;
+    margin-left: 10px;
+}
 
   body {
     background-color: #16161a;
     font-family:'open-sans'
 }
 
-.topnav {
+header {
     background-color: #0b0b0d;
-    border: solid;
-    border-color: #707070;
+    border: solid 1px #707070;
+    display: flex;
+    align-items: center;
+    max-height: 142px;
 }
 
+.logo {
+    max-height: 139px;
+    max-width: 224px;
+    margin-left: 10px;
+}
+.topnav {
+    /*border: springgreen solid 1px;/*/
+    margin-left: 10px;
+    max-width: 100%;
+}
+
+nav {
+    border: rgb(71, 132, 143) solid 1px;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0px;
+    border: solid white;
+}
 nav li:hover {
     font-weight:bolder;
 }
 
-ul#horizontal-list {
-    max-width: 696px;
-    list-style: none;
-}
-
-ul#horizontal-list li {
-    display: inline;
-    padding: 10px;
-    font-family: arial;
-    top: -50px;
-}
-
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.logo {
-    left: -340px;
-    border: 0px;
-    width: 240px;
+.box-wrapper {
+    display: flex;
+}
+
+.welcomebox_one {
+    flex: 3;
+}
+
+.welcomebox_two {
+    flex: 2;
 }
