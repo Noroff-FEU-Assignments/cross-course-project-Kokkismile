@@ -63,12 +63,10 @@ a {
     background-image: url(../images/pexels-photo-2047905.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    flex: auto;
     width: 100%;
 }
 
 .welcomebox_two {
     background-color: #707070;
-    flex: auto;
     width: 100%;
 }
