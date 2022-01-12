@@ -45,7 +45,6 @@ nav {
 nav li {
     display: inline-block;
     margin: 0px;
-    border: solid white;
 }
 nav li:hover {
     font-weight:bolder;
@@ -63,7 +62,7 @@ a {
 .welcomebox_one {
     background-image: url(../images/pexels-photo-2047905.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%; flex: auto;
+    background-size: 100% 100%;
     flex: auto;
     width: 100%;
 }
