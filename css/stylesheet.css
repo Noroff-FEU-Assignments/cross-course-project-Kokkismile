@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 @font-face {
     font-family: 'open-sans', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -31,8 +37,12 @@ header {
     max-width: 224px;
     margin-left: 10px;
 }
+
+ul {
+    list-style-type: none;
+}
+
 .topnav {
-    /*border: springgreen solid 1px;/*/
     margin-left: 10px;
     max-width: 100%;
 }
@@ -65,14 +75,15 @@ a {
     background-size: 100% 100%;
     width: 100%;
     max-width: 850px;
+    flex-grow: 1;
 }
 
 .welcomebox_two {
     background-image: linear-gradient(#16161A,#707070);
-    width: 100%;
-    margin-left: 100px;
-    margin-right: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
     max-width: fit-content;
+    flex-grow: 5;
 }
 
 .welcometext {
@@ -81,10 +92,17 @@ a {
 }
 
 .online-players {
+    font-size: 300%;
+    margin: 8%;
     text-align: center;
-    font-size: 60px;
 }
-.button-big {
+.button-homepage {
     background-color: #16161A;
     border: solid 2px white;
+    width: 10%;
+    height: 5%;
+    text-align: center;
+    padding: 2% 4%;
+    font-size: 30px;
+    margin: 5%;
 }
