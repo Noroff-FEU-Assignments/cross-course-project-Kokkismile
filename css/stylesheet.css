@@ -68,12 +68,17 @@ a {
 .box-wrapper {
     display: flex;
     height: 759px;
+    flex-direction: column;
 }
+
+@media (min-width: 600px) {.box-wrapper {flex-direction: row;}}
+
 .welcomebox_one {
     background-image: url(../images/pexels-photo-2047905.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 890px;
+    min-height: 400px;
     flex-grow: 3;
 }
 
@@ -90,17 +95,22 @@ a {
 }
 
 .online-players {
-    font-size: 300%;
+    font-size: 3rem;
     margin: 8%;
     text-align: center;
 }
-.button-homepage {
+.button-homepage1 {
     background-color: #16161A;
     border: solid 2px white;
     width: 10%;
     height: 5%;
-    text-align: center;
     padding: 2% 4%;
     font-size: 30px;
-    margin: 5%;
+    margin-left: 10%;
 }
+
+@media (min-width: 600px) {.button-homepage1 .button-homepage2 {
+width: 5%;
+height: 2%;
+font-size: 15px;
+}}
