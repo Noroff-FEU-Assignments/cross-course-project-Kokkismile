@@ -73,17 +73,15 @@ a {
     background-image: url(../images/pexels-photo-2047905.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 100%;
-    max-width: 850px;
-    flex-grow: 1;
+    max-width: 890px;
+    flex-grow: 3;
 }
 
 .welcomebox_two {
     background-image: linear-gradient(#16161A,#707070);
-    margin-left: 5%;
-    margin-right: 5%;
-    max-width: fit-content;
-    flex-grow: 5;
+    margin: 3% 3% 0% 3%;
+    flex-grow: 4;
+    height: auto;
 }
 
 .welcometext {
