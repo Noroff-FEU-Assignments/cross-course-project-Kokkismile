@@ -78,7 +78,7 @@ a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 890px;
-    min-height: 400px;
+    min-height: 500px;
     flex-grow: 3;
 }
 
@@ -106,7 +106,17 @@ a {
     height: 5%;
     padding: 2% 4%;
     font-size: 30px;
-    margin-left: 10%;
+    margin-left: 20%;
+}
+
+.button-homepage2 {
+    background-color: #16161A;
+    border: solid 2px white;
+    width: 10%;
+    height: 5%;
+    padding: 2% 4%;
+    font-size: 30px;
+    margin-right: 10%;
 }
 
 @media (min-width: 600px) {.button-homepage1 .button-homepage2 {
