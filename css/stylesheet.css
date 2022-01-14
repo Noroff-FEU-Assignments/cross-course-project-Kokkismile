@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: 'open-sans', sans-serif;
+    font-family: 'open-sans', sans-serif; /*Add lovelo and figure out how to apply costum font/*/
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 
@@ -15,7 +15,6 @@ h1, h2, h3, p {
 
 .slogan {
     font-family: 'open-sans' sans-serif;
-    color: white;
     margin-left: 10px;
 }
 
@@ -74,9 +73,9 @@ a {
 @media (min-width: 600px) {.box-wrapper {flex-direction: row;}}
 
 .welcomebox_one {
-    background-image: url(../images/pexels-photo-2047905.png);
+    background-image: url(../images/pexels-photo-2047905.png); /*try crop bottom of pic away/*/
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; /*Is there a bether way to do this? (responsive bg pic) /*/
     max-width: 890px;
     min-height: 500px;
     flex-grow: 3;
@@ -84,13 +83,15 @@ a {
 
 .welcomebox_two {
     background-image: linear-gradient(#16161A,#707070);
-    margin: 3% 3% 0% 3%;
     flex-grow: 4;
     height: auto;
+    margin: 3% 3%;
 }
 
+@media (min-width: 600px) {.welcomebox_two {margin: 0;}} /*this dont work/*/
+
 .welcometext {
-    margin: 60px;
+    margin:10px 60px; /*Find a way to have text centered AND on the left consistently/*/
     font-size: 20px;
 }
 
@@ -99,26 +100,19 @@ a {
     margin: 8%;
     text-align: center;
 }
-.button-homepage1 {
+.button-homepage1, .button-homepage2 {
     background-color: #16161A;
     border: solid 2px white;
     width: 10%;
     height: 5%;
     padding: 2% 4%;
-    font-size: 30px;
-    margin-left: 20%;
+    font-size: 1.5rem;
+    margin: 2rem;
+    
 }
 
-.button-homepage2 {
-    background-color: #16161A;
-    border: solid 2px white;
-    width: 10%;
-    height: 5%;
-    padding: 2% 4%;
-    font-size: 30px;
-    margin-right: 10%;
-}
-
+ /*margin-right: 10%;
+ margin-left: 20%;/*/
 @media (min-width: 600px) {.button-homepage1 .button-homepage2 {
 width: 5%;
 height: 2%;
