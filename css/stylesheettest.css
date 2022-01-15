@@ -47,7 +47,7 @@ ul {
 }
 
 li + .item2 {
-    background-color: #525255;
+    background-color: #525255; /*Why does it not apply to first 2 li? /*/
     font-size: 2rem;
 }
 
@@ -65,6 +65,7 @@ li + .item2 {
 
 #icon {
     margin: 1rem;
+    justify-self: end;
 }
 
 @media (min-width: 600px) {.hide_show-hamburger {
