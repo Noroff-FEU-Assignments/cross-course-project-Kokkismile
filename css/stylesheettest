@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'open-sans', sans-serif; /*Add lovelo and figure out how to apply costum font/*/
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+  body {
+    background-color: #16161a;
+    font-family:'open-sans'
+}
+
+header {
+    background-color: #0b0b0d;
+    border: solid 1px #707070;
+    margin-top: 0.3%;
+}
+
+.navigation-container {
+    border: solid white 1px;
+    display: flex;
+    flex-direction: row;
+    max-height: 10rem;
+    align-items: center;
+}
+
+.slogan {
+    font-family: 'open-sans' sans-serif;
+    flex-grow: 1;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+.logo {
+    max-height: auto;
+    max-width: 200px;
+    flex-grow: 1;
+}
+
+nav {
+    border: rgb(71, 132, 143) solid 1px;
+    padding-top: 1rem;
+    flex-grow: 1;
+}
+
+#navigation-list {
+    margin-bottom: 4rem;
+}
+
+.search {
+    width: 1.5%;
+    align-self: flex-end;
+    flex: 2;
+    margin-bottom: 0.5rem;
+    flex-grow: 1;
+}
+
+#media-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media {
+    margin-bottom: 4rem;
+}
+
+#icon {
+    margin: 1rem;
+    flex-grow: 1;
+}
+ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0px;
+}
+nav li:hover {
+    font-weight:bolder;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.box-wrapper {
+    display: flex;
+    height: 759px;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {.box-wrapper {flex-direction: row;}}
+
+.welcomebox_one {
+    background-image: url(../images/pexels-photo-2047905.png); /*try crop bottom of pic away/*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*Is there a bether way to do this? (responsive bg pic) /*/
+    max-width: 890px;
+    min-width: 350px;
+    min-height: 500px;
+    flex-grow: 3;
+    border: solid 2px rgb(202, 146, 207);
+}
+
+.welcomebox_two {
+    background-image: linear-gradient(#16161A,#707070);
+    flex-grow: 4;
+    min-height: 500px; /*Why is box2 shorter than box1 /*/
+    min-width: 250px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: solid 2px rgb(202, 146, 207);
+}
+
+/*@media (min-width: 600px) {.welcomebox_two {margin: 0;}} this dont work as intended/*/
+
+.welcometext {
+    margin:10px 60px; 
+    font-size: 20px;
+    text-align: center left;/*Find a way to have text centered AND on the left consistently/*/
+    border: solid 1px rgb(147, 233, 67);
+}
+
+.online-players {
+    font-size: 3rem;
+    margin: 8%;
+    text-align: center;
+    border: solid 1px rgb(147, 233, 67);
+}
+.button-homepage1, .button-homepage2 { /*merge into one button class/*/
+    background-color: #16161A;
+    border: solid 2px white;
+    width: 10%;
+    height: 5%;
+    padding: 2% 4%;
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+.center-buttons {
+ border: solid 1px white;
+ text-align: center;
+ position: relative;
+ top: auto;
+}
+
+@media (min-width: 600px) {.button-homepage1 .button-homepage2 {
+width: 5%;
+height: 2%;
+font-size: 15px;
+}}
