@@ -127,7 +127,6 @@ li + .item2 {
     width: 100%;
     height: auto;
     min-width: 200px;
-    border: solid springgreen;
 }
 
 .wrap-search-slogan {
@@ -145,14 +144,13 @@ li + .item2 {
 @media (min-width: 600px) {.box-wrapper {flex-direction: row;}}
 
 .welcomebox_one {
-    background-image: url(../images/pexels-photo-2047905.png); /*try crop bottom of pic away/*/
+    background-image: url(../images/pexels-photo-2047905.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; /*Is there a bether way to do this? (responsive bg pic) /*/
     max-width: 890px;
     min-width: 350px;
     min-height: 500px;
     flex-grow: 2;
-    border: solid 2px rgb(202, 146, 207);
 }
 
 .welcomebox_two {
@@ -162,7 +160,6 @@ li + .item2 {
     min-width: 250px;
     margin-left: 3%;
     margin-right: 3%;
-    border: solid 2px rgb(202, 146, 207);
 }
 
 /*@media (min-width: 600px) {.welcomebox_two {margin: 0;}} this dont work as intended/*/
