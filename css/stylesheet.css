@@ -5,12 +5,20 @@
 }
 
 @font-face {
-    font-family: 'open-sans', sans-serif; /*Add lovelo and figure out how to apply costum font/*/
+    font-family: 'open-sans', sans-serif, 'Source Code Pro', monospace ; 
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 
 h1, h2, h3, p {
     color: white;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-family: 'Bowlby One SC';
 }
 
 header {
@@ -118,6 +126,7 @@ li + .item2 {
     font-size: 1.1em;
     color: white;
     display: inline-block;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #gamehub-logo{
@@ -163,6 +172,7 @@ li + .item2 {
     margin:10px 60px; 
     font-size: 20px;
     text-align: center left;
+    font-family: roboto-mono;
 }
 
 .online-players {
@@ -198,6 +208,7 @@ li + .item2 {
 #justplay {
     display: flex;
     flex-direction: row;
+    font-weight: bold;
     
 }
 
