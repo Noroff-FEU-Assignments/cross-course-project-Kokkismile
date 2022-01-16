@@ -108,7 +108,7 @@ a {
     max-width: 890px;
     min-width: 350px;
     min-height: 500px;
-    flex-grow: 3;
+    flex-grow: 2;
     border: solid 2px rgb(202, 146, 207);
 }
 
