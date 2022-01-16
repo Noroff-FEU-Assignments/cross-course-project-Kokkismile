@@ -33,7 +33,7 @@ nav {
     margin-left: 95%;
 }
 
-#navigation-list {
+#vertical-list {
     margin-left: 70%;
 }
 
@@ -42,7 +42,7 @@ ul {
     
 }
 
-#navigation-list > li {
+#vertical-list > li {
     margin: 1.5rem 1rem 1rem 0rem;
 }
 
