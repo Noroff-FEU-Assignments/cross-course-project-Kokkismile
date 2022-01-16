@@ -78,15 +78,15 @@ li + .item2 {
     font-size: 1.5em;
 }
 
-@media (min-width: 600px) {.hide_show-hamburger {
+@media (min-width: 800px) {.hide_show-hamburger {
     display: none;
 }}
 
-@media (min-width: 600px) {#show-horizontal-list {
+@media (min-width: 800px) {#show-horizontal-list {
     display: block;
 }}
 
-@media (max-width: 600px) {.cart-button {
+@media (max-width: 800px) {.cart-button {
     display: none;
 }}
 
@@ -105,6 +105,7 @@ li + .item2 {
     display: flex;
     flex-direction: row;
     margin-top: -35%;
+    
 }
 
 #media-icon {
@@ -140,7 +141,7 @@ li + .item2 {
     flex-direction: column;
 }
 
-@media (min-width: 600px) {.box-wrapper {flex-direction: row;}}
+@media (min-width: 800px) {.box-wrapper {flex-direction: row;}}
 
 .welcomebox_one {
     background-image: url(../images/pexels-photo-2047905.png);
@@ -155,7 +156,7 @@ li + .item2 {
 .welcomebox_two {
     background-image: linear-gradient(#16161A,#707070);
     flex-grow: 4;
-    min-height: 500px; /*Why is box2 shorter than box1 /*/
+    min-height: 500px;
     min-width: 250px;
     margin-left: 3%;
     margin-right: 3%;
@@ -190,7 +191,7 @@ li + .item2 {
  top: auto;
 }
 
-@media (min-width: 600px) {.button-homepage1 .button-homepage2 {
+@media (min-width: 800px) {.button-homepage1 .button-homepage2 {
 width: 5%;
 height: 2%;
 font-size: 15px;
