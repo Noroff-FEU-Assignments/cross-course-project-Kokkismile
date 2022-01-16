@@ -162,12 +162,10 @@ li + .item2 {
     margin-right: 3%;
 }
 
-/*@media (min-width: 600px) {.welcomebox_two {margin: 0;}} this dont work as intended/*/
-
 .welcometext {
     margin:10px 60px; 
     font-size: 20px;
-    text-align: center left;/*Find a way to have text centered AND on the left consistently/*/
+    text-align: center left;
 }
 
 .online-players {
@@ -175,7 +173,7 @@ li + .item2 {
     margin: 8%;
     text-align: center;
 }
-.button-homepage1, .button-homepage2 { /*merge into one button class/*/
+.button-homepage1, .button-homepage2 {
     background-color: #16161A;
     border: solid 2px white;
     width: 10%;
@@ -236,88 +234,3 @@ font-size: 15px;
     @media (max-width: 800px) {.icon-windows, .icon-mac {
         display: none;
         }}
-
-
-
-
-/*
-  body {
-    background-color: #16161a;
-    font-family:'open-sans'
-}
-
-header {
-    background-color: #0b0b0d;
-    border: solid 1px #707070;
-    margin-top: 0.3%;
-}
-
-.navigation-container {
-    border: solid white 1px;
-    display: flex;
-    flex-direction: row;
-    max-height: 10rem;
-    align-items: center;
-}
-
-.slogan {
-    font-family: 'open-sans' sans-serif;
-    flex-grow: 1;
-    margin-left: 1rem;
-    margin-top: 2rem;
-    margin-right: 1rem;
-}
-.logo {
-    max-height: auto;
-    max-width: 200px;
-    flex-grow: 1;
-}
-
-nav {
-    border: rgb(71, 132, 143) solid 1px;
-    padding-top: 1rem;
-    flex-grow: 1;
-}
-
-#navigation-list {
-    margin-bottom: 4rem;
-}
-
-.search {
-    width: 1.5%;
-    align-self: flex-end;
-    flex: 2;
-    margin-bottom: 0.5rem;
-    flex-grow: 1;
-}
-
-#media-icons {
-    display: flex;
-    flex-direction: row;
-}
-
-.social-media {
-    margin-bottom: 4rem;
-}
-
-#icon {
-    margin: 1rem;
-    flex-grow: 1;
-}
-ul {
-    list-style-type: none;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0px;
-}
-nav li:hover {
-    font-weight:bolder;
-}
-
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-/*/
