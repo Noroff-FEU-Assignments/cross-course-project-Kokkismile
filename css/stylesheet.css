@@ -191,6 +191,15 @@ li + .item2 {
  top: auto;
 }
 
+#welcome, #justplay {
+    color: #BDDBC7;
+}
+
+.download-app {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
 @media (min-width: 800px) {.button-homepage1 .button-homepage2 {
 width: 5%;
 height: 2%;
