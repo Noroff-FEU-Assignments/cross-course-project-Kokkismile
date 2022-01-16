@@ -133,8 +133,7 @@ li + .item2 {
     align-self: flex-end;
     margin-left: 1em;
 }
-/*header ends/*/
-
+/*body layout/*/
 .box-wrapper {
     display: flex;
     height: 759px;
@@ -168,14 +167,12 @@ li + .item2 {
     margin:10px 60px; 
     font-size: 20px;
     text-align: center left;/*Find a way to have text centered AND on the left consistently/*/
-    border: solid 1px rgb(147, 233, 67);
 }
 
 .online-players {
     font-size: 3rem;
     margin: 8%;
     text-align: center;
-    border: solid 1px rgb(147, 233, 67);
 }
 .button-homepage1, .button-homepage2 { /*merge into one button class/*/
     background-color: #16161A;
@@ -188,7 +185,6 @@ li + .item2 {
 }
 
 .center-buttons {
- border: solid 1px white;
  text-align: center;
  position: relative;
  top: auto;
