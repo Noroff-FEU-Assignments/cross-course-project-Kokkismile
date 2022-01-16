@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: white;
 }
+/*Horizontal and hamburger menu/*/
 nav {
     display: none;
 }
@@ -58,20 +59,6 @@ li + .item2 {
     font-size: 1.5rem;
 }
 
-.header-elements {
-    display: flex;
-    justify-content: space-between space-around;
-}
-
-#media-icons {
-    display: flex;
-    flex-direction: row;
-}
-
-#icon {
-    margin: 1rem;
-}
-
 @media (min-width: 600px) {.hide_show-hamburger {
     display: none;
 }}
@@ -84,5 +71,18 @@ li + .item2 {
     display: none;
 }}
 
+/*Header layout/*/
+.header-elements {
+    display: flex;
+    align-items:center
+}
 
-/*testcode/*/
+#media-icons {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+#icon {
+    margin: 1rem;
+}
