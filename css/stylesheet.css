@@ -120,14 +120,11 @@ li + .item2 {
     display: inline-block;
 }
 
-.logo-wrap {
-    display: flex;
-    flex-direction: column;
-}
 #gamehub-logo{
+    display: block;
     width: 100%;
+    max-width: 250px;
     height: auto;
-    min-width: 200px;
 }
 
 .wrap-search-slogan {
