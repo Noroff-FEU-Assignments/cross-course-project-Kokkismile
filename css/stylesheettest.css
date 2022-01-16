@@ -47,7 +47,7 @@ ul {
 }
 
 li + .item2 {
-    background-color: #525255; /*Why does it not apply to first 2 li? /*/
+    background-color: #525255;
     font-size: 2rem;
 }
 
@@ -58,6 +58,11 @@ li + .item2 {
     font-size: 1.5rem;
 }
 
+.header-elements {
+    display: flex;
+    justify-content: space-between space-around;
+}
+
 #media-icons {
     display: flex;
     flex-direction: row;
@@ -65,7 +70,6 @@ li + .item2 {
 
 #icon {
     margin: 1rem;
-    justify-self: end;
 }
 
 @media (min-width: 600px) {.hide_show-hamburger {
@@ -75,4 +79,10 @@ li + .item2 {
 @media (min-width: 600px) {#show-horizontal-list {
     display: block;
 }}
+
+@media (max-width: 600px) {.cart-button {
+    display: none;
+}}
+
+
 /*testcode/*/
