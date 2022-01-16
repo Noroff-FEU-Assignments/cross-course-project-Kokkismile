@@ -200,11 +200,42 @@ li + .item2 {
     margin-top: 2rem;
 }
 
+#justplay {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#icon-googleplay {
+    margin-left: 5em;
+    margin-top: -1em;
+}
+
+.download-options {
+    display: flex;
+}
+
+.icon-windows {
+    margin: 3em;
+}
+
+.icon-mac {
+    margin: 3em;
+}
+
 @media (min-width: 800px) {.button-homepage1 .button-homepage2 {
 width: 5%;
 height: 2%;
 font-size: 15px;
 }}
+
+@media (min-width: 800px) {#icon-googleplay {
+    display: none;
+    }}
+
+    @media (max-width: 800px) {.icon-windows, .icon-mac {
+        display: none;
+        }}
 
 
 
