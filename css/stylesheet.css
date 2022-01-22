@@ -14,16 +14,17 @@
     font-family: lovelo-black;
 }
 
+@font-face {
+    src: url(/fonts/ocr-a-std/OCRAStd.otf);
+    font-family: ocra;
+}
+
 h1, h2, h3, p {
     color: white;
 }
 
-h2 {
-    font-family: 'Roboto Mono', monospace;
-}
-
-h1 {
-    font-family: 'Bowlby One SC';
+h1 h2 p {
+    font-family: 'ocra', sans-serif;
 }
 
 header {
@@ -156,7 +157,7 @@ li + .item2 {
 @media (min-width: 800px) {.box-wrapper {flex-direction: row;}}
 
 .welcomebox_one {
-    background-image: url(../images/pexels-photo-2047905.png);
+    background-image: url(../images/half-open-laptop.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; /*Is there a bether way to do this? (responsive bg pic) /*/
     max-width: 890px;
@@ -178,13 +179,13 @@ li + .item2 {
     margin:10px 60px; 
     font-size: 20px;
     text-align: center left;
-    font-family: roboto-mono;
 }
 
 .online-players {
     font-size: 3rem;
     margin: 8%;
     text-align: center;
+    font-family: 'lovelo', arial;
 }
 .button-homepage1, .button-homepage2 {
     background-color: #16161A;
