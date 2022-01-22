@@ -9,6 +9,11 @@
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 
+@font-face {
+    src: url(/fonts/lovelo/Lovelo-Black.otf);
+    font-family: lovelo-black;
+}
+
 h1, h2, h3, p {
     color: white;
 }
@@ -34,6 +39,7 @@ body {
 a {
     text-decoration: none;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 /*Horizontal- and hamburger menu/*/
 nav {
@@ -188,6 +194,7 @@ li + .item2 {
     padding: 2% 4%;
     font-size: 1.5rem;
     margin: 5%;
+    font-family: lovelo-black;
 }
 
 .center-buttons {
