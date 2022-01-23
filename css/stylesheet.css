@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+:root {
+    --clr-primary: #16161a;
+    --clr-primary-dark: #0b0b0d;
+    --clr-grey: #707070;
+    --clr-green: #3fa535;
+    --clr-lightgreen: #BDDBC7;
+}
+
 @font-face {
     font-family: 'open-sans', sans-serif, 'Source Code Pro', monospace ; 
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -159,7 +167,7 @@ li + .item2 {
 .welcomebox_one {
     background-image: url(../images/half-open-laptop.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%; /*Is there a bether way to do this? (responsive bg pic) /*/
+    background-size: 100% 100%;
     max-width: 890px;
     min-width: 350px;
     min-height: 500px;
