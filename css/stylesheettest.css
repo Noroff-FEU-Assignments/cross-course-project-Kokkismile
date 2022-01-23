@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 :root {
     --clr-primary: #16161a;
     --clr-primary-dark: #0b0b0d;
@@ -7,8 +14,8 @@
 }
 
 @font-face {
-    font-family: 'open-sans', sans-serif, 'Source Code Pro', monospace ; 
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    font-family: open-sans;
 }
 
 @font-face {
@@ -21,8 +28,13 @@
     font-family: ocra;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
     color: white;
+}
+
+a {
+    font-family: 'open-sans', sans-serif;
+    text-decoration: none;
 }
 
 h1 h2 p {
@@ -37,3 +49,53 @@ header {
 body {
     background-color: var(--clr-primary);
 }
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media-icons {
+    display: flex;
+}
+
+li {
+    display: inline-block;
+}
+
+#search-text {
+    font-family: 'open-sans', sans-serif;
+    color: white;
+}
+
+#cart-icon {
+    margin-bottom: -20px;
+}
+
+#hamburger-icon {
+    margin-top: 7em;
+    margin-left: -2em;
+}
+
+nav {
+    display: none;
+}
+
+#checkbox:checked ~ nav {
+    display: block;
+}
+
+li + .item2 {
+    background-color: #525255;
+    font-size: 2em;
+    border: solid 1px #707070;
+}
+
+/*@media (min-width: 800px) {#hamburger-icon {
+    display: none;
+}}
+
+@media (min-width: 800px) {nav {
+    display: block;
+}}/*/
