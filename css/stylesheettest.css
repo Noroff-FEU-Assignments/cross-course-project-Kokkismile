@@ -82,7 +82,7 @@ nav {
     display: none;
 }
 
-#checkbox:checked ~ nav {
+#hamburger-menu:checked ~ nav {
     display: block;
 }
 
