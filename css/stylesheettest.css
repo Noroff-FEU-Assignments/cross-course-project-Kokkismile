@@ -92,6 +92,14 @@ nav {
     display: none;
 }
 
+#hamburger-menu:checked ~ #nav-placement {
+    display: flex;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    margin-bottom: -70%;
+    margin-left: -18%;
+}
+
 @media (min-width: 800px) {#hamburger-icon {
     display: none;
 }}
@@ -102,11 +110,27 @@ nav {
     font-size: 1.5em;
 }}
 
+@media (max-width: 800px) {.item {
+    border: solid 1px #707070;
+    background-color: #525255;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    min-width: 100px;
+}}*
+
+/*
 @media (max-width: 800px) {#hamburger-menu:checked ~ #nav-placement, .item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
-    background-color: #525255;
     border: solid 1px #707070;
     font-size: 1.5em;
-}}
+}}*/
+
+/*.item {  
+    border: solid 1px #707070;
+    background-color: #525255;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    min-width: 100px; 
+} */
