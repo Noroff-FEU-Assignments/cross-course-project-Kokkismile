@@ -42,43 +42,56 @@ h1 h2 p {
 }
 
 header {
-    background-color: var(--clr-primary-dark);
-    border: solid 1px var(--clr-grey);
+    background-color: #0b0b0d;
+    border: solid 1px #707070;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr 4fr;
+    position: relative;
+}
+
+.logo {
+    grid-row: 1/5;
+}
+
+#img-logo {
+    height: auto;
+    width: 150px; /* use flex grow/shrink instead? */
 }
 
 body {
-    background-color: var(--clr-primary);
+    background-color: #16161a;
 }
 
-.header-elements {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .slogan {
     font-family: 'ocra', sans-serif;
-    font-size: 1em;
-    align-self: flex-end;
-    margin-bottom: 1.5em;
-}
-
-.media-mobile-menu-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.media-icons {
-    position: absolute;
+    font-size: 0.8em;
+    grid-row: 3;
 }
 
 #media-icon {
-    padding: 0.5em;
+    height: auto;
+    width: 20px;
+    margin: 0.5em;
+}
+
+.social-media {
+    grid-row: 1/5;
+    grid-column: 6/6;
 }
 
 li {
     display: inline-block;
 }
+
+.nav-placement {
+    grid-row: 6/6;
+}
+
+/* #hamburger-icon {
+    grid-row: 6/6;
+} */
 
 #search-text {
     font-family: 'open-sans', sans-serif;
@@ -89,10 +102,6 @@ li {
     margin-bottom: -20px;
 }
 /*mobile hamburger menue hide/show*/
-#hamburger-icon {
-    justify-self: flex-end;
-    margin-bottom: -3em;
-}
 
 nav {
     display: none;
@@ -143,4 +152,10 @@ nav {
     display: inline-block;
     margin-bottom: 0.5em;
     min-width: 100px; 
+} */
+
+/* .header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 } */
