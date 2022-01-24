@@ -45,7 +45,7 @@ header {
     background-color: #0b0b0d;
     border: solid 1px #707070;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr 1fr 4fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
     position: relative;
 }
 
@@ -85,13 +85,11 @@ li {
     display: inline-block;
 }
 
-.nav-placement {
-    grid-row: 6/6;
+#hamburger-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
-
-/* #hamburger-icon {
-    grid-row: 6/6;
-} */
 
 #search-text {
     font-family: 'open-sans', sans-serif;
@@ -111,7 +109,7 @@ nav {
     display: none;
 }
 
-#hamburger-menu:checked ~ #nav-placement {
+#hamburger-menu:checked ~ #nav-checked {
     display: flex;
     margin-bottom: 0.5em;
     font-size: 1.5em;
