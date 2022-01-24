@@ -62,8 +62,18 @@ body {
     align-self: flex-end;
     margin-bottom: 1.5em;
 }
-.media-icons {
+
+.media-mobile-menu-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.media-icons {
+    position: absolute;
+}
+
+#media-icon {
+    padding: 0.5em;
 }
 
 li {
