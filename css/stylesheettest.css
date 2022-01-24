@@ -28,13 +28,14 @@
     font-family: ocra;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p {
     color: white;
 }
 
 a {
-    font-family: 'open-sans', sans-serif;
     text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 h2 p {
@@ -45,8 +46,12 @@ header {
     background-color: #0b0b0d;
     border: solid 1px #707070;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 2fr;
     position: relative;
+}
+
+body {
+    background-color: #16161a;
 }
 
 .logo {
@@ -58,16 +63,18 @@ header {
     width: 150px; /* use flex grow/shrink instead? */
 }
 
-body {
-    background-color: #16161a;
-}
-
-
-
 .slogan {
     font-family: 'ocra', sans-serif;
     font-size: 0.8em;
     grid-row: 3;
+    grid-column: 4;
+    margin-left: 0.5em;
+}
+
+.search {
+    grid-column: 4;
+    grid-row: 1;
+    margin-top: 2em;
 }
 
 #media-icon {
@@ -96,8 +103,10 @@ li {
     color: white;
 }
 
-#cart-icon {
-    margin-bottom: -20px;
+.cart {
+    grid-row: 1;
+    grid-column: 6/6;
+    margin-top: 40%;
 }
 /*mobile hamburger menue hide/show*/
 
@@ -111,10 +120,20 @@ nav {
 
 #hamburger-menu:checked ~ #nav-checked {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 0.5em;
     font-size: 1.5em;
-    margin-bottom: -70%;
+    margin-top: 2em;
     margin-left: -18%;
+    padding: 0.8em;
+}
+
+.item {
+    font-family: 'open-sans', sans-serif;
+}
+
+.item:hover {
+    text-decoration: underline white;
 }
 
 @media (min-width: 800px) {#hamburger-icon {
@@ -123,9 +142,18 @@ nav {
 
 @media (min-width: 800px) {nav {
     display: flex;
-    font-family: 'open-sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
 }}
+
+@media (min-width: 800px) {.slogan {
+    position: absolute;
+    margin-left: -100%;
+}}
+
+@media (max-width: 800px) {.cart {
+    display: none;
+}}
+
 
 @media (max-width: 800px) {.item {
     border: solid 1px #707070;
@@ -133,7 +161,14 @@ nav {
     display: inline-block;
     margin-bottom: 0.5em;
     min-width: 100px;
-}}*
+}}
+
+@media (max-width: 800px) {#nav-list {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 30%;
+    padding: 1em;
+}}
 
 /*
 @media (max-width: 800px) {#hamburger-menu:checked ~ #nav-placement, .item {
