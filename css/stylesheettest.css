@@ -46,7 +46,7 @@ header {
     background-color: #0b0b0d;
     border: solid 1px #707070;
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 2fr;
     position: relative;
 }
 
@@ -133,7 +133,7 @@ nav {
     margin-bottom: 0.5em;
     font-size: 1.5em;
     margin-top: 2em;
-    margin-left: -18%;
+    margin-left: -25%;
     padding: 0.8em;
 }
 
