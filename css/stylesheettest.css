@@ -66,21 +66,28 @@ body {
 .slogan {
     font-family: 'ocra', sans-serif;
     font-size: 0.8em;
-    grid-row: 3;
-    grid-column: 4;
+    grid-row: 2/2;
+    grid-column: 5/6;
     margin-left: 0.5em;
 }
 
 .search {
-    grid-column: 4;
-    grid-row: 1;
+    grid-column: 5/6;
+    grid-row: 1/2;
     margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+#search-bar {
+    max-width: 100px;
+    height: 1.5em;
 }
 
 #media-icon {
     height: auto;
-    width: 20px;
-    margin: 0.5em;
+    width: 15px;
+    margin: 0.3em;
 }
 
 .social-media {
@@ -106,8 +113,10 @@ li {
 .cart {
     grid-row: 1;
     grid-column: 6/6;
-    margin-top: 40%;
+    margin-top: 50%;
+    margin-left: 4em;
 }
+
 /*mobile hamburger menue hide/show*/
 
 nav {
@@ -140,14 +149,20 @@ nav {
     display: none;
 }}
 
+@media (min-width: 800px) {.nav-placement {
+    grid-row: 1/2;
+    grid-column: 3/6;
+}}
+
 @media (min-width: 800px) {nav {
     display: flex;
     font-size: 1em;
 }}
 
 @media (min-width: 800px) {.slogan {
-    position: absolute;
-    margin-left: -100%;
+    grid-column: 2/6;
+    grid-row: 1/2;
+    margin-top: 3em;
 }}
 
 @media (max-width: 800px) {.cart {
@@ -169,26 +184,3 @@ nav {
     margin-left: 30%;
     padding: 1em;
 }}
-
-/*
-@media (max-width: 800px) {#hamburger-menu:checked ~ #nav-placement, .item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5em;
-    border: solid 1px #707070;
-    font-size: 1.5em;
-}}*/
-
-/*.item {  
-    border: solid 1px #707070;
-    background-color: #525255;
-    display: inline-block;
-    margin-bottom: 0.5em;
-    min-width: 100px; 
-} */
-
-/* .header-elements {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
