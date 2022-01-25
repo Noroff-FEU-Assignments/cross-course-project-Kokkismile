@@ -130,7 +130,6 @@ nav {
 
 #hamburger-menu:checked ~ #nav-checked {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 0.5em;
     font-size: 1.5em;
     margin-top: 2em;
