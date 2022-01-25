@@ -67,21 +67,22 @@ body {
 .slogan {
     font-family: 'ocra', sans-serif;
     max-width: 150px;
+    max-height: 10px;
     font-size: 0.8em;
     grid-column: 2;
-    margin-left: 1em;
-    margin-right: 1em;
+    grid-row: 1;
+    margin: 4em 0 0 2em;
 }
 
 .search {
     grid-column: 2;
-    margin-left: 1em;
-    margin-top: 10%;
+    grid-row: 1;
+    margin-left: 2em;
+    margin-top: 0.5em;
 }
 
 #search-bar {
-    max-width: 200px;
-    height: 1px;
+    max-width: 300px;
 }
 
 .social-media {
@@ -114,8 +115,8 @@ li {
 .cart {
     grid-row: 1;
     grid-column: 5/5;
-    margin-top: 50%;
-    margin-left: 4em;
+    margin-top: 3.2em;
+    margin-left: 2.5em;
 }
 
 /*mobile hamburger menue hide/show*/
@@ -178,13 +179,10 @@ nav {
     font-size: 1.3em;
 }
 .search {
-    display: inline;
     grid-column: 4;
+    margin-top: 3em;
 }
-#search-bar {
-    width: 100px;
-    height: 10px;
-}
+
 #media-icon {
     width: 25px;
     margin: 0.5em;
