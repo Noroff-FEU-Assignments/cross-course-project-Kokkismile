@@ -2,14 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-:root {
-    --clr-primary: #16161a;
-    --clr-primary-dark: #0b0b0d;
-    --clr-grey: #707070;
-    --clr-green: #3fa535;
-    --clr-lightgreen: #BDDBC7;
+    list-style-type: none;
 }
 
 @font-face {
@@ -43,117 +36,6 @@ header {
 body {
     background-color: #16161a;
     font-family:'open-sans'
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-/*Horizontal- and hamburger menu/*/
-nav {
-    display: none;
-}
-
-.item2:hover, .item:hover {
-    text-decoration: underline;
-}
-
-#hamburger-menue:checked ~ nav {
-    display: block;
-}
-
-#hamburger-menue {
-    display: none;
-}
-
-.hide_show-hamburger {
-    margin-left: 95%;
-}
-
-#hamburger-icon {
-    margin-top: -100%;
-}
-
-#vertical-list {
-    margin-left: 70%;
-}
-
-ul {
-    list-style-type: none;
-    
-}
-
-#vertical-list > li {
-    margin: 0em 0.5em 0.5em 0em;
-}
-
-li + .item2 {
-    background-color: #525255;
-    font-size: 2em;
-    border: solid 1px #707070;
-}
-
-#show-horizontal-list li {
-    background-color: #0B0B0D;
-    display: inline;
-    margin: 0.5em;
-    font-size: 1.5em;
-}
-
-@media (min-width: 800px) {.hide_show-hamburger {
-    display: none;
-}}
-
-@media (min-width: 800px) {#show-horizontal-list {
-    display: block;
-}}
-
-@media (max-width: 800px) {.cart-button {
-    display: none;
-}}
-
-/*Header layout/*/
-.header-elements {
-    display: flex;
-    align-items:center;
-}
-
-.topnav-icons-search-wrap {
-    display: flex;
-    align-items: center;
-}
-
-#media-icons {
-    display: flex;
-    flex-direction: row;
-    margin-top: -35%;
-    
-}
-
-#media-icon {
-    margin-left: 1em;
-    height: auto;
-    width: 1.5em;
-}
-
-.slogan, p {
-    font-size: 1.1em;
-    color: white;
-    display: inline-block;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#gamehub-logo{
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-}
-
-.wrap-search-slogan {
-    align-self: flex-end;
-    margin-left: 1em;
 }
 /*body layout/*/
 .box-wrapper {
