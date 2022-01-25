@@ -46,7 +46,7 @@ header {
     background-color: #0b0b0d;
     border: solid 1px #707070;
     display: grid;
-    grid-template-columns: 1fr 0.2fr 2fr 0fr 5fr;
+    grid-template-columns: 1fr 2fr 1fr 0fr 2fr;
     position: relative;
 }
 
@@ -71,23 +71,26 @@ body {
     font-size: 0.8em;
     grid-column: 2;
     grid-row: 1;
-    margin: 4em 0 0 2em;
+    margin: 4em 0 0 1.4em;
 }
 
 .search {
     grid-column: 2;
     grid-row: 1;
-    margin-left: 2em;
-    margin-top: 0.5em;
+    margin: 0.6em 1em;
 }
 
-#search-bar {
-    max-width: 300px;
+#search-text {
+    font-family: 'open-sans', sans-serif;
+    color: white;
+    font-weight: bold;
 }
 
 .social-media {
-    grid-column: 5/5;
-    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 1;
 }
 
 #media-icon {
@@ -104,12 +107,7 @@ li {
     position: absolute;
     bottom: 10px;
     right: 10px;
-}
-
-#search-text {
-    font-family: 'open-sans', sans-serif;
-    color: white;
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 .cart {
@@ -200,7 +198,11 @@ nav {
 #nav-list {
     position: absolute;
     margin-top: 10%;
-    margin-left: -15%;
+    margin-left: -25%;
     padding: 1em;
     max-width: 180px;
+}}
+
+@media (min-width: 950px) {.cart {
+    margin-left: 10em;
 }}
