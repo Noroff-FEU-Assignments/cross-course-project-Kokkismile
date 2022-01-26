@@ -1,3 +1,35 @@
 .flex-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.store-h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.sale-wrap {
+    background-color: #0b0b0d;
+    min-height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.special-wrap {
+    background-color: #0b0b0d;
+    min-height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-store-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+}
+
+
+
