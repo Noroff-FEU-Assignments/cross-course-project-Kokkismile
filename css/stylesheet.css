@@ -101,20 +101,22 @@ body {
 #justplay {
     display: flex;
     flex-direction: row;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 
 #icon-googleplay {
     margin-left: 6em;
-    margin-top: -1em;
 }
 
 .download-options {
     display: flex;
 }
 
-.icon-mac-windows {
+.icon-mac-windows-wrap {
+    margin-top: 7em;
+}
+
+#icon-windows, #icon-mac {
     margin: 3em;
 }
 
@@ -131,7 +133,7 @@ body {
     display: none;
     }}
 
-@media (max-width: 800px) {.icon-windows, .icon-mac {
+@media (max-width: 800px) {#icon-windows, #icon-mac {
         display: none;
         }}
 
