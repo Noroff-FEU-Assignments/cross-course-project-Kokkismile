@@ -1,0 +1,3 @@
+.grid-container {
+    display: grid 1fr 1fr 1fr 1fr;
+}
