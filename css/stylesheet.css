@@ -32,14 +32,12 @@ body {
     background-color: #16161a;
     font-family:'open-sans'
 }
-/*body layout/*/
+/*Homepage/*/
 .box-wrapper {
     display: flex;
     height: 759px;
     flex-direction: column;
 }
-
-@media (min-width: 800px) {.box-wrapper {flex-direction: row;}}
 
 .welcomebox_one {
     background-image: url(../images/half-open-laptop.png);
@@ -119,15 +117,19 @@ body {
 }
 
 @media (min-width: 800px) {.button-homepage1 .button-homepage2 {
-width: 5%;
-height: 2%;
-font-size: 15px;
-}}
+    width: 5%;
+    height: 2%;
+    font-size: 15px;
+}
 
-@media (min-width: 800px) {#icon-googleplay {
+.box-wrapper {
+    flex-direction: row;}
+
+#icon-googleplay {
     display: none;
     }}
 
-    @media (max-width: 800px) {.icon-windows, .icon-mac {
+@media (max-width: 800px) {.icon-windows, .icon-mac {
         display: none;
         }}
+
