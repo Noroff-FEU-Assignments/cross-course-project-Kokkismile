@@ -134,8 +134,8 @@ body {
 @media (max-width: 800px) {.icon-windows, .icon-mac {
         display: none;
         }}
-/* about page */
 
+/* about page */
 #about {
     display: flex;
     justify-content: center;
@@ -163,7 +163,7 @@ body {
     height: auto;
     width: 100%;
     padding: 1em;
-    min-width: 450px;
+    min-width: 350px;
 }
 
 .img-phone-wrap {
@@ -175,7 +175,7 @@ body {
 }
 
 .about-box-wrap {
-    margin-top: 0;
+    margin: 1em;
 }}
 
 
