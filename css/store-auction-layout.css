@@ -1,5 +1,11 @@
-.store-h1, .store-h2 {
+.store-h1 {
     margin-top: 1em;
+    font-size: 3em;
+    color: #3FA535;
+}
+
+.store-h2 {
+    font-size: 1.2em;
 }
 .flex-container {
     display: flex;
@@ -66,5 +72,8 @@
 }}
 
 @media (max-width: 900px) {.special-wrap, .sale-wrap {
+    display: none;
+}
+#sale-sign {
     display: none;
 }}
