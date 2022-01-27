@@ -24,7 +24,11 @@ h1, h2, h3, p {
     color: white;
 }
 
-h1 h2 p {
+h1 {
+    font-family: 'lovelo', Arial, Helvetica, sans-serif;
+}
+
+h2, p {
     font-family: 'ocra', sans-serif;
 }
 
