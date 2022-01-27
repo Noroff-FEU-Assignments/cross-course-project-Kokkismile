@@ -8,6 +8,18 @@
     font-size: 1.2em;
     width: 1em;
     margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.store-h3 {
+    font-family: 'open-sans', sans-serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #3FA535;
+}
+
+.store-h3 + p {
+    margin-bottom: 1em;
 }
 .flex-container {
     display: flex;
@@ -22,36 +34,27 @@
 
 .sale-wrap {
     background-color: #0b0b0d;
-    min-height: calc(100vh + 350px);
+    border: solid 1px #3FA535;
+    height: fit-content;
+    padding: 1em;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .special-wrap {
     background-color: #0b0b0d;
-    min-height: calc(100vh + 350px);
+    border: solid 1px #3FA535;
+    height: fit-content;
+    padding: 1em;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.store-h2 {
-    margin-top: 1em;
-    display: inline-block;
-}
-
-#green-arrow {
-
-    margin-inline: 20px;
-}
 .main-store-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 7em;
     margin-top: 5em;
-}
-
-.auction-arrow-wrap {
-    display: flex;
 }
 
 .img-gamecover {
@@ -63,6 +66,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
+}
+
+.store-filters {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'ocra', sans-serif;
+    font-size: 1em;
+    margin: 1em;
+    margin-bottom: 5em;
 }
 
 @media (max-width: 1300px) {.img-gamecover {
