@@ -68,6 +68,11 @@
     margin-bottom: 1em;
 }
 
+.game {
+    background-color: #0b0b0d;
+    border: solid 1px #3FA535;
+}
+
 .store-filters {
     display: flex;
     flex-direction: column;
@@ -76,6 +81,13 @@
     font-size: 1em;
     margin: 1em;
     margin-bottom: 5em;
+}
+
+.button-text {
+    font-family: 'lovelo', Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    text-align: center;
+    border: solid 1px #3FA535;
 }
 
 @media (max-width: 1300px) {.img-gamecover {
