@@ -69,11 +69,12 @@
 .main-store-box {
     display: flex;
     flex-direction: column;
+}
+.special-wrap, .sale-wrap {
+    display: none;
 }}
 
-@media (max-width: 900px) {.special-wrap, .sale-wrap {
-    display: none;
-}
+@media (min-width: 900px) {
 #sale-sign {
     display: none;
 }}
