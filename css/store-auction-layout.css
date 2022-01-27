@@ -31,5 +31,21 @@
     gap: 5em;
 }
 
+.auction-arrow-wrap {
+    display: flex;
+}
+
+.img-gamecover {
+    height: auto;
+    width: 100% 100%;
+}
+
+@media (max-width: 900px) {.img-gamecover {
+    height: auto;
+}
+.main-store-box {
+    display: flex;
+    flex-direction: column;
+}}
 
 
