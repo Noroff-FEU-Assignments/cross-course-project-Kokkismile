@@ -6,6 +6,8 @@
 
 .store-h2 {
     font-size: 1.2em;
+    width: 1em;
+    margin-bottom: 1em;
 }
 .flex-container {
     display: flex;
@@ -63,7 +65,7 @@
     margin-bottom: 1em;
 }
 
-@media (max-width: 900px) {.img-gamecover {
+@media (max-width: 1300px) {.img-gamecover {
     height: auto;
 }
 .main-store-box {
@@ -74,7 +76,7 @@
     display: none;
 }}
 
-@media (min-width: 900px) {
+@media (min-width: 1300px) {
 #sale-sign {
     display: none;
 }}
