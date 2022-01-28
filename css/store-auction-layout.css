@@ -118,3 +118,46 @@
 #sale-sign {
     display: none;
 }}
+
+/* game info page */
+.game-info-wrap {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 0.1fr 2fr 0.1fr;
+}
+.game-info-text-wrap {
+    grid-column: 2;
+    display: flex;
+    background-color: #0B0B0D;
+    border: solid 1px #707070;
+    margin-left: 10em;
+}
+
+.trailer-wrap {
+    grid-column: 4;
+    background-color: #0B0B0D;
+    border: solid 1px #707070;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.trailer {
+    border: solid 1x green;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.cyberpunk-info {
+    max-width: 170px;
+    width: fit-content;
+}
+
+#add-to-cart-button-info {
+    margin-top: 2em;
+}
+
+@media (max-width: 1300px) {
+    .game-info-wrap {
+        display: flex;
+        flex-direction: column;
+    }}
