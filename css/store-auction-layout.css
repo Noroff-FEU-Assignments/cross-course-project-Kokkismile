@@ -56,11 +56,6 @@
     margin-top: 5em;
 }
 
-.img-gamecover {
-    height: auto;
-    width: 100% 100%;
-}
-
 .info-cart-wrap {
     display: flex;
     justify-content: space-between;
@@ -144,7 +139,7 @@
 }
 
 .trailer {
-    border: solid 1x green;
+    border: solid 1x #3FA535;
     max-height: 200px;
     max-width: 200px;
 }
@@ -170,3 +165,16 @@
         width: min(100%, 700px);
         margin-inline: auto;
     }}
+
+/* library */
+#library-h1 {
+    color: #3FA535;
+}
+
+.library-container {
+    height: fit-content;
+    width: fit-content;
+    border: solid #3FA535;
+    padding: 3em;
+    margin: 1em;
+}
