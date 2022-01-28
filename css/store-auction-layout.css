@@ -38,7 +38,10 @@
     height: fit-content;
     padding: 1em;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.sale-wrap .game {
+    margin-bottom: 2em;
 }
 
 .special-wrap {
