@@ -90,6 +90,15 @@
     border: solid 1px #3FA535;
 }
 
+#gamer-name {
+    color: #5C70D5;
+    margin: 0.2em 0 0.2em 0;
+}
+
+#price {
+    color: #3FA535;
+}
+
 @media (max-width: 1300px) {.img-gamecover {
     height: auto;
 }
