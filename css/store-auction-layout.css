@@ -40,10 +40,6 @@
     flex-direction: column;
 }
 
-.sale-wrap .game {
-    margin-bottom: 2em;
-}
-
 .special-wrap {
     background-color: #0b0b0d;
     border: solid 1px #3FA535;
@@ -56,7 +52,7 @@
 .main-store-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 7em;
+    gap: 4em;
     margin-top: 5em;
 }
 
@@ -74,6 +70,7 @@
 .game {
     background-color: #0b0b0d;
     border: solid 1px #3FA535;
+    margin-bottom: 2em;
 }
 
 .store-filters {
