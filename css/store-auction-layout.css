@@ -122,14 +122,15 @@
 /* game info page */
 .game-info-wrap {
     display: grid;
-    grid-template-columns: 0.1fr 2fr 0.1fr 2fr 0.1fr;
+    grid-template-columns: 0.5fr 2fr 0.1fr 2fr 0.5fr;
+    margin: 1em;
 }
 .game-info-text-wrap {
     grid-column: 2;
     display: flex;
     background-color: #0B0B0D;
     border: solid 1px #707070;
-    margin-left: 10em;
+    max-width: 800px;
 }
 
 .trailer-wrap {
@@ -139,6 +140,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    max-width: 800px;
 }
 
 .trailer {
@@ -160,4 +162,11 @@
     .game-info-wrap {
         display: flex;
         flex-direction: column;
+    }
+    .trailer-wrap {
+        margin-top: 4em;
+    }
+    .trailer-wrap, .game-info-text-wrap {
+        width: min(100%, 700px);
+        margin-inline: auto;
     }}
