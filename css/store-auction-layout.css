@@ -167,13 +167,16 @@
     }}
 
 /* library */
+.library-container {
+    display: flex;
+    justify-content: center;
+}
+
 #library-h1 {
     color: #3FA535;
 }
 
-.library-container {
-    height: fit-content;
-    width: fit-content;
+.library-box {
     border: solid #3FA535;
     padding: 3em;
     margin: 1em;
