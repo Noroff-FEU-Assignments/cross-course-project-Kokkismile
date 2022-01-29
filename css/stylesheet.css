@@ -189,6 +189,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 2em;
+    border: solid 1px #707070;
+    padding: 2em;
 }
 
 #account-h3 {
@@ -213,4 +215,9 @@ body {
 
 .style-second-word {
     grid-template-columns: 2;
+}
+
+.account-box3 {
+    margin: 2em;
+    padding: 2em;
 }
