@@ -311,11 +311,6 @@ fieldset {
     align-self: flex-start;
 }
 
-.form-option {
-    font-family: 'open-sans', sans-serif, serif;
-    font-weight: bold;
-}
-
 input[type="submit"]{
     background-color: #3FA535;
     color: #fff;
@@ -343,4 +338,6 @@ input[type="number"]{
 
 select[name="payment-method"]{
     width: 4em;
+    font-family: 'open-sans', sans-serif, serif;
+    font-weight: bold;
 }
