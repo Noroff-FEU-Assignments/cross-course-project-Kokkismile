@@ -288,6 +288,7 @@ body {
     border:  solid springgreen;
 }
 
+/* form */
 .fieldset-auction {
     display: flex;
     flex-direction: column;
@@ -325,4 +326,24 @@ input[type="submit"]{
     font-family: 'lovelo', Arial, Helvetica, sans-serif;
     font-size: 2em;
     padding: 15px 55px;
+}
+
+label[for="checkbox"]{
+    margin-bottom: 1em;
+}
+
+input[type="text"]{
+    color: white;
+}
+
+input[type="tel"]{
+    color: white;
+}
+
+input[type="number"]{
+    color: white;
+}
+
+select[name="payment-method"]{
+    width: 4em;
 }
