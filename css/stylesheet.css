@@ -257,6 +257,14 @@ body {
     padding: 1em;
 }
 
+.saved-payment1-4-wrap {
+    border: solid 1px #707070;
+    padding: 1em;
+}
+.saved-payment1, .saved-payment3 {
+    background-color: #0B0B0D;
+}
+
 @media (max-width: 900px) {
     .account-grid-box {
         grid-template-columns: 1fr;
