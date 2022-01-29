@@ -274,10 +274,8 @@ body {
 
 /* sell game page */
 .container-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5em;
-    border: solid salmon;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .form-wrap {
@@ -285,11 +283,10 @@ body {
     font-size: 1.3em;
     color: white;
     margin: 2em;
-    border:  solid springgreen;
 }
 
 /* form */
-.fieldset-auction {
+fieldset {
     display: flex;
     flex-direction: column;
 }
