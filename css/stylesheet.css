@@ -187,9 +187,9 @@ body {
 /* account page */
 .container-box1-2 {
     display: flex;
-    margin: 0.5em;
     border: solid 1px #707070;
     padding: 1em;
+    margin: 10px;
     width: fit-content;
 }
 
