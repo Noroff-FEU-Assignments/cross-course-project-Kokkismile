@@ -274,5 +274,5 @@ body {
     }
 
 .account-box1 {
-    width: min(85%, 400px);
+    max-width: 400px;
 }}
