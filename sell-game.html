@@ -57,28 +57,26 @@
                     <legend class="form-legend">Pay to</legend>
                     <label for="name" class="form-label">First and last name</label>
                     <input type="text" name="name" id="name" class="form-input">
-                    <label for="cardnumber" class="form-label">Card number</label>
-                    <input type="number" name="cardnumber" id="cardnumber" class="form-input">
+                    <label for="Phone-number" class="form-label">Phone number</label>
+                    <input type="tel" name="Phone-number" id="Phone-number" class="form-input">
                     </fieldset>
-                <fieldset class="fieldset-auction">
-                    <legend class="form-legend">Payment</legend>
-                    <label for="number" class="form-label">Card number/VIPS</label>
+                    <fieldset class="fieldset-auction">
+                    <legend class="form-legend">Chose Payment method</legend>
+                    <select name="payment-method">
+                        <option value="visa" class="form-option">VISA</option>
+                        <option value="credit-card" class="form-option">Credit Card</option>
+                        <option value="paypal" class="form-option">Paypal</option>
+                        <option value="vips" class="form-option">VIPS</option>
+                    </select>
+                    <label for="number" class="form-label">Card number</label>
                     <input type="text" number="Cardnumber" class="form-input">
                     <label for="CVC" class="form-label">CVC</label>
                     <input type="text" CVC="CVC" class="form-input">
-                    <select name="payment-method">
-                        <option value="visa">VISA</option>
-                        <option value="credit-card">Credit Card</option>
-                        <option value="paypal">Paypal</option>
-                        <option value="vips">VIPS</option>
-                    </select>
-                    
+                    <input type="checkbox" value="checked" id="form-checkbox">
                     <label for="checkbox">Yes. I have read, understood, and accept the terms of using Game Hub Auction
                     </label>
-                    <input type="checkbox" value="checked">
-    
                     <input type="submit" value="SUBMIT">
-                </fieldset>
+                    </fieldset>
             </form>
                   </form>
               </div>

@@ -271,3 +271,58 @@ body {
 .account-details {
     grid-template-columns: 1fr;
 }}
+
+/* sell game page */
+.container-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+    border: solid salmon;
+}
+
+.form-wrap {
+    font-family: 'open-sans', sans-serif, serif;
+    font-size: 1.3em;
+    color: white;
+    margin: 2em;
+    border:  solid springgreen;
+}
+
+.fieldset-auction {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-top: 1em;
+    height: 3em;
+    max-width: 400px;
+    background-color: #0b0b0d;
+}
+
+.form-label {
+    margin-top: 1em;
+}
+
+.form-legend {
+    margin: 1em;
+}
+
+#form-checkbox {
+    margin: 1em;
+    align-self: flex-start;
+}
+
+.form-option {
+    font-family: 'open-sans', sans-serif, serif;
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    background-color: #3FA535;
+    color: #fff;
+    width: fit-content;
+    font-family: 'lovelo', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 15px 55px;
+}
