@@ -271,4 +271,8 @@ body {
     }
     .container-box1-2 {
         flex-direction: column;
-    }}
+    }
+
+.account-box1 {
+    width: min(85%, 400px);
+}}
