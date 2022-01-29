@@ -183,3 +183,34 @@ body {
 .about-box-wrap {
     margin: 1em;
 }}
+
+/* account page */
+.container-box1-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+#account-h3 {
+    font-size: 2em;
+}
+.account-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 1em;
+    background-color: #000000;
+    padding: 1em;
+    border: solid 1px #3FA535;
+}
+
+.style-first-word {
+    color: #3FA535;
+    grid-template-columns: 1;
+    font-size: 1em
+}
+
+.style-second-word {
+    grid-template-columns: 2;
+}
