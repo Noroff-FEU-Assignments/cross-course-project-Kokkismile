@@ -187,10 +187,10 @@ body {
 /* account page */
 .container-box1-2 {
     display: flex;
-    justify-content: space-between;
-    margin: 2em;
+    margin: 0.5em;
     border: solid 1px #707070;
-    padding: 2em;
+    padding: 1em;
+    width: fit-content;
 }
 
 #account-h3 {
@@ -217,6 +217,10 @@ body {
     grid-template-columns: 2;
 }
 
+.account-box1, .account-box2 {
+    margin: 2em;
+}
+
 .account-box3 {
     display: flex;
     flex-direction: row;
@@ -235,7 +239,28 @@ body {
     margin: 2em 0 2em 1em;
 }
 
+.h3-pen-icon-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-icon {
+    margin: 1em;
+}
+
+.saved-payment-pen-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pen {
+    padding: 1em;
+}
+
 @media (max-width: 900px) {
     .account-grid-box {
         grid-template-columns: 1fr;
+    }
+    .container-box1-2 {
+        flex-direction: column;
     }}
