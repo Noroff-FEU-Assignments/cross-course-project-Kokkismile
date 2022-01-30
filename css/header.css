@@ -199,6 +199,6 @@ nav {
 }}
 
 @media (min-width: 1050px) {.cart {
-    margin-left: 10em;
+    margin-left: 80%;
     position: relative;
 }}
