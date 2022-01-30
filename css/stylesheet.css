@@ -283,10 +283,13 @@ body {
     grid-template-columns: 1fr;
 }}
 
-/* sell game page */
+/* form */
 .container-form {
     display: flex;
     justify-content: flex-start;
+    border: solid 1px #707070;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .form-wrap {
@@ -296,16 +299,15 @@ body {
     margin: 2em;
 }
 
-/* form */
 fieldset {
     display: flex;
     flex-direction: column;
+    border: none;
 }
 
 .form-input {
     margin-top: 1em;
     height: 3em;
-    max-width: 400px;
     background-color: #0b0b0d;
 }
 
@@ -327,12 +329,14 @@ input[type="submit"]{
     color: #fff;
     width: fit-content;
     font-family: 'lovelo', Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 15px 55px;
+    margin: 0 auto;
 }
 
 label[for="checkbox"]{
     margin-bottom: 1em;
+    font-size: 0.8em;
 }
 
 input[type="text"]{
