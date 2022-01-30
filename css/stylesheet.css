@@ -65,8 +65,11 @@ body {
 }
 
 .welcometext {
-    margin:10px 60px; 
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    font-size: 1.2em;
     text-align: center left;
 }
 
@@ -95,17 +98,25 @@ body {
 
 #welcome, #justplay {
     color: #BDDBC7;
+    margin: 0.5em;
 }
 
 .download-app {
     font-size: 1.5rem;
     margin-top: 2rem;
+    max-width: fit-content;
+    padding: 1em;
 }
 
 #justplay {
     display: flex;
     flex-direction: row;
-    font-weight: bold; 
+    font-weight: bold;
+    padding: 2em;
+}
+
+#justplay-link {
+    margin-left: 10em;
 }
 
 #icon-googleplay {
