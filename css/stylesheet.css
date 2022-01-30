@@ -399,6 +399,7 @@ select[name="payment-method"]{
     font-family: 'lovelo', Arial, Helvetica, sans-serif;
     border: solid 2px white;
     padding: 15px 25px;
+    text-align: center;
 }
 
 .cart-game-info-text {
@@ -413,4 +414,14 @@ select[name="payment-method"]{
 
 @media (max-width: 800px) {.cart-container {
     flex-direction: column;
+}
+
+#cart-button1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#cart-button2 {
+    grid-row: 5;
+    grid-column: 1;
 }}
