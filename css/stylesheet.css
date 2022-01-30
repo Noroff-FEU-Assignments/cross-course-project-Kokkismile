@@ -429,3 +429,19 @@ select[name="payment-method"]{
     grid-row: 5;
     grid-column: 1;
 }}
+
+/* sucsess page */
+.sucsess-box {
+    background-color: #0b0b0d;
+    margin-top: 2em;
+    width: fit-content;
+}
+
+#sucsess {
+    color: #3FA535;
+    margin-bottom: 2em;
+}
+#go-to-lib {
+    color: #3FA535;
+    margin-top: 2em;
+}
