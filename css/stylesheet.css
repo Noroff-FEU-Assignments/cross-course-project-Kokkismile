@@ -380,12 +380,21 @@ select[name="payment-method"]{
 }
 
 .cart-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     
 }
 
+#cart-button1 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#cart-button2 {
+    grid-row: 5;
+    grid-column: 2;
+}
 .button-cart {
     font-family: 'lovelo', Arial, Helvetica, sans-serif;
     border: solid 2px white;
