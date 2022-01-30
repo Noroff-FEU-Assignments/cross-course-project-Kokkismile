@@ -140,11 +140,6 @@ header {
     width: 220px;
 }
 
-.nav-placement {
-    grid-row: 1/2;
-    grid-column: 3;
-}
-
 nav {
     display: flex;
     font-size: 1em;
@@ -154,6 +149,8 @@ nav {
     margin-top: 0.5em;
     margin-bottom: 1em;
     max-height: 100px;
+    grid-row: 1/2;
+    grid-column: 3;
 }
 
 .slogan {
