@@ -169,8 +169,9 @@ nav {
 }
 
 .search {
-    grid-column: 4;
-    align-self: center;
+    grid-column: 3;
+    align-self: flex-end;
+    padding: 2em;
 }
 
 .media-icon {
