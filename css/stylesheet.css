@@ -355,8 +355,7 @@ select[name="payment-method"]{
 
 /* cart page */
 #cart-h1 {
-    margin-top: 2em;
-    text-align: center;
+    margin: 2em 0 1em 1em;
 }
 .cart-container {
     margin-top: 2em;
@@ -366,9 +365,16 @@ select[name="payment-method"]{
 
 .cart-box1 {
     background-color: #0b0b0d;
+    border: solid 1px #707070;
     padding: 2em;
 }
 .cart-item-count-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.cart-info-game-wrap {
     display: flex;
     flex-direction: row;
 }
@@ -384,6 +390,11 @@ select[name="payment-method"]{
     font-family: 'lovelo', Arial, Helvetica, sans-serif;
     border: solid 2px white;
     padding: 15px 25px;
+}
+
+.cart-game-info-text {
+    padding: 1em;
+    max-width: 15em;
 }
 
 @media (max-width: 800px) {.cart-container {
