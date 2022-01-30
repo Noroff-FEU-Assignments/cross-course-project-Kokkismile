@@ -352,3 +352,40 @@ select[name="payment-method"]{
     font-family: 'open-sans', sans-serif, serif;
     font-weight: bold;
 }
+
+/* cart page */
+#cart-h1 {
+    margin-top: 2em;
+    text-align: center;
+}
+.cart-container {
+    margin-top: 2em;
+    display: flex;
+    margin: 1em;
+}
+
+.cart-box1 {
+    background-color: #0b0b0d;
+    padding: 2em;
+}
+.cart-item-count-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    
+}
+
+.button-cart {
+    font-family: 'lovelo', Arial, Helvetica, sans-serif;
+    border: solid 2px white;
+    padding: 15px 25px;
+}
+
+@media (max-width: 800px) {.cart-container {
+    flex-direction: column;
+}
