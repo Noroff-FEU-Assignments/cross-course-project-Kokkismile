@@ -413,4 +413,4 @@ select[name="payment-method"]{
 
 @media (max-width: 800px) {.cart-container {
     flex-direction: column;
-}
+}}
