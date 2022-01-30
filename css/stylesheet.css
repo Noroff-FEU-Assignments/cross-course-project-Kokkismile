@@ -397,6 +397,11 @@ select[name="payment-method"]{
     max-width: 15em;
 }
 
+#cart-h3 {
+    margin: 2em;
+    color: #3FA535;
+}
+
 @media (max-width: 800px) {.cart-container {
     flex-direction: column;
 }
