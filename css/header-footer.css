@@ -3,19 +3,32 @@ header, footer {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
 }
 
 .header-item-wrap {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
+.top-nav {
+    margin: 0 50px;
+}
+
 #nav-list {
     display: flex;
+}
+
+.item {
+    margin: 5px;
 }
 
 footer {
@@ -34,7 +47,8 @@ footer {
     height: auto;
     width: 100%;
     max-width: 220px;
-    min-width: 150px;
+    min-width: 100px;
+    margin-right: 10px;
 }
 
 .slogan {
