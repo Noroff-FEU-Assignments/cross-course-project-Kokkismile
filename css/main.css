@@ -1,0 +1,8 @@
+@import url(/css/header-footer.css);
+@import url(/css/index.css);
+
+body {
+    background-color: #16161A;
+    color: #fff;
+    margin: 0 2rem;
+}
