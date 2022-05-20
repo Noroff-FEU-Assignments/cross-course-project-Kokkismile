@@ -2,6 +2,21 @@
 @import url(/css/index.css);
 @import url(/css/icons-buttons.css);
 
+@font-face {
+    font-family: 'open-sans', sans-serif, 'Source Code Pro', monospace ; 
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+@font-face {
+    src: url(/fonts/lovelo/Lovelo-Black.otf);
+    font-family: lovelo-black;
+}
+
+@font-face {
+    src: url(/fonts/ocr-a-std/OCRAStd.otf);
+    font-family: ocra;
+}
+
 body {
     background-color: #16161A;
     color: #fff;
@@ -18,4 +33,8 @@ ul {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+h1, h2, p {
+    font-family: 'ocra', sans-serif;
 }
