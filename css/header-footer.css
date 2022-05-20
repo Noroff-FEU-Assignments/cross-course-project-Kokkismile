@@ -33,9 +33,55 @@ footer {
 #img-logo {
     height: auto;
     width: 100%;
+    max-width: 220px;
+    min-width: 150px;
 }
 
 .slogan {
     font-size: 15px;
     max-width: 150px;
 }
+
+/*mobile hamburger menue hide/show*/
+
+nav {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ .top-nav {
+    display: flex;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-left: -50%;
+}
+
+.item:hover {
+    text-decoration: underline white;
+}
+
+@media (min-width: 850px) {#hamburger-icon {
+    display: none;
+}
+
+nav {
+    display: block;
+}}
+
+@media (max-width: 850px) {.cart {
+    display: none;
+}
+
+.item {
+    border: solid 1px #707070;
+    background-color: #525255;
+}
+
+#nav-list {
+    position: absolute;
+    flex-direction: column;
+}}
