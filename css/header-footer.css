@@ -43,23 +43,6 @@ footer {
 }
 
 /*mobile hamburger menue hide/show*/
-
-nav {
-    display: none;
-}
-
-#hamburger-menu {
-    display: none;
-}
-
-#hamburger-menu:checked ~ .top-nav {
-    display: flex;
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
-    margin-top: 2em;
-    margin-left: -50%;
-}
-
 .item:hover {
     text-decoration: underline white;
 }
@@ -69,16 +52,18 @@ nav {
 }
 
 nav {
-    display: block;
+    display: block !important;
 }}
 
-@media (max-width: 850px) {.cart {
-    display: none;
-}
+@media (max-width: 850px) {
 
 .item {
     border: solid 1px #707070;
     background-color: #525255;
+}
+
+nav {
+    display: none;
 }
 
 #nav-list {

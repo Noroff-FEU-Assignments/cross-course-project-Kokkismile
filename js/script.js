@@ -5,6 +5,9 @@ const mobileNavigation = document.querySelector("nav");
 
 hamburgerIcon.onclick = function toogleHamburgerMenu() {
 
-    mobileNavigation.style.display === "block" ? mobileNavigation.style.display = "none" : mobileNavigation.style.display = "block";
-    
+    if (mobileNavigation.style.display === "block") {
+        mobileNavigation.style.display = "none";
+    } else {
+        mobileNavigation.style.display = "block";
+    }
 };
