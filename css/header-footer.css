@@ -2,6 +2,21 @@ header, footer {
     background-color: #0B0B0D;
 }
 
+header {
+    display: flex;
+}
+
+.header-item-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nav-list {
+    display: flex;
+}
+
 footer {
     margin-top: auto;
     padding: 0 20px;
@@ -12,4 +27,14 @@ footer {
 
 .media-icons {
     display: flex;
+}
+
+#img-logo {
+    height: auto;
+    width: 100%;
+}
+
+.slogan {
+    font-size: 15px;
+    max-width: 150px;
 }
