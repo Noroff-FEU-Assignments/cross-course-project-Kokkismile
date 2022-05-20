@@ -1,5 +1,6 @@
 @import url(/css/header-footer.css);
 @import url(/css/index.css);
+@import url(/css/icons-buttons.css);
 
 body {
     background-color: #16161A;
@@ -10,7 +11,11 @@ body {
     min-height: 100vh;
 }
 
-.icon {
-    font-size: 30px;
-    padding: 10px;
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
