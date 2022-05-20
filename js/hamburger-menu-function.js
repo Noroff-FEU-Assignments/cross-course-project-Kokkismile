@@ -1,5 +1,8 @@
-let hamburgerIcon = document.querySelector("#hamburger-icon");
+const hamburgerIcon = document.querySelector("#hamburger-icon");
+const mobileNavigation = document.querySelector("nav");
 
-function toogleHamburgerMenu (event) {
-    console.log(event)
+hamburgerIcon.onclick = function toogleHamburgerMenu() {
+
+    mobileNavigation.style.display === "block" ? mobileNavigation.style.display = "none" : mobileNavigation.style.display = "block";
+    
 };
