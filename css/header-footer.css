@@ -82,7 +82,7 @@ footer {
 
 /*mobile hamburger menu hide/show*/
 .item:hover {
-    text-decoration: underline white;
+    text-decoration: underline #fff;
 }
 
 @media (min-width: 850px) {#hamburger-icon {
