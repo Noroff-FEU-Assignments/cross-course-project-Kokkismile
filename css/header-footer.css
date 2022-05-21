@@ -1,10 +1,12 @@
 header, footer {
     background-color: #0B0B0D;
+    border: 2px solid #707070;
     padding: 0 20px;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
 }
 
 .logo-slogon-nav-wrap {
@@ -14,7 +16,7 @@ header {
 
 .slogan {
     font-size: clamp(10px, 1vw, 15px);
-    padding: 5px;
+    margin-left: 20px;
     width: clamp(5px, 100%, 140px);
 }
 
@@ -22,7 +24,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* flex-wrap: wrap; */
     justify-content: flex-end;
 }
 
@@ -36,6 +37,7 @@ header {
 
 .search-bar {
     width: clamp(50px, 20vw, 500px);
+    margin-right: 10px;
 }
 
 footer {
@@ -51,9 +53,7 @@ footer {
 
 #img-logo {
     height: auto;
-    width: clamp(100px, 100%, 220px);
-    /* max-width: 220px;
-    min-width: 100px; */
+    width: clamp(100px, 80%, 220px);
     padding: 5px;
 }
 

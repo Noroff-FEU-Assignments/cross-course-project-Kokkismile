@@ -1,4 +1,13 @@
 .icon {
-    /* font-size: 30px; */
+    font-size: 30px;
     padding: 10px;
 }
+
+@media (max-width: 850px) {
+
+
+    .icon {
+        font-size: clamp(15px, 4vw, 20px);
+    }
+    
+    }
