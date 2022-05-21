@@ -38,3 +38,12 @@ a {
 h1, h2, p {
     font-family: 'ocra', sans-serif;
 }
+
+@media (max-width: 850px) {
+
+
+body {
+    margin: 0;
+}
+
+}
