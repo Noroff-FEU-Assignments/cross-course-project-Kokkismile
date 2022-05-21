@@ -3,6 +3,14 @@
     padding: 10px;
 }
 
+#profile-icon {
+    color: #A5358F;
+}
+
+#cart-icon {
+    color: #6277E3;
+}
+
 @media (max-width: 850px) {
 
 
