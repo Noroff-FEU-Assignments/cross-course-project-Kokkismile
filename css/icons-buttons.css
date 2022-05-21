@@ -14,9 +14,11 @@
 .action-button1, .action-button2 {
     padding: 5px 25px;
     margin: 5%;
-    border-radius: 20px;
+    border-radius: 15px;
     border: solid 1px var(--light-grey);
     font-family: 'lovelo', 'impact', Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .button-text-border {

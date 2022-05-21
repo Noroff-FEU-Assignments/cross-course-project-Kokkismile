@@ -1,4 +1,4 @@
-.box-wrapper {
+main {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 850px) {
-    .box-wrapper {
+    main {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
