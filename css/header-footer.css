@@ -45,7 +45,7 @@ nav ul li.active-link>a {
 }
 
 .search-bar {
-    width: clamp(50px, 20vw, 500px);
+    width: clamp(50px, 15vw, 400px);
     margin-right: 10px;
 }
 
