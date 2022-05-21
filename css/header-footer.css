@@ -36,10 +36,6 @@ header {
 }
 
 /* NOT WORKING */
-li.active a:before, a:hover:before {
-    visibility: visible;
-}
-
 nav ul li.active-link>a {
     text-decoration: underline;
 }
