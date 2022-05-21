@@ -83,24 +83,17 @@ nav {
     display: block !important;
 }}
 
+/* media query for big screen */
 @media (min-width: 1300px) {
     .nav-list {
         font-size: 20px;
-    }
-}
+    }}
 
-
-
-
-
+/* media query for smaal screen */
 @media (max-width: 900px) {
     header, footer {
         padding: 0 5px;
     }}
-
-
-
-
 
 @media (max-width: 850px) {
 
