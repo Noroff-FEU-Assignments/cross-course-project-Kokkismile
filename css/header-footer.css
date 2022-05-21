@@ -7,6 +7,7 @@ header, footer {
 header {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo-slogon-nav-wrap {
@@ -27,7 +28,7 @@ header {
     justify-content: flex-end;
 }
 
-#nav-list {
+.nav-list {
     display: flex;
 }
 
@@ -73,8 +74,9 @@ nav {
 @media (max-width: 850px) {
 
 .item {
-    border: solid 1px #707070;
+    border: solid 2px #707070;
     background-color: #525255;
+    padding: 10px 25px;
 }
 
 nav {
@@ -82,10 +84,13 @@ nav {
 }
 
 header, footer {
-    padding: 0px;
+    padding: 0 5px;
 }
 
-#nav-list {
+.nav-list {
     position: absolute;
     flex-direction: column;
+    background-color: #0B0B0D;
+    right: 0;
+    top: 90%;
 }}
