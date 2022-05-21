@@ -30,6 +30,9 @@ header {
 
 .nav-list {
     display: flex;
+    font-family: ocra;
+    margin-left: 10px;
+    font-size: 14px;
 }
 
 .item {
@@ -70,6 +73,12 @@ footer {
 nav {
     display: block !important;
 }}
+
+@media (min-width: 1100px) {
+    .nav-list {
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 850px) {
 
