@@ -30,8 +30,8 @@ header {
 
 .nav-list {
     display: flex;
-    font-family: ocra;
-    margin-left: 10px;
+    font-family: 'ocra', 'open-sans', 'sans-serif';
+    margin: 0 20px;
     font-size: 14px;
 }
 
@@ -46,6 +46,20 @@ nav ul li.active-link>a {
 
 .search-bar {
     width: clamp(50px, 15vw, 400px);
+    margin-right: 5px;
+}
+
+.search-lens {
+    color: rgb(22, 22, 22);
+    padding: 2px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 5px;
     margin-right: 10px;
 }
 
