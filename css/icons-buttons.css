@@ -4,11 +4,11 @@
 }
 
 #profile-icon {
-    color: #A5358F;
+    color: var(--pink);
 }
 
 #cart-icon {
-    color: #6277E3;
+    color: var(--blue);
 }
 
 @media (max-width: 850px) {

@@ -1,0 +1,15 @@
+.box-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.welcomebox-one {
+    background-image: url(/images/half-open-laptop.png);
+}
+
+.index-button-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20% 0;
+}

@@ -17,6 +17,12 @@
     font-family: ocra;
 }
 
+:root {
+    --blue: #6277E3;
+    --pink: #A5358F;
+    --green:#3FA535;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
