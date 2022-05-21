@@ -6,12 +6,12 @@
 .welcomebox-one {
     background-image: url(/images/half-open-laptop.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
+    min-height: 500px;
 }
 
 .index-button-wrap {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 20% 0;
+    margin-top: 10%;
 }
