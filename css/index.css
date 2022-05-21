@@ -10,6 +10,12 @@ main {
     min-height: 500px;
 }
 
+.welcomebox-two {
+    padding: 30px;
+    margin: 0 60px;
+    background-image: linear-gradient(var(--dark-grey), var(--light-grey));
+}
+
 .index-button-wrap {
     display: flex;
     justify-content: center;
@@ -21,4 +27,9 @@ main {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
+    }}
+
+@media (max-width: 850px) {
+    .welcomebox-two {
+        margin: 0;
     }}
