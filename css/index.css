@@ -13,11 +13,12 @@ main {
 .welcomebox-two {
     padding: 30px;
     margin: 0 60px;
-    background-image: linear-gradient(var(--dark-grey), var(--light-grey));
+    background-image: linear-gradient(var(--dark-grey), var(--grey));
 }
 
 .counter-container {
     display: flex;
+    margin-bottom: 1rem;
 }
 
 .counter-number-box {
