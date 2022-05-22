@@ -53,12 +53,12 @@ a {
 
 h1, h2, p {
     font-family: 'ocra', sans-serif;
-    text-transform: uppercase;
 }
 
 h1, h2 {
     margin-bottom: 3rem;
     font-weight: 100;
+    text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
