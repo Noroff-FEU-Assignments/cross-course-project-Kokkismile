@@ -16,6 +16,16 @@ main {
     background-image: linear-gradient(var(--dark-grey), var(--light-grey));
 }
 
+.counter-container {
+    display: flex;
+}
+
+.counter-number-box {
+    background-color: var(--dark-grey);
+    padding: 10px;
+    border: solid 2px var(--light-grey);
+}
+
 .justplay-link {
     display: flex;
     align-items: baseline;
