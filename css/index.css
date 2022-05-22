@@ -16,6 +16,15 @@ main {
     background-image: linear-gradient(var(--dark-grey), var(--light-grey));
 }
 
+.text-green {
+    color: var(--green);
+}
+
+.justplay-link {
+    display: flex;
+    align-items: baseline;
+}
+
 .index-button-wrap {
     display: flex;
     justify-content: center;
