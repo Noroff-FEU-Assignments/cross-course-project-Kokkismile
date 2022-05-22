@@ -1,24 +1,18 @@
 .index-box-wrapper {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: 100%;
+    grid-template-rows: 1fr 1.7fr;
 }
 
 .welcomebox-one {
     background-image: url(/images/half-open-laptop.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-height: 500px;
 }
 
 .welcomebox-two {
     padding: 30px;
     margin: 0 60px;
     background-image: linear-gradient(var(--dark-grey), var(--grey));
-}
-
-.index-h1 {
-    margin-top: 15%;
 }
 
 .counter-container {
@@ -37,10 +31,6 @@
 .index-h2-counter-button-wrap {
     margin-bottom: 4rem;
 }
-
-/* .index-info-text-wrap {
-    margin-bottom: 10%;
-} */
 
 .online-players {
     margin: 1rem 0 2rem 0;
@@ -61,14 +51,17 @@
     margin: 5%;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 950px) {
     .index-box-wrapper {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }}
 
-@media (max-width: 850px) {
+@media (max-width: 1400px) {
     .welcomebox-two {
         margin: 0;
+    }
+    .index-info-text-wrap {
+        margin-bottom: 1rem;
     }}
