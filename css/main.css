@@ -30,6 +30,10 @@
     color: var(--green);
 }
 
+.text-light-grey {
+    color: var(--light-grey);
+}
+
 *{
     box-sizing: border-box;
     padding: 0;

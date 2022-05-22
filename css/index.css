@@ -25,6 +25,8 @@ main {
     background-color: var(--dark-grey);
     padding: 10px;
     border: solid 2px var(--light-grey);
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .index-h2-counter-button-wrap {
