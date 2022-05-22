@@ -1,6 +1,8 @@
 .icon {
     font-size: 30px;
     padding: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .icon:hover {
