@@ -3,6 +3,11 @@
     padding: 10px;
 }
 
+.icon:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
 #profile-icon {
     color: var(--pink);
 }
