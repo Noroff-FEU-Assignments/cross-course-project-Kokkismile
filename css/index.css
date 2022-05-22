@@ -11,7 +11,6 @@
 
 .welcomebox-two {
     padding: 30px;
-    margin: 0 60px;
     background-image: linear-gradient(var(--dark-grey), var(--grey));
 }
 
@@ -59,9 +58,6 @@
     }}
 
 @media (max-width: 1400px) {
-    .welcomebox-two {
-        margin: 0;
-    }
     .index-info-text-wrap {
         margin-bottom: 1rem;
     }}
