@@ -46,6 +46,10 @@ main {
     margin-top: 10%;
 }
 
+.index-button-wrap > a {
+    margin: 5%;
+}
+
 @media (min-width: 850px) {
     main {
         display: grid;
