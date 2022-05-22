@@ -55,7 +55,7 @@
     .index-box-wrapper {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
     }}
 
 @media (max-width: 1400px) {
