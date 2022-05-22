@@ -76,7 +76,7 @@ footer {
 
 #img-logo {
     height: auto;
-    width: clamp(100px, 80%, 220px);
+    width: clamp(90px, 60%, 200px);
     padding: 5px;
 }
 
