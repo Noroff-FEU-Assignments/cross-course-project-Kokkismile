@@ -27,6 +27,14 @@ main {
     border: solid 2px var(--light-grey);
 }
 
+.index-h2-counter-button-wrap {
+    margin-bottom: 4rem;
+}
+
+.online-players {
+    margin-bottom: 2rem;
+}
+
 .justplay-link {
     display: flex;
     align-items: baseline;
