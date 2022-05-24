@@ -1,11 +1,41 @@
-main {
+.auction-main {
     background-image: url(/images/bg-img/background-stars.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 20vw;
+    padding: 3rem 0 2rem 0;
 }
 
 .auction-display-wrap {
+    display: grid;
+    grid-template-areas: "filter top     top"
+                         "filter listing listing"
+                         "filter listing listing"
+                         "filter bottom  bottom";
     margin: 0 auto;
-    background-image: linear-gradient(var(--dark-grey), var(--light-grey));
+    background-image: linear-gradient(var(--light-grey), var(--dark-grey));
+    border: 2px solid #BA7B4F;
+    border-radius: 8%;
+    width: fit-content;
+    color: #BA7B4F;
+}
+
+.auction-h1-arrows-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auction-listing-headers {
+    display: flex;
+    color: #fff;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.auction-filter-wrap {
+    color: #fff;
+}
+
+.auction-lower-buttons-wrap {
+    color: #fff;
 }

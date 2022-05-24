@@ -57,11 +57,20 @@
     background-image: linear-gradient(360deg, var(--green), var(--dark-grey));
 }
 
+/* AUCTION HOUSE ICONS */
+.action-arrow {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #540802;
+    color: #BA7B4F;
+    border: 1px solid #BA7B4F;
+    border-radius: 5px;
+    font-size: 25px;
+    height: fit-content;
+}
+
+/* MEDIA QUERIES ICONS */
 @media (max-width: 850px) {
-
-
     .icon {
         font-size: clamp(15px, 4vw, 20px);
-    }
-    
-    }
+    }}
