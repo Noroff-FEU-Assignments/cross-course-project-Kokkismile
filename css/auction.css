@@ -1,0 +1,7 @@
+main {
+    background-image: url(/images/bg-img/background-stars.jpg);
+}
+
+.auction-display-wrap {
+    background-image: linear-gradient(var(--dark-grey), var(--light-grey));
+}
