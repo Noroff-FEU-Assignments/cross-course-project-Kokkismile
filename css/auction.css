@@ -1,7 +1,11 @@
 main {
     background-image: url(/images/bg-img/background-stars.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 20vw;
 }
 
 .auction-display-wrap {
+    margin: 0 auto;
     background-image: linear-gradient(var(--dark-grey), var(--light-grey));
 }
