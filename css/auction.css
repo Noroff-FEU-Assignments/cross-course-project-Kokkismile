@@ -8,10 +8,9 @@
 
 .auction-display-wrap {
     display: grid;
-    grid-template-areas: "filter top     top"
+    grid-template-areas: "filter    top     top"
                          "filter listing listing"
-                         "filter listing listing"
-                         "filter bottom  bottom";
+                         "filter bottom   bottom";
     margin: 0 auto;
     background-image: linear-gradient(var(--light-grey), var(--dark-grey));
     border: 2px solid #BA7B4F;
@@ -19,6 +18,11 @@
     width: fit-content;
     color: #BA7B4F;
 }
+
+.top {background-color: yellow;}
+.filter {background-color: #BA7B4F;}
+.listing {background-color: black;}
+.bottom {background-color: green;}
 
 .auction-h1-arrows-wrap {
     display: flex;
