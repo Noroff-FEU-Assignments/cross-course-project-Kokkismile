@@ -31,14 +31,21 @@
 .auction-h1-arrows-wrap {
     display: flex;
     justify-content: space-between;
+    font-size: 10px;
 }
 
 /*_____________________________________ LISTING */
+.auction-list-container {
+    background-color: var(--dark-grey);
+    border: 1px solid #BA7B4F;
+    padding: 10px;
+}
+
 .auction-listing-headers {
     display: flex;
     color: #fff;
-    background-color: black;
     justify-content: space-between;
+    padding: 5px;
 }
 
 /*_____________________________________ FILTER */
