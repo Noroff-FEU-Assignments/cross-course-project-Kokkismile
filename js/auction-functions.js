@@ -1,5 +1,6 @@
 //AUCTION LISTING
-const games = [{Name: "Avorion"}, {Name: "PrisonArchietects"}]
+const games = [{name: "Avorion"}, {name: "PrisonArchietects"}, {name: "Skyrim"}, {name: "Elden Ring"}, {name: "Fallot"}];
+const users = [{user: "Moonfly"}, {user: "MRcool"}, {user: "Zhico"}, {user: "Grimshot"}, {user: "Rexxar"}];
 let auctionArray = "";
 
 function createList() {
@@ -7,7 +8,7 @@ function createList() {
     for(i = 0; i < games.length; i++) {
 
         auctionArray = [{user: "Moonfly",
-                     games: games.Name[i]}]
+                     games: games.name[i]}]
     }
 }
 
