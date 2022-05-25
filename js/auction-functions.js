@@ -1,8 +1,8 @@
 //AUCTION LISTING
-const games = [{Name: Avorion}, {Name: PrisonArchietects}]
+const games = [{Name: "Avorion"}, {Name: "PrisonArchietects"}]
 let auctionArray = "";
 
-export function createList() {
+function createList() {
 
     for(i = 0; i < games.length; i++) {
 
@@ -10,3 +10,7 @@ export function createList() {
                      games: games.Name[i]}]
     }
 }
+
+createList();
+
+console.log(auctionArray);
