@@ -44,6 +44,7 @@
 .auction-list-container {
     background-color: var(--dark-grey);
     min-height: 400px;
+    width: 70vw;
     border: 1px solid #BA7B4F;
     border-radius: 10px;
     padding: 10px;
@@ -109,4 +110,11 @@
 
 .Buyout-bid-buttons-wrap {
     display: flex;
+}
+
+.auction-bid-button, .auction-buyout-button {
+    background-color: var(--dark-grey);
+    padding: 5px 20px;
+    margin-right: 10px;
+    height: fit-content;
 }
