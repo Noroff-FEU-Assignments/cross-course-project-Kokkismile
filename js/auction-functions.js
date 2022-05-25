@@ -7,7 +7,7 @@ function createList() {
     for(let i = 0; i < users.length; i++) {
 
         let auctionSeller = users.user[i];
-        console.log(auctionSeller);
+        //console.log(auctionSeller);
     }
 }
 
