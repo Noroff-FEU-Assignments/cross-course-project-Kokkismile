@@ -8,7 +8,7 @@ function createList() {
     for(let i = 0; i < users.length; i++) {
 
         auctionSeller = users.user[i]
-    }console.log(i);
+    }console.log(auctionSeller);
 }
 
 createList();

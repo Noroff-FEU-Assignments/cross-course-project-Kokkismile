@@ -14,6 +14,7 @@
                          "filter bottom   bottom";
     margin: 0 auto;
     padding: 20px;
+    margin-top: 3%;
     background-image: linear-gradient(var(--light-grey), var(--dark-grey));
     border: 2px solid #BA7B4F;
     border-radius: 50px;
@@ -34,9 +35,14 @@
     font-size: 10px;
 }
 
+.auction-h1 {
+    color: #fff;
+}
+
 /*_____________________________________ LISTING */
 .auction-list-container {
     background-color: var(--dark-grey);
+    min-height: 400px;
     border: 1px solid #BA7B4F;
     padding: 10px;
 }
