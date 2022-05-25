@@ -5,13 +5,11 @@ let auctionArray = "";
 
 function createList() {
 
-    for(i = 0; i < games.length; i++) {
+    for(let i = 0; i < users.length; i++) {
 
-        auctionArray = [{user: "Moonfly",
-                     games: games.name[i]}]
-    }
+        auctionSeller = users.user[i]
+    }console.log(i);
 }
 
 createList();
 
-console.log(auctionArray);
