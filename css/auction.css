@@ -113,7 +113,9 @@
 }
 
 .auction-bid-button, .auction-buyout-button {
-    background-color: var(--dark-grey);
+    background-color: #540802;
+    border: solid 1px #BA7B4F;
+    border-radius: 5px;
     padding: 5px 20px;
     margin-right: 10px;
     height: fit-content;
