@@ -42,7 +42,10 @@
 }
 
 .action-arrow {
-    padding: 5px 10px;
+    padding-top: clamp(2.5px, 1vw, 5px);
+    padding-bottom: clamp(2.5px, 1vw, 5px);
+    padding-left: clamp(5px, 1.5vw, 10px);
+    padding-right: clamp(5px, 1.5vw, 10px);
     margin-right: 10px;
     background-color: #540802;
     color: #BA7B4F;
@@ -71,11 +74,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #fff;
     padding: 5px;
+    font-size: clamp(8px, 2vw, 20px);
 }
 
 .auction-listing-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: clamp(8px, 2vw, 20px);
 }
 
 .auction-item-seller-wrap {
@@ -86,9 +91,12 @@
 /*_____________________________________ FILTER */
 .auction-filter-wrap {
     color: #fff;
-    margin-top: 30%;
-    font-size: clamp(5px, 2vw, 15px);
-    padding: 10px;
+    margin-top: 20%;
+    font-size: clamp(8px, 2vw, 20px);
+}
+
+.ah-tag {
+    padding: 5px;
 }
 
 /*_____________________________________ USER */
@@ -123,7 +131,10 @@
 
 .auction-sell-games-link, .auction-buy-games-link {
     background-color: var(--dark-grey);
-    padding: 5px 20px;
+    padding-top: clamp(2.5px, 1vw, 5px);
+    padding-bottom: clamp(2.5px, 1vw, 5px);
+    padding-left: clamp(5px, 1.5vw, 20px);
+    padding-right: clamp(5px, 1.5vw, 20px);
     border: solid 1px #BA7B4F;
     border-radius: 5px;
     font-size: clamp(5px, 2vw, 16px);
@@ -149,7 +160,10 @@
     border: solid 1px #BA7B4F;
     font-size: clamp(5px, 2vw, 16px);
     border-radius: 5px;
-    padding: 5px 20px;
+    padding-top: clamp(2.5px, 1vw, 5px);
+    padding-bottom: clamp(2.5px, 1vw, 5px);
+    padding-left: clamp(5px, 1.5vw, 20px);
+    padding-right: clamp(5px, 1.5vw, 20px);
     margin-right: 10px;
     height: fit-content;
     white-space: nowrap;
@@ -164,12 +178,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .auction-lower-buttons-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     .auction-filter-wrap {
         margin-top: 50px;
+        max-width: 250px;
     }
     .auction-display-wrap {
         padding: 40px;
@@ -186,10 +197,14 @@
         top: -60px;
         left: -60px;
     }
+    .auction-filter-wrap {
+        margin-top: 50px;
+        max-width: 190px;
+    }
 }
 
-/*_____________________________________ RESPONSIVE < 500px*/
-@media(max-width: 500px) {
+/*_____________________________________ RESPONSIVE < 400px*/
+@media(max-width: 400px) {
     .auction-main {
         padding: 2rem 0 2rem 0;
     }
