@@ -47,7 +47,7 @@
     color: #BA7B4F;
     border: 1px solid #BA7B4F;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: clamp(10px, 2vw, 20px);
     height: fit-content;
 }
 
@@ -123,7 +123,7 @@
     padding: 5px 20px;
     border: solid 1px #BA7B4F;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: clamp(5px, 2vw, 16px);
     margin-left: 10px;
     filter: drop-shadow(2px 3px 2px black);
     height: fit-content;
@@ -142,6 +142,7 @@
 .auction-bid-button, .auction-buyout-button {
     background-color: #540802;
     border: solid 1px #BA7B4F;
+    font-size: clamp(5px, 2vw, 16px);
     border-radius: 5px;
     padding: 5px 20px;
     margin-right: 10px;
