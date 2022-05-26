@@ -66,10 +66,20 @@
 }
 
 .auction-listing-headers {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #fff;
-    justify-content: space-between;
     padding: 5px;
+}
+
+.auction-listing-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.auction-item-seller-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*_____________________________________ FILTER */
