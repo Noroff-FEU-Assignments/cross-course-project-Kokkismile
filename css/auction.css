@@ -178,9 +178,19 @@
         top: -65px;
         left: -65px;
     }
-    .auction-lower-buttons-container {
-        position: absolute;
+}
+
+/*_____________________________________ RESPONSIVE < 620px*/
+@media(max-width: 620px) {
+    .auction-bg-img-wrap {
+        top: -60px;
+        left: -60px;
     }
 }
 
-@media(max-width: 750px) {}
+/*_____________________________________ RESPONSIVE < 500px*/
+@media(max-width: 500px) {
+    .auction-main {
+        padding: 2rem 0 2rem 0;
+    }
+}
