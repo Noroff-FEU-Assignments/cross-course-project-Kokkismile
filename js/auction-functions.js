@@ -1,6 +1,6 @@
 //AUCTION LISTING
 //Example users and games
-const games = [{name: "Avorion", user: "Moonfly"}, {name: "PrisonArchietects", user: "MRcool"}, {name: "Skyrim", user: "Zhico"}, {name: "Elden Ring", user: "Grimshot"}, {name: "Fallout", user: "Rexxar"}];
+const games = [{name: "Avorion", user: "Moonfly"}, {name: "PrisonArchitects", user: "MRcool"}, {name: "Skyrim", user: "Zhico"}, {name: "Elden Ring", user: "Grimshot"}, {name: "Fallout", user: "Rexxar"}];
 
 //Listing container
 const listContainer = document.querySelector(".auction-listing-container");
