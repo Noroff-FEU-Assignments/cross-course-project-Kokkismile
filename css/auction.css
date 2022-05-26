@@ -37,17 +37,22 @@
 
 .auction-h1 {
     color: #fff;
+    margin: 0;
 }
 
 .action-arrow {
     padding: 5px 10px;
-    margin: 5px;
+    margin-right: 10px;
     background-color: #540802;
     color: #BA7B4F;
     border: 1px solid #BA7B4F;
     border-radius: 5px;
     font-size: 25px;
     height: fit-content;
+}
+
+.auction-listing-container {
+    padding: 5px;
 }
 
 /*_____________________________________ LISTING */
