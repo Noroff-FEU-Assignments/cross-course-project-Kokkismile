@@ -108,7 +108,7 @@
 
 .user-img-placeholder {
     padding: 10px;
-    font-size: clamp(20px, 6vw, 90px);
+    font-size: clamp(40px, 6vw, 90px);
 }
 
 /*_____________________________________ BOTTOM */
@@ -192,5 +192,9 @@
 @media(max-width: 500px) {
     .auction-main {
         padding: 2rem 0 2rem 0;
+    }
+    .auction-bg-img-wrap {
+        top: -55px;
+        left: -55px;
     }
 }
