@@ -32,7 +32,7 @@
 .auction-h1-arrows-wrap {
     display: flex;
     justify-content: space-between;
-    font-size: 10px;
+    font-size: clamp(5px, 1vw, 20px);
 }
 
 .auction-h1 {
@@ -126,6 +126,7 @@
     font-size: 16px;
     margin-left: 10px;
     filter: drop-shadow(2px 3px 2px black);
+    height: fit-content;
 }
 
 .auction-sell-games-link:hover, .auction-buy-games-link:hover {
@@ -145,4 +146,13 @@
     padding: 5px 20px;
     margin-right: 10px;
     height: fit-content;
+}
+
+@media(max-width: 900px) {
+    .display-filter {
+        grid-area: bottom;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
