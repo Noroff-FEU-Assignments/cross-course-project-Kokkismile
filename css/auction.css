@@ -15,7 +15,6 @@
     margin: 0 auto;
     padding: 20px;
     margin-top: 3%;
-    /* background-image: linear-gradient(to right,var(--light-grey), var(--dark-grey)); */
     background-image: linear-gradient(350deg, var(--dark-grey), var(--grey), var(--light-grey));
     border: 2px solid #BA7B4F;
     border-radius: 50px;
