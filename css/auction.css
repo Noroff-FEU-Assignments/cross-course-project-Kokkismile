@@ -71,7 +71,7 @@
 
 .auction-listing-headers {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     color: #fff;
     padding: 5px;
     font-size: clamp(8px, 2vw, 20px);
@@ -79,7 +79,7 @@
 
 .auction-listing-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     font-size: clamp(8px, 2vw, 20px);
 }
 
