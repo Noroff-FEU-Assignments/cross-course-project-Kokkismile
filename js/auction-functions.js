@@ -3,6 +3,7 @@ const games = [{name: "Avorion"}, {name: "PrisonArchietects"}, {name: "Skyrim"},
 const users = [{user: "Moonfly"}, {user: "MRcool"}, {user: "Zhico"}, {user: "Grimshot"}, {user: "Rexxar"}];
 
 const listContainer = document.querySelector(".auction-listing-container");
+const auctionListing = listContainer.innerHTML = `<p>test</p>`;
 
 function createList() {
 

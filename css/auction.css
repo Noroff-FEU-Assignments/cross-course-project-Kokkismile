@@ -75,6 +75,7 @@
 /*_____________________________________ FILTER */
 .auction-filter-wrap {
     color: #fff;
+    margin-top: 30%;
 }
 
 /*_____________________________________ USER */
@@ -94,7 +95,7 @@
 
 .user-img-placeholder {
     padding: 10px;
-    font-size: 50px;
+    font-size: clamp(20px, 6vw, 90px);
 }
 
 /*_____________________________________ BOTTOM */
