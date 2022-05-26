@@ -8,6 +8,7 @@
 
 .auction-display-wrap {
     display: grid;
+    position: relative;
     grid-template-areas: "user    top     top"
                          "filter listing listing"
                          "filter listing listing"
@@ -86,6 +87,8 @@
 .auction-filter-wrap {
     color: #fff;
     margin-top: 30%;
+    font-size: clamp(5px, 2vw, 15px);
+    padding: 10px;
 }
 
 /*_____________________________________ USER */
@@ -127,6 +130,8 @@
     margin-left: 10px;
     filter: drop-shadow(2px 3px 2px black);
     height: fit-content;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .auction-sell-games-link:hover, .auction-buy-games-link:hover {
@@ -147,8 +152,11 @@
     padding: 5px 20px;
     margin-right: 10px;
     height: fit-content;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
+/*_____________________________________ RESPONSIVE < 900px*/
 @media(max-width: 900px) {
     .display-filter {
         grid-area: bottom;
@@ -156,4 +164,23 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    .auction-lower-buttons-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .auction-filter-wrap {
+        margin-top: 50px;
+    }
+    .auction-display-wrap {
+        padding: 40px;
+    }
+    .auction-bg-img-wrap {
+        top: -65px;
+        left: -65px;
+    }
+    .auction-lower-buttons-container {
+        position: absolute;
+    }
 }
+
+@media(max-width: 750px) {}
