@@ -40,14 +40,18 @@
 
 .forms-wrap {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .user-details-form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin: 50px 30px;
+}
+
+.h2-form-account {
+    margin-top: 20px;
+    margin: 50px 30px;
 }
 
 .form-grey {
@@ -60,7 +64,7 @@
 .form-grey > input {
     padding: 5px;
     background-color: var(--grey);
-    color: #fff;
+    color-scheme: dark;
     border: solid 1px var(--grey);
 }
 
@@ -77,8 +81,4 @@
     margin-top: 20px;
     color: #fff;
     width: fit-content;
-}
-
-.h2-form-grey {
-    margin-top: 20px;
 }
