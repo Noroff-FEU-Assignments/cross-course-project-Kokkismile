@@ -35,15 +35,30 @@
 .account-nav-button {
     margin-right: 10px;
     background-color: var(--dark-grey);
+    border: solid 2px var(--dark-grey);
     border-radius: 5px;
     padding: 10px 25px;
 }
 
 .account-container {
     background-color: var(--dark-grey);
+    border: solid 1px var(--light-grey);
+}
+
+/* Preferences */
+#preferences-tab-open {
+    background-color: var(--blue);
+}
+
+/* Profile */
+#profile-tab-open {
+    background-color: var(--blue);
 }
 
 /* Account */
+#account-tab-open {
+    background-color: var(--blue);
+}
 
 .forms-wrap {
     display: flex;
