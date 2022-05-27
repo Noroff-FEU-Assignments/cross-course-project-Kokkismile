@@ -2,6 +2,7 @@
 @import url(/css/index.css);
 @import url(/css/icons-buttons.css);
 @import url(/css/auction.css);
+@import url(/css/account-layout.css);
 
 @font-face {
     font-family: 'open-sans', sans-serif, 'Source Code Pro', monospace ; 
