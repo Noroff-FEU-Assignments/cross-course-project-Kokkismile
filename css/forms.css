@@ -1,0 +1,28 @@
+.form-grey {
+    padding: 20px;
+    border: solid 1px var(--grey);
+    background-color: rgb(10, 10, 10);
+    border-radius: 15px;
+}
+
+.form-grey > input {
+    padding: 5px;
+    background-color: var(--grey);
+    color-scheme: dark;
+    border: solid 1px var(--grey);
+}
+
+.form-grey > :nth-child(odd) {
+    background-color: rgb(10, 10, 10);
+}
+
+.form-grey > label {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.form-submit {
+    margin-top: 20px;
+    color: #fff;
+    width: fit-content;
+}
