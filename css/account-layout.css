@@ -47,12 +47,10 @@
 .user-details-form {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    height: fit-content;
+    margin-bottom: 20px;
 }
 
 .form-grey {
-    margin: 60px 0;
     padding: 20px;
     border: solid 1px var(--grey);
     background-color: rgb(10, 10, 10);
@@ -83,5 +81,4 @@
 
 .h2-form-grey {
     margin-top: 20px;
-    font-family: open-sans;
 }
