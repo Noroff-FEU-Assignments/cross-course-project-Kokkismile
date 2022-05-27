@@ -3,3 +3,20 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.account-progress-wrap {
+    display: flex;
+}
+
+.account-progress-bar {
+    background-color: var(--dark-grey);
+    border: solid 1px var(--light-grey);
+    border-radius: 5px;
+    height: fit-content;
+    padding-left: 60px;
+}
+
+.account-progress {
+    background-color: var(--green);
+    padding: 10px;
+}
