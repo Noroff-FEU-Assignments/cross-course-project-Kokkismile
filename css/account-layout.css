@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .account-progress-wrap {
@@ -11,12 +12,55 @@
 .account-progress-bar {
     background-color: var(--dark-grey);
     border: solid 1px var(--light-grey);
-    border-radius: 5px;
+    border-radius: 20px;
     height: fit-content;
     padding-left: 60px;
+    margin-right: 15px;
 }
 
 .account-progress {
     background-color: var(--green);
     padding: 10px;
+    border-radius: 20px;
+}
+
+.account-nav-buttons-wrap {
+    display: flex;
+}
+
+.account-nav-button {
+    margin-right: 10px;
+    background-color: var(--dark-grey);
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.account-container {
+    background-color: var(--dark-grey);
+    height: 68vh;
+}
+
+.user-details-form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.form-grey > input {
+    padding: 5px;
+    background-color: var(--grey);
+    color: #fff;
+    border: solid 1px var(--grey);
+}
+
+.form-grey > :nth-child(odd) {
+    background-color: var(--dark-grey);
+}
+
+.form-grey > label {
+    padding: 5px;
+}
+
+.form-submi {
+    width: 10px;
 }
