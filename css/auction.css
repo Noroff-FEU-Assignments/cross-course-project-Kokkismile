@@ -33,7 +33,7 @@
 .auction-h1-arrows-wrap {
     display: flex;
     justify-content: space-between;
-    font-size: clamp(5px, 1vw, 20px);
+    font-size: clamp(5px, 1vw, 12px);
 }
 
 .auction-h1 {
