@@ -19,8 +19,13 @@
 
 .account-progress {
     background-color: var(--green);
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
+    font-family: open-sans;
+}
+
+.account-progress-step {
+    font-family: open-sans;
 }
 
 .account-nav-buttons-wrap {
