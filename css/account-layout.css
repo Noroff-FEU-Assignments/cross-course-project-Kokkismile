@@ -1,7 +1,6 @@
 .account-h1-progress-wrap {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 30px;
 }
 
@@ -37,13 +36,26 @@
 
 .account-container {
     background-color: var(--dark-grey);
-    height: 68vh;
+}
+
+.forms-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .user-details-form {
     display: flex;
     flex-direction: column;
     width: fit-content;
+}
+
+.form-grey {
+    margin: 60px 0;
+    padding: 20px;
+    border: solid 1px var(--grey);
+    background-color: rgb(10, 10, 10);
+    border-radius: 15px;
 }
 
 .form-grey > input {
@@ -54,11 +66,12 @@
 }
 
 .form-grey > :nth-child(odd) {
-    background-color: var(--dark-grey);
+    background-color: rgb(10, 10, 10);
 }
 
 .form-grey > label {
     padding: 5px;
+    margin-top: 5px;
 }
 
 .form-submit {

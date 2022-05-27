@@ -72,19 +72,35 @@
             <a href="#" class="account-nav-button"><p>Account</p></a>
         </div>
         <div class="account-container">
-            <form class="user-details-form form-grey">
-                <label for="form-mail">E-mail:</label>
-                <input type="text" id="form-mail">
-                <label for="form-phone">Phone number:</label>
-                <input type="tel" id="form-phone">
-                <label for="form-adress">Adress:</label>
-                <input type="text" id="form-adress">
-                <label for="form-username">Username:</label>
-                <input type="text" id="form-username">
-                <label for="form-user-password">Password</label>
-                <input type="text" id="form-user-password">
-                <button type="submit" class="form-submit action-button3">Save Changes</button>
-            </form>
+            <div class="forms-wrap">
+                <form class="user-details-form form-grey">
+                    <label for="form-mail">E-mail:</label>
+                    <input type="text" id="form-mail">
+                    <label for="form-phone">Phone number:</label>
+                    <input type="tel" id="form-phone">
+                    <label for="form-adress">Adress:</label>
+                    <input type="text" id="form-adress">
+                    <label for="form-username">Username:</label>
+                    <input type="text" id="form-username">
+                    <label for="form-user-password">Password</label>
+                    <input type="text" id="form-user-password">
+                    <button type="submit" class="form-submit action-button3 button-text-border">Save Changes</button>
+                </form>
+                <form class="user-details-form form-grey">
+                    <label for="form-full-name">Full name</label>
+                    <input type="text" id="form-full-name">
+                    <label for="form-select-card">Card</label>
+                    <select id="form-select-card">
+                        <option>Visa</option>
+                        <option>Mastercard</option>
+                    </select>
+                    <label for="form-card-date">Expire date:</label>
+                    <input type="date" id="form-card-date">
+                    <label for="form-username">Username:</label>
+                    <input type="number" id="form-cvc">
+                    <label for="form-cvc">CVC</label>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
