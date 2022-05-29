@@ -25,13 +25,18 @@
     font-family: 'lovelo', 'impact', Arial, Helvetica, sans-serif;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-
-.button-text-border {
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: var(--light-grey);
+    width: fit-content;
+    font-size: 1rem;
 }
+
+/* .button-text-border {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--light-grey);
+} */
 
 .action-button1 {
     background-image: linear-gradient(var(--blue), var(--dark-grey));
