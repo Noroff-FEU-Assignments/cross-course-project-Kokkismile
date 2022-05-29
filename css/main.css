@@ -29,6 +29,14 @@
     --dark-grey: #0B0B0D;
 }
 
+.text-margin-1rem {
+    margin-bottom: 1rem;
+}
+
+.text-margin-2rem {
+    margin-bottom: 2rem;
+}
+
 .text-green {
     color: var(--green);
 }
@@ -80,10 +88,6 @@ h2 {
 
 h3 {
     font-family: 'ocra', sans-serif;
-}
-
-.text-margin-1rem {
-    margin-bottom: 1rem;
 }
 
 @media (max-width: 900px) {

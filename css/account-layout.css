@@ -59,6 +59,10 @@
     margin: 20px;
 }
 
+.profile-user-info-container {
+    margin-bottom: 1rem;
+}
+
 .user-img-wrap {
     margin-bottom: 20px;
 }
@@ -66,7 +70,7 @@
 .placeholder-user-img {
     font-size: 60px;
     padding: 15px;
-    border: solid 2px var(--light-grey);
+    border: solid 1px var(--light-grey);
     color: var(--pink);
 }
 
