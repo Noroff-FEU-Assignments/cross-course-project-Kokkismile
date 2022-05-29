@@ -73,60 +73,68 @@
         </div>
         <div class="account-container">
             <div class="preferences-settings-wrap">
-                <div class="cookie-quick">
-                    <h2 class="settings-h2">Cookie settings (quick)</h2>
-                    <form>
-                        <input type="radio" id="radio-all" value="radio-all" name="cookie-quick">
-                        <label for="radio-all">Accept all</label>
-                        <input type="radio" id="radio-nessesary" value="radio-nessesary" name="cookie-quick" checked>
-                        <label for="radio-nessesary">Only nessesary</label>
-                    </form>
+                <div class="preferences-settings-box1">
+                    <div class="cookie-quick">
+                        <h2 class="settings-h2">Cookie settings (quick)</h2>
+                        <form class="cookie-settings-quick">
+                            <div class="bg-grey">
+                                <input type="radio" id="radio-all" value="radio-all" name="cookie-quick">
+                                <label for="radio-all">Accept all</label>
+                            </div>
+                            <div class="">
+                                <input type="radio" id="radio-nessesary" value="radio-nessesary" name="cookie-quick" checked>
+                                <label for="radio-nessesary">Only nessesary</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cookie-advanced">
+                        <h2 class="settings-h2">Cookie settings (advanced)</h2>
+                        <h3 class="text-warning text-margin-1rem settings-warning">Warning! Redused functionality may occur.</h3>
+                        <form class="cookie-settings-advanced">
+                            <div class="bg-grey padding-5px">
+                                <label for="checkbox-comersial">Comersial</label>
+                                <input type="checkbox" id="checkbox-comersial"> 
+                            </div>
+                            <div class="padding-5px">
+                                <label for="checkbox-session">Session cookies</label>
+                                <input type="checkbox" id="checkbox-session">
+                            </div>
+                            <div class="bg-grey padding-5px">
+                                <label for="checkbox-first-party">First party cookies</label>
+                                <input type="checkbox" id="checkbox-first-party"> 
+                           </div>
+                           <div class="padding-5px">
+                               <label for="checkbox-second-party">Second party cookies</label>
+                               <input type="checkbox" id="checkbox-second-party">
+                           </div>
+                           <div class="bg-grey padding-5px">
+                                <label for="checkbox-google">Google analytics</label>
+                                <input type="checkbox" id="checkbox-google">
+                           </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="cookie-advanced">
-                    <h2 class="settings-h2">Cookie settings (advanced)</h2>
-                    <h3 class="text-warning text-margin-1rem settings-warning">Warning! Redused functionality may occur.</h3>
-                    <form class="cookie-settings-advanced">
-                        <div class="bg-grey padding-5px">
-                            <label for="checkbox-comersial">Comersial</label>
-                            <input type="checkbox" id="checkbox-comersial"> 
-                        </div>
-                        <div class="padding-5px">
-                            <label for="checkbox-session">Session cookies</label>
-                            <input type="checkbox" id="checkbox-session">
-                        </div>
-                        <div class="bg-grey padding-5px">
-                            <label for="checkbox-first-party">First party cookies</label>
-                            <input type="checkbox" id="checkbox-first-party"> 
-                       </div>
-                       <div class="padding-5px">
-                           <label for="checkbox-second-party">Second party cookies</label>
-                           <input type="checkbox" id="checkbox-second-party">
-                       </div>
-                       <div class="bg-grey padding-5px">
-                            <label for="checkbox-google">Google analytics</label>
-                            <input type="checkbox" id="checkbox-google">
-                       </div>
-                    </form>
-                </div>
-                <div class="language-settings">
-                    <h2 class="settings-h2">Language settings</h2>
-                    <form>
-                        <label for="checkbox-english">English:</label>
-                        <input type="checkbox" id="checkbox-english">
-                        <label for="checkbox-norwegian">Norwegian:</label>
-                        <input type="checkbox" id="checkbox-norwegian">
-                    </form>
-                </div>
-                <div class="content-settings">
-                    <h2 class="settings-h2">Content settings</h2>
-                    <form>
-                        <div class="radio-mature-content">
-                            <input type="radio" id="radio-mature-yes" value="radio-mature-yes" name="yes-no">
-                            <label for="radio-mature-no">I'm okay with mature content</label>
-                            <input type="radio" id="radio-mature-no" value="radio-mature-no" name="yes-no" checked>
-                            <label for="radio-mature-no">I'm NOT okay with mature content</label>
-                        </div>
-                    </form>
+                <div class="preferences-settings-box2">
+                    <div class="language-settings">
+                        <h2 class="settings-h2">Language settings</h2>
+                        <form>
+                            <label for="checkbox-english">English:</label>
+                            <input type="checkbox" id="checkbox-english">
+                            <label for="checkbox-norwegian">Norwegian:</label>
+                            <input type="checkbox" id="checkbox-norwegian">
+                        </form>
+                    </div>
+                    <div class="content-settings">
+                        <h2 class="settings-h2">Content settings</h2>
+                        <form>
+                            <div class="radio-mature-content">
+                                <input type="radio" id="radio-mature-yes" value="radio-mature-yes" name="yes-no">
+                                <label for="radio-mature-no">I'm okay with mature content</label>
+                                <input type="radio" id="radio-mature-no" value="radio-mature-no" name="yes-no" checked>
+                                <label for="radio-mature-no">I'm NOT okay with mature content</label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
            </div>
     </main>
