@@ -50,6 +50,28 @@
     background-color: var(--blue);
 }
 
+.settings-h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.preferences-settings-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.cookie-settings-advanced {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    width: fit-content;
+}
+
 /* Profile */
 #profile-tab-open {
     background-color: var(--blue);

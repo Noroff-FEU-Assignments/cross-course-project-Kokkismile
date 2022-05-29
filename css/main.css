@@ -37,6 +37,10 @@
     margin-bottom: 2rem;
 }
 
+.padding-5px {
+    padding: 5px;
+}
+
 .text-green {
     color: var(--green);
 }
