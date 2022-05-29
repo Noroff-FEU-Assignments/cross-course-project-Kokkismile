@@ -52,7 +52,7 @@
 }
 
 .settings-h2 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -63,6 +63,7 @@
 .preferences-settings-wrap {
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
 }
 
 .preferences-settings-box1 {
@@ -79,8 +80,9 @@
     row-gap: 10px;
 }
 
-.cookie-settings-quick {
+.cookie-settings-quick, .language-settings, .content-settings {
     display: grid;
+    row-gap: 10px;
 }
 
 /* Profile */
