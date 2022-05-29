@@ -55,6 +55,10 @@
     margin: 0;
 }
 
+.settings-warning {
+    font-size: 15px;
+}
+
 .preferences-settings-wrap {
     display: flex;
     flex-wrap: wrap;
