@@ -107,13 +107,12 @@
     padding: 15px;
     border: solid 1px var(--light-grey);
     color: var(--pink);
-    border-radius: 20px;
 }
 
 .profile-user-info-container {
     background-color: var(--grey);
+    border: solid 1px var(--light-grey);
     padding: 20px;
-    border-radius: 20px;
 }
 
 .activity-reviews-wrap {
