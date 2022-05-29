@@ -45,6 +45,10 @@
     color: var(--blue);
 }
 
+.text-warning {
+    color: #FFFF61;
+}
+
 .text-light-grey {
     color: var(--light-grey);
 }
