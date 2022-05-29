@@ -6,6 +6,7 @@
 
 .account-progress-wrap {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .account-progress-bar {
@@ -13,7 +14,7 @@
     border: solid 1px var(--light-grey);
     border-radius: 20px;
     height: fit-content;
-    padding-left: 60px;
+    padding-left: 30px;
     margin-right: 15px;
 }
 
@@ -22,10 +23,13 @@
     padding: 5px;
     border-radius: 20px;
     font-family: open-sans;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .account-progress-step {
     font-family: open-sans;
+    padding: 5px;
 }
 
 .account-nav-buttons-wrap {
@@ -38,6 +42,7 @@
     border: solid 2px var(--dark-grey);
     border-radius: 5px;
     padding: 10px 25px;
+    font-size: clamp(5px, 2vw, 1rem);
 }
 
 .account-container {
