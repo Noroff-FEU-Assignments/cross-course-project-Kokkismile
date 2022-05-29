@@ -33,6 +33,10 @@
     color: var(--green);
 }
 
+.text-blue {
+    color: var(--blue);
+}
+
 .text-light-grey {
     color: var(--light-grey);
 }
