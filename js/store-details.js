@@ -19,7 +19,7 @@ async function fetchDetails() {
 
             gameDetails.innerHTML = `<div>
                                      <h1>${detailsJson.name}</h1>
-                                     <img src="${detailsJson.background_image_additional}">
+                                     <img src="${detailsJson.background_image_additional}" class="card-img">
                                      <p>${detailsJson.description}</p>
                                      </div>`;
             
