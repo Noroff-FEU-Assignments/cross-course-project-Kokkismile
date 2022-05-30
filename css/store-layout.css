@@ -18,3 +18,12 @@
     height: auto;
     width: 100%;
 }
+
+.detail-img {
+    max-height: 550px;
+}
+
+.detail-card {
+    background-color: var(--dark-grey);
+    margin: 2% 0;
+}
