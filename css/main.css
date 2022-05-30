@@ -102,6 +102,27 @@ h3 {
     font-family: 'ocra', sans-serif;
 }
 
+.game-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: var(--green);
+    margin: 20px;
+}
+
+.card-styling {
+    background-color: var(--dark-grey);
+    border: solid 1px var(--green);
+    max-width: 500px;
+}
+
+.card-img {
+    height: auto;
+    width: 100%;
+}
+
 @media (max-width: 900px) {
 
 
