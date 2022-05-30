@@ -4,6 +4,7 @@
 @import url(/css/forms.css);
 @import url(/css/auction.css);
 @import url(/css/account-layout.css);
+@import url(/css/store-layout.css);
 
 @font-face {
     font-family: 'open-sans', sans-serif, 'Source Code Pro', monospace ; 
@@ -100,27 +101,6 @@ h2 {
 
 h3 {
     font-family: 'ocra', sans-serif;
-}
-
-.game-cards {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card {
-    color: var(--green);
-    margin: 20px;
-}
-
-.card-styling {
-    background-color: var(--dark-grey);
-    border: solid 1px var(--green);
-    max-width: 500px;
-}
-
-.card-img {
-    height: auto;
-    width: 100%;
 }
 
 @media (max-width: 900px) {
