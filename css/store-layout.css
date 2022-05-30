@@ -20,10 +20,10 @@
 }
 
 .detail-img {
-    max-height: 550px;
+    max-height: 350px;
 }
 
 .detail-card {
     background-color: var(--dark-grey);
-    margin: 2% 0;
+    padding: 2rem;
 }
