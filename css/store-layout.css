@@ -1,16 +1,19 @@
 .game-cards {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 .card {
-    color: var(--green);
+    color: rgb(192, 213, 223);
     margin: 20px;
 }
 
 .card-styling {
     background-color: var(--dark-grey);
-    border: solid 1px var(--green);
+    border: solid 1px rgb(192, 213, 223);
     max-width: 500px;
 }
 
@@ -20,7 +23,7 @@
 }
 
 .detail-img {
-    max-height: 350px;
+    max-height: 450px;
 }
 
 .detail-card {

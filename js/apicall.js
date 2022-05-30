@@ -23,12 +23,12 @@ async function fetchGames() {
             let game = results[i].name;
             console.log("logging game: " + game);
 
-            gameCard.innerHTML += `<a href="store-details.html?id=${results[i].id}" class="card">
-                                     <div class="card-styling">
-                                     <h2>Game:${game}</h2>
+            gameCard.innerHTML += `<div class="card-styling">
+                                     <a href="store-details.html?id=${results[i].id}" class="card">
+                                     <h2 class="padding-10px">Game:${game}</h2>
                                      <img src="${results[i].background_image}" class="card-img"></img>
-                                     </div>
-                                   </a>`;
+                                     </a>
+                                   </div>`;
         }
 
     } catch(error) {
