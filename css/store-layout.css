@@ -25,7 +25,7 @@
 /* Details page */
 .store-details-wrap {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 0px;
 }
 
@@ -50,7 +50,6 @@
 .cart-back-wrap {
     display: flex;
     background-color: var(--dark-grey);
-    width: fit-content;
 }
 
 .add-to-cart, .arrow-back {
