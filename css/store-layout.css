@@ -49,6 +49,8 @@
 
 .cart-back-wrap {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: var(--dark-grey);
 }
 

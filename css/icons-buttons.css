@@ -3,6 +3,7 @@
     padding: 10px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    font-size: clamp(20px, 4vw, 30px);
 }
 
 .icon:hover {
@@ -63,7 +64,7 @@
 }
 
 /* MEDIA QUERIES ICONS */
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
     .icon {
         font-size: clamp(15px, 4vw, 20px);
-    }}
+    }} */
