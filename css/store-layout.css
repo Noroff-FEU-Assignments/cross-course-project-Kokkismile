@@ -50,6 +50,7 @@
 .cart-back-wrap {
     display: flex;
     background-color: var(--dark-grey);
+    width: fit-content;
 }
 
 .add-to-cart, .arrow-back {
