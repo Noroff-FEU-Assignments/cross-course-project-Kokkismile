@@ -78,6 +78,15 @@
     justify-content: space-between;
 }
 
+#input-review {
+    width: 100%;
+    min-height: 150px;
+    margin: 10px 0 2rem 0;
+    background-color: var(--grey);
+    border: solid 1px var(--silver-grey);
+    color-scheme: dark;
+}
+
 @media(max-width: 850px) {
     .store-details-wrap {
         display: flex;
