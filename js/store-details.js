@@ -10,6 +10,8 @@ const detailsUrl = gameUrl + id + apiKey;
 const gameDetails = document.querySelector(".details-container");
 gameDetails.innerHTML = `<h1>LOADING ⌛️</h1>`;
 
+const addCart = document.querySelector(".add-to-cart");
+
 async function fetchDetails() {
     try {
         const getDetails = await fetch(detailsUrl);
@@ -17,15 +19,18 @@ async function fetchDetails() {
         console.log(detailsJson)
         gameDetails.innerHTML = "";
 
-            gameDetails.innerHTML = `<div class="detail-card">
+            gameDetails.innerHTML = `
+                                     <div class="detail-card">
                                      <img src="${detailsJson.background_image_additional}" class="card-img detail-img">
                                      <div class="detail-info-text-wrap">
                                      <h1>${detailsJson.name}</h1>
                                      <p>${detailsJson.description}</p>
                                      </div>
                                      </div>`;
-            
-        
+
+            /* addCart.innerHTML = `<button class="add-to-cart">
+                                   <i class="fa-solid fa-cart-plus icon"></i>
+                                 </button>` */
 
     } catch(error) {
         console.log(error)
@@ -33,3 +38,6 @@ async function fetchDetails() {
 }
 
 fetchDetails()
+
+const cart = document.querySelectorAll(".add-to-cart");
+
