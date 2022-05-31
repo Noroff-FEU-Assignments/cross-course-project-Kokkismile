@@ -14,12 +14,18 @@
 .card-styling {
     background-color: var(--dark-grey);
     border: solid 1px var(--silver-grey);
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .card-img {
     height: auto;
     width: 100%;
+}
+
+.store-game-img {
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 /* Details page */

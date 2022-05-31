@@ -26,7 +26,7 @@ async function fetchGames() {
             gameCard.innerHTML += `<div class="card-styling">
                                      <a href="store-details.html?id=${results[i].id}" class="card">
                                      <h2 class="padding-10px">Game:${game}</h2>
-                                     <img src="${results[i].background_image}" class="card-img"></img>
+                                     <div class="store-game-img" style="background-image: url(${results[i].background_image});"></div>
                                      </a>
                                    </div>`;
         }
