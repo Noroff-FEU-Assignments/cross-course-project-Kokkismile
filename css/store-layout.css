@@ -40,7 +40,7 @@
 }
 
 .details-bg {
-    padding: 2rem;
+    margin-top: 1rem;
 }
 
 .detail-info-text-wrap {
@@ -78,6 +78,10 @@
     justify-content: space-between;
 }
 
+.form-review {
+    margin-bottom: 2rem;
+}
+
 #input-review {
     width: 100%;
     min-height: 150px;
@@ -85,6 +89,10 @@
     background-color: var(--grey);
     border: solid 1px var(--silver-grey);
     color-scheme: dark;
+}
+
+.review-submit {
+    background-color: var(--dark-grey);
 }
 
 @media(max-width: 850px) {
