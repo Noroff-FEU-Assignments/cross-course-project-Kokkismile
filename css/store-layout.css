@@ -35,6 +35,7 @@
 
 .detail-card {
     border: solid 1px var(--silver-grey);
+    background-color: var(--dark-grey);
     max-width: 1000px;
 }
 
@@ -45,25 +46,19 @@
 
 .cart-back-wrap {
     display: flex;
+    background-color: var(--dark-grey);
 }
 
 .add-to-cart, .arrow-back {
     display: flex;
     align-items: center;
     color: var(--silver-grey);
-    background-color: var(--dark-grey);
     padding: 5px 20px;
-    border-radius: 20px 20px 0 0;
-    margin-top: 2rem;
-    border-top: solid 1px var(--silver-grey);
-}
-
-.arrow-back {
-    margin-right: 1rem;
 }
 
 .review-container {
     border: solid 1px var(--silver-grey);
+    background-color: var(--dark-grey);
     width: fit-content;
 }
 
