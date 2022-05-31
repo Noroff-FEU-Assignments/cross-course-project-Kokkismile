@@ -55,14 +55,14 @@
 .add-to-cart, .arrow-back {
     display: flex;
     align-items: center;
-    color: var(--silver-grey);
+    color: var(--green);
     padding-right: 4rem;
 }
 
 .review-container {
     background-color: var(--dark-grey);
     width: fit-content;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .review-placeholder {

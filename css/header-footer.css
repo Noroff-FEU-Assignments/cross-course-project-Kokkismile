@@ -21,6 +21,10 @@ header {
     width: clamp(5px, 100%, 140px);
 }
 
+.header-cart-profile-icon {
+    display: flex;
+}
+
 .search-cart-profile-wrap {
     display: flex;
     flex-wrap: wrap;

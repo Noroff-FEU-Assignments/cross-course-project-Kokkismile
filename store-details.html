@@ -44,9 +44,14 @@
                 <label for="search"><i class="fa-solid fa-magnifying-glass search-lens"></i></label>
                 <input type="text" id="search" class="search-bar" placeholder="Search">
             </div>
-            <div class="cart">
-                <a href="profile.html"><i class="fa-solid fa-circle-user icon" id="profile-icon"></i></a>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping icon" id="cart-icon"></i></a>
+            <div class="header-cart-profile-icon">
+                <div>
+                    <a href="profile.html"><i class="fa-solid fa-circle-user icon" id="profile-icon"></i></a>
+                </div>
+                <div class="header-cart">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping icon" id="cart-icon"></i></a>
+                    <p>+ 1</p>
+                </div>
             </div>
             <div class="hamburger">
                 <i class="fa-solid fa-bars icon" id="hamburger-icon"></i>
@@ -72,12 +77,12 @@
                     <div class="review-thumbs-wrap">
                         <h2>Reviews</h2>
                         <div>
-                            <i class="fa-solid fa-thumbs-up icon"></i>
-                            <p>1000k</p>
+                            <i class="fa-solid fa-thumbs-up icon" id="like"></i>
+                            <p id="like-count">1000k</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-thumbs-down icon"></i>
-                            <p>100k</p>
+                            <i class="fa-solid fa-thumbs-down icon" id="dislike"></i>
+                            <p id="dislike-count">100k</p>
                         </div>
                     </div>
                     <form class="form-review">
