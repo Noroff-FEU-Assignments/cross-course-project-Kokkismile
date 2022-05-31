@@ -7,7 +7,7 @@ const id = param.get("id");
 
 const detailsUrl = gameUrl + id + apiKey;
 
-const gameDetails = document.querySelector(".game-cards-details");
+const gameDetails = document.querySelector(".details-container");
 gameDetails.innerHTML = `<h1>LOADING ⌛️</h1>`;
 
 async function fetchDetails() {

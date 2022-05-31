@@ -7,13 +7,13 @@
 }
 
 .card {
-    color: rgb(192, 213, 223);
+    color: var(--silver-grey);
     margin: 20px;
 }
 
 .card-styling {
     background-color: var(--dark-grey);
-    border: solid 1px rgb(192, 213, 223);
+    border: solid 1px var(--silver-grey);
     max-width: 500px;
 }
 
@@ -27,12 +27,28 @@
 }
 
 .detail-card {
+    border: solid 1px rgb(192, 213, 223);
+    max-width: 1000px;
+}
+
+.details-bg {
     background-color: var(--dark-grey);
     padding: 2rem;
 }
 
-.add-to-cart {
-    color: var(--green);
+.cart-back-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-to-cart, .arrow-back {
     display: flex;
     align-items: center;
+    color: var(--green);
+    background-color: var(--dark-grey);
+    padding: 5px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 2rem;
+    border-top: solid 1px rgb(192, 213, 223);
 }
