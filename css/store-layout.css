@@ -79,6 +79,12 @@
     justify-content: space-between;
 }
 
+.thumbs-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
 .form-review {
     margin: 2rem 0;
 }
