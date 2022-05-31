@@ -30,3 +30,9 @@
     background-color: var(--dark-grey);
     padding: 2rem;
 }
+
+.add-to-cart {
+    color: var(--green);
+    display: flex;
+    align-items: center;
+}
