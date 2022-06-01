@@ -32,10 +32,10 @@ async function fetchDetails() {
         cart.addEventListener("click", cartFunction);
                                      
         function cartFunction() {
-            cartArray.push(id, detailsJson.name, detailsJson.released, "$50")
+            cartArray.push(detailsJson.background_image + apiKey, id, detailsJson.name, detailsJson.released, "$50")
             console.log(cartArray)
-            localStorage.setItem("cartArray", cartArray)
-            let cartStorage = localStorage.getItem("cartArray")
+            localStorage.setItem("cartArray", JSON.stringify(cartArray));
+            let cartStorage = JSON.parse(localStorage.getItem("cartArray"));
             console.log(cartStorage)
         }
 
