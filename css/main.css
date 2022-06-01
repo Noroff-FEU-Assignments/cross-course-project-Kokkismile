@@ -30,6 +30,7 @@
     --silver-grey: rgb(192, 213, 223);
     --grey: #16161A;
     --dark-grey: #0B0B0D;
+    --error: rgb(255, 60, 0);
 }
 
 .text-margin-1rem {
@@ -66,6 +67,10 @@
 
 .text-light-grey {
     color: var(--light-grey);
+}
+
+.text-error {
+    color: var(--error);
 }
 
 *{
