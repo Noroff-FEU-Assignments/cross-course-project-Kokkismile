@@ -26,16 +26,19 @@ async function fetchDetails() {
                                      </div>
                                      </div>`;
 
+        let cartArray = [];
+
+        const cart = document.querySelector(".add-to-cart");
+        cart.addEventListener("click", cartFunction);
+                                     
+        function cartFunction() {
+            cartArray.push(id)
+            console.log(cartArray)
+        }
+
     } catch(error) {
         console.log(error)
     }
 }
 
 fetchDetails()
-
-const cart = document.querySelector(".add-to-cart");
-cart.addEventListener("click", cartFunction);
-
-function cartFunction(event) {
-    console.log(event);
-}
