@@ -68,6 +68,12 @@
     padding-right: 4rem;
 }
 
+.add-to-cart {
+    background-color: var(--dark-grey);
+    border: 0px;
+    color: var(--green);
+}
+
 .review-container {
     background-color: var(--dark-grey);
     width: fit-content;

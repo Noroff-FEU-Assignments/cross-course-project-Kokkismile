@@ -24,7 +24,7 @@ async function fetchDetails() {
                                      <img src="${detailsJson.background_image_additional}" class="card-img detail-img">
                                      <div class="detail-info-text-wrap">
                                      <h1>${detailsJson.name}</h1>
-                                     <p>${detailsJson.description}</p>
+                                     <p>${detailsJson.description_raw}</p>
                                      </div>
                                      </div>`;
 
@@ -39,5 +39,16 @@ async function fetchDetails() {
 
 fetchDetails()
 
+function logThis(event) {
+    console.log(event)
+}
+
 const cart = document.querySelectorAll(".add-to-cart");
+
+
+
+
+function clickButton() {
+}
+clickButton(addEventListener("click", logThis));
 
