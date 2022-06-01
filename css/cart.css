@@ -1,0 +1,12 @@
+.cart-item-img {
+    height: 150px;
+    max-width: 250px;
+    background-size: 100% 100%;
+    border: solid 1px var(--silver-grey);
+}
+
+.cart-items-bg {
+    margin-top: 1rem;
+    background-color: var(--dark-grey);
+    width: fit-content;
+}

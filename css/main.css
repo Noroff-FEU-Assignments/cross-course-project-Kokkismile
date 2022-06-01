@@ -5,6 +5,7 @@
 @import url(/css/auction.css);
 @import url(/css/account-layout.css);
 @import url(/css/store-layout.css);
+@import url(/css/cart.css);
 
 @font-face {
     font-family: 'open-sans', sans-serif, 'Source Code Pro', monospace ; 
