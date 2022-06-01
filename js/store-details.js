@@ -39,16 +39,9 @@ async function fetchDetails() {
 
 fetchDetails()
 
-function logThis(event) {
-    console.log(event)
+const cart = document.querySelector(".add-to-cart");
+cart.addEventListener("click", cartFunction);
+
+function cartFunction(event) {
+    console.log(event);
 }
-
-const cart = document.querySelectorAll(".add-to-cart");
-
-
-
-
-function clickButton() {
-}
-clickButton(addEventListener("click", logThis));
-

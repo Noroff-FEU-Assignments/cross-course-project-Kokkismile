@@ -72,6 +72,7 @@
     background-color: var(--dark-grey);
     border: 0px;
     color: var(--green);
+    cursor: pointer;
 }
 
 .review-container {
