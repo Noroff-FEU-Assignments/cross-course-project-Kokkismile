@@ -1,6 +1,6 @@
 .cart-item-img {
     height: 150px;
-    max-width: 250px;
+    max-width: 350px;
     background-size: 100% 100%;
     border: solid 1px var(--silver-grey);
 }
@@ -9,4 +9,13 @@
     margin-top: 1rem;
     background-color: var(--dark-grey);
     width: fit-content;
+}
+
+.cart-items-container {
+    display: flex;
+}
+
+.cart-item-info {
+    padding: 10px;
+    border: 1px solid var(--silver-grey);
 }
