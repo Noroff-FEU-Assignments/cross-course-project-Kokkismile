@@ -10,8 +10,6 @@ const detailsUrl = gameUrl + id + apiKey;
 const gameDetails = document.querySelector(".details-container");
 gameDetails.innerHTML = `<h1>LOADING ⌛️</h1>`;
 
-const addCart = document.querySelector(".add-to-cart");
-
 async function fetchDetails() {
     try {
         const getDetails = await fetch(detailsUrl);
@@ -27,10 +25,6 @@ async function fetchDetails() {
                                      <p>${detailsJson.description_raw}</p>
                                      </div>
                                      </div>`;
-
-            /* addCart.innerHTML = `<button class="add-to-cart">
-                                   <i class="fa-solid fa-cart-plus icon"></i>
-                                 </button>` */
 
     } catch(error) {
         console.log(error)
