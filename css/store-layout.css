@@ -61,7 +61,7 @@
     background-color: var(--dark-grey);
 }
 
-.add-to-cart, .arrow-back {
+.add-to-cart-wrap, .arrow-back {
     display: flex;
     align-items: center;
     color: var(--green);
