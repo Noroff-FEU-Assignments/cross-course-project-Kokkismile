@@ -19,6 +19,7 @@
 
 .login-form-input-wrap {
     display: flex;
+    margin-bottom: 2rem;
 }
 
 .login-form-input {
@@ -43,6 +44,16 @@
     margin-top: 5%;
 }
 
+.login-button-h1-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login-h2-special {
+    max-width: 200px;
+}
+
 @media(min-width: 850px) {
     .login-main {
         display: flex;
@@ -52,7 +63,7 @@
 
 @media(max-width: 850px) {
     .form-bg {
-        margin-top: 15vh;
+        margin-top: 30vh;
         padding-bottom: 30vh;
     }
     .login-h1 {
@@ -61,5 +72,8 @@
     }
     .login-form-button {
         margin-left: 40px;
+    }
+    .login-main {
+        height: fit-content;
     }
 }
