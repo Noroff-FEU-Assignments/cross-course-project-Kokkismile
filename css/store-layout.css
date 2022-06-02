@@ -57,6 +57,10 @@
     padding: 1rem;
 }
 
+#details-buy-button {
+    margin-left: 1rem;
+}
+
 .cart-back-wrap {
     display: flex;
     flex-wrap: wrap;
