@@ -39,6 +39,18 @@ async function fetchDetails() {
             console.log(cartStorage)
         }
 
+        //BUY NOW BUTTON
+        const buyButton = document.querySelector(".buy");
+        buyButton.addEventListener("click", buyNow);
+
+        function buyNow() {
+            cartArray.push(detailsJson.background_image + apiKey, id, detailsJson.name, detailsJson.released, "$50")
+            console.log(cartArray)
+            localStorage.setItem("cartArray", JSON.stringify(cartArray));
+            let cartStorage = JSON.parse(localStorage.getItem("cartArray"));
+            console.log(cartStorage)
+        }
+
     } catch(error) {
         console.log(error)
     }

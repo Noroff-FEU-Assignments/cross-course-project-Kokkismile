@@ -33,6 +33,10 @@
     font-size: 1rem;
 }
 
+.js-button {
+    all: unset;
+}
+
 /* .button-text-border {
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke-width: 0.5px;
