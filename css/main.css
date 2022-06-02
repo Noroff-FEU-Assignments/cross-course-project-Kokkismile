@@ -114,6 +114,11 @@ h3 {
     font-family: 'ocra', sans-serif;
 }
 
+.auto-scale-img {
+    height: auto;
+    width: 100%;
+}
+
 @media (max-width: 900px) {
 
 
