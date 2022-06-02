@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Game Hub home page">
-    <title>GameHub/Home</title>
+    <meta name="description" content="Log in to Game Hub">
+    <title>login</title>
     <script src="/js/script.js" type="module" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dela+Gothic+One&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/fontawsome/css/all.css">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
     <!-- Hotjar Tracking Code for https://clever-colden-4143cc.netlify.app -->
     <script>
       (function(h,o,t,j,a,r){
@@ -31,7 +32,7 @@
       <nav class="top-nav"> 
         <ul class="nav-list">
           <li class="item"><a href="Store.html">Store</a></li>
-          <li class="item"><a href="auction.html">Auction</a></li>
+          <!-- <li class="item"><a href="auction.html">Auction</a></li> -->
           <li class="item"><a href="About.html">About</a></li>
           <li class="item"><a href="Account.html">Account</a></li>
           <li class="item"><a href="cart.html">Cart</a></li>
@@ -53,47 +54,20 @@
       </div>
     </div>
   </header>
-  <main class="index-main">
-    <div class="index-box-wrapper">
-      <div class="welcomebox-one">
-      <div class="index-button-wrap"> 
-        <a href="store.html" class="action-button1"><span class="button-text-border">Browse</span></a>
-        <a href="login.html" class="action-button2"><span class="button-text-border">Sign Inn</span></a>
-      </div> 
-      </div> 
-      <div class="welcomebox-two">
-          <h1 class="text-green index-h1">Welcome to Game Hub</h1>
-          <div class="index-h2-counter-button-wrap">
-            <div class="counter-container">
-              <p class="counter-number-box text-light-grey">0</p>
-              <p class="counter-number-box text-green">5</p>
-              <p class="counter-number-box text-green">1</p>
-              <p class="counter-number-box text-green">5</p>
-              <p class="counter-number-box text-green">0</p>
-            </div>
-            <p class="online-players text-green">ONLINE PLAYERS</p>
-            <a href="#" class="action-button3"><span class="button-text-border">Join Them!</span></a>
-          </div>
-          <div class="index-info-text-wrap">
-            <p>Here you can buy, sell and play games.</p>
-            <p>Download our desktop app to play offline.</p>
-            <a href="#" class="justplay-link text-margin-1rem"><p class="text-green">Download</p><i class="fa-solid fa-download icon text-green"></i></a>
-            <p>Check out the <a href="#" class="text-green">#justplay</a> event on instagram</p>
-            <p>We aim to become the biggest gaming universe on the web.</p>
-            <p class="text-margin-1rem">Read more about our <a href="#" class="text-green">-goals-</a></p>
-            <p>Interested in getting a great deal on your next game?</p>
-            <p>Try our brand new <a href="#" class="text-green">-Auction House-</a></p>
-            <p class="text-margin-1rem">(members only)</p>
-            <p>NEW HERE?</p>
-            <p>Have a look at our offers in our <a href="#" class="text-green">-Store-</a></p>
-            <p>Get all members only benefit right away. </p>
-            <p class="text-margin-1rem">Register your <a href="#" class="text-green">-Free Account-</a></p>
-            <p>We love any feedback! If you for any reason want to</p>
-            <p><a href="#" class="text-green">-Contact Us-</a> Plase do so.</p>
-            <p class="text-margin-1rem">E-mail: game-hub@gameuniverse.com</p>
-          </div>
-    </div> 
-  </div>
+  <main class="login-main">
+      <div class="form-bg">
+          <form class="login-form">
+              <div class="text-margin-1rem login-form-input">
+                <label for="login-username"><i class="fa-solid fa-circle-user login-icon"></i></label>
+                <input type="text" id="login-username">
+              </div>
+              <div class="text-margin-1rem login-form-input">
+                <label for="login-password"><i class="fa-solid fa-key login-icon"></i></label>
+                <input form="login-password">
+              </div>
+          </form>
+      </div>
+      <h1 class="login-h1">Login to discover a universe of games</h1>
   </main>
   <footer>
     <p class="copyright">© 2022, rights reserved</p>

@@ -1,0 +1,34 @@
+.login-main {
+    background-image: url(/images/bg-img/mountain-milky-way.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    min-height: 48vw;
+}
+
+.login-icon {
+    font-size: 30px;
+    color: var(--blue);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-form-input {
+    display: flex;
+}
+
+.form-bg {
+    background-color: var(--dark-grey);
+    opacity: 70%;
+    margin: 0 auto;
+}
+
+.login-h1 {
+    font-size: 2rem;
+    max-width: 500px;
+}
