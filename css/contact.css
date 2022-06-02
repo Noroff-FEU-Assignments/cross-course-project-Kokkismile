@@ -1,0 +1,21 @@
+.contact-about-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dark-grey);
+    margin-top: 2rem;
+}
+
+.about-us {
+    max-width: 900px;
+    margin: 2rem;
+}
+
+.contact-us {
+    margin: 2rem;
+}
+
+.phone-img {
+    height: auto;
+    width: 100%;
+    max-width: 750px;
+}
