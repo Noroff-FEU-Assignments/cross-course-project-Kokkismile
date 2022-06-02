@@ -4,11 +4,12 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
-    min-height: 48vw;
+    min-height: 88vh;
 }
 
 .login-icon {
-    font-size: 30px;
+    font-size: clamp(20px, 4vw, 50px);
+    margin-right: 10px;
     color: var(--blue);
 }
 
@@ -18,17 +19,33 @@
     
 }
 
-.login-form-input {
+.login-form-input-wrap {
     display: flex;
+}
+
+.login-form-input {
+    width: 500px;
 }
 
 .form-bg {
     background-color: var(--dark-grey);
-    opacity: 70%;
+    opacity: 80%;
     margin: 0 auto;
+    margin-top: 20vh;
+    padding: 2%;
 }
 
 .login-h1 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     max-width: 500px;
+    margin-top: 5%;
+}
+
+@media(max-width: 850px) {
+    .login-main {
+        display: grid;
+    }
+    .form-bg {
+        margin-top: 2rem;
+    }
 }
