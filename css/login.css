@@ -35,7 +35,7 @@
 }
 
 .login-form-button {
-    margin: 1rem 0 3rem 60px;
+    margin: clamp(30px, 3vw, 40px);
 }
 
 .login-h1 {
@@ -52,6 +52,10 @@
 
 .login-h2-special {
     max-width: 200px;
+}
+
+.create-account-form-button {
+    margin-left: clamp(30px, 3vw, 40px);
 }
 
 @media(min-width: 850px) {
