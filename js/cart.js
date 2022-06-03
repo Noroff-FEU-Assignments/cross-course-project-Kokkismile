@@ -1,23 +1,34 @@
 let cartContainer = document.querySelector(".cart-items-container");
+cartContainer.innerHTML = `<p>Cart is empty</p>`;
 
+//Get array from localstorage
 let cartStorage = JSON.parse(localStorage.getItem("cartArray"));
 console.log(cartStorage);
 
-cartContainer.innerHTML = `<p>Cart is empty</p>`;
 
+
+//Create object from array
+let cartObject = {}
+  for(i = 0; i < cartStorage.length; i++) {
+    cartObject = {img: cartStorage[0], name: cartStorage[2], id: cartStorage[1], price: cartStorage[4], released: cartStorage[3]}
+    
+  }
+
+//Create HTML
 function asembleCart() {
     cartContainer.innerHTML = ``;
 
-    for(i = 0; i < cartStorage.length; i++) {
+
         cartContainer.innerHTML += `<div class="cart-items-bg">
-                                     <div class="cart-item-img" style="background-image: url(${cartStorage[0]});"></div>
+                                     <div class="cart-item-img" style="background-image: url(${cartObject.img});"></div>
                                      <div class="cart-item-info">
-                                       <p>${cartStorage[2]}</p>
-                                       <p>Game ID: ${cartStorage[1]}</p>
-                                       <p class="text-green">Price: ${cartStorage[3]}</p>
+                                       <p>${cartObject.name}</p>
+                                       <p>Game ID: ${cartObject.id}</p>
+                                       <p>Released: ${cartObject.released}</p>
+                                       <p class="text-green">Price: ${cartObject.price}</p>
                                      </div>
                                    </div>`;
-    }
+
 }
 
 asembleCart();
