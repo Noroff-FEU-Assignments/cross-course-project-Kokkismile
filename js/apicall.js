@@ -19,7 +19,7 @@ async function fetchGames() {
 
         for(i = 0; i < results.length; i++) {
 
-            let resultArray; 
+            //let resultArray; 
 
             gameCard.innerHTML += `<div class="store-card-wrap">
                                        <button id="add-to-cart" data-product=${results[i].name}>
