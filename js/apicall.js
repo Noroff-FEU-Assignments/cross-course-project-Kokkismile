@@ -40,10 +40,15 @@ async function fetchGames() {
         
         cart.forEach(function(cart) {
             cart.onclick = function(event) {
-                localStorage.setItem("cartArray", JSON.stringify(cartArray));
+                
                 //console.log(cartArray)
 
                 console.log(cart.dataset.id);
+                let addedId = cart.dataset.id;
+                cartArray.push(addedId)
+                console.log(cartArray)
+
+                localStorage.setItem("cartIdArray", JSON.stringify(cartArray));
             }
         })
         
