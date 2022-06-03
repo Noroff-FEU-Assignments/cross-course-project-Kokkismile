@@ -9,7 +9,7 @@ function asembleCart() {
     cartContainer.innerHTML = ``;
 
     for(i = 0; i < cartStorage.length; i++) {
-        cartContainer.innerHTML = `<div class="cart-items-bg">
+        cartContainer.innerHTML += `<div class="cart-items-bg">
                                      <div class="cart-item-img" style="background-image: url(${cartStorage[0]});"></div>
                                      <div class="cart-item-info">
                                        <p>${cartStorage[2]}</p>
