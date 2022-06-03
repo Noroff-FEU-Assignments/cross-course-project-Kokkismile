@@ -1,0 +1,12 @@
+let cartArray = [];
+
+        const cart = document.querySelector(".add-to-cart");
+        cart.addEventListener("click", cartFunction);
+                                     
+        function cartFunction() {
+            cartArray.push(detailsJson.background_image + apiKey, id, detailsJson.name, detailsJson.released, "$50")
+            console.log(cartArray)
+            localStorage.setItem("cartArray", JSON.stringify(cartArray));
+            let cartStorage = JSON.parse(localStorage.getItem("cartArray"));
+            console.log(cartStorage)
+        }

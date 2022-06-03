@@ -14,21 +14,39 @@ async function fetchGames() {
         gameCard.innerHTML = "";
         
         const results = json.results;
-        console.log("testlog: " + json.results)
 
         
 
         for(i = 0; i < results.length; i++) {
             
             let game = results[i].name;
-            console.log("logging game: " + game);
 
-            gameCard.innerHTML += `<div class="card-styling">
-                                     <a href="store-details.html?id=${results[i].id}" class="card">
-                                     <h2 class="padding-10px">Game:${game}</h2>
-                                     <div class="card-bg-img" style="background-image: url(${results[i].background_image});"></div>
-                                     </a>
+            gameCard.innerHTML += `<div class="store-card-wrap">
+                                       <button class="add-to-cart">
+                                         <i class="fa-solid fa-cart-plus icon"></i>
+                                         </button>
+                                       <div class="card-styling">
+                                         <a href="store-details.html?id=${results[i].id}" class="card">
+                                         <h2 class="padding-10px">Game:${game}</h2>
+                                         <div class="card-bg-img" style="background-image: url(${results[i].background_image});">
+                                         </div>
+                                         </a>
+                                       </div>
                                    </div>`;
+
+            let cartArray = [];
+            
+            const cart = document.querySelector(".add-to-cart");
+            cart.addEventListener("click", cartFunction);
+
+            function cartFunction() {
+            cartArray.push(results[i].id);
+            console.log("logging array" + cartArray);
+            localStorage.setItem("cartArray", JSON.stringify(cartArray));
+            //console.log("storage" + JSON.parse(localStorage.getItem("cartArray")))
+        }
+
+        cartFunction();
         }
 
     } catch(error) {
