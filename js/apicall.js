@@ -31,7 +31,7 @@ async function fetchGames() {
                                          </a>
                                        </div>
                                    </div>`;
-
+            console.log(results[i].name)
             let cartArray = [];
             cartArray.push(results[i].background_image + apiKey, results[i].name, results[i].released, "$50");
 
