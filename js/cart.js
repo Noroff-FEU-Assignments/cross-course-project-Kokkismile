@@ -15,7 +15,7 @@ let cartObject = {}
   }
 
 //Create HTML
-function asembleCart() {
+function assembleCart() {
     cartContainer.innerHTML = ``;
 
 
@@ -28,10 +28,11 @@ function asembleCart() {
                                        <p class="text-green">Price: ${cartObject.price}</p>
                                      </div>
                                    </div>`;
+                                  
 
 }
 
-asembleCart();
+assembleCart();
 
 //Clear cart
 const clear = document.querySelector(".clear-cart");
