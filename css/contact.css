@@ -12,10 +12,21 @@
 
 .contact-us {
     margin: 2rem;
+    background-color: var(--grey);
+    border: solid 1px var(--silver-grey);
 }
 
 .phone-img {
     height: auto;
     width: 100%;
     max-width: 750px;
+    border: 1px solid var(--silver-grey);
+}
+
+.contact-text-padding {
+    padding: 10px;
+}
+
+.contact-us-button {
+    margin-left: 10px;
 }
