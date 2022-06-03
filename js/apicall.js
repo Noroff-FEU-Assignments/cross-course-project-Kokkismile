@@ -31,17 +31,20 @@ async function fetchGames() {
                                          </a>
                                        </div>
                                    </div>`;
-            console.log(results[i].name)
-            let cartArray = [];
-            cartArray.push(results[i].background_image + apiKey, results[i].name, results[i].released, "$50");
+
+            //let cartArray = [];
+            //cartArray.push(results[i].background_image + apiKey, results[i].name, results[i].released, "$50");
 
 
         const cart = document.querySelectorAll("#add-to-cart");
         
         cart.forEach(function(cart) {
-            cart.onclick = function() {
-                localStorage.setItem("cartArray", JSON.stringify(cartArray));
-                console.log(cartArray)
+            cart.onclick = function(event) {
+
+                console.log(event.target.dataset);
+
+                //localStorage.setItem("cartArray", JSON.stringify(cartArray));
+                //console.log(cartArray)
             }
         })
 
