@@ -39,9 +39,11 @@ async function fetchGames() {
         const cart = document.querySelectorAll("#add-to-cart");
         
         cart.forEach(function(cart) {
-            cart.onclick = function() {
+            cart.onclick = function(event) {
                 localStorage.setItem("cartArray", cartArray);
                 console.log(cartArray)
+
+                console.log(event.target.dataset.product);
             }
         })
 
