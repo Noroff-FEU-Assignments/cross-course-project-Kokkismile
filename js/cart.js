@@ -14,7 +14,7 @@ function asembleCart() {
                                      <div class="cart-item-info">
                                        <p>${cartStorage[2]}</p>
                                        <p>Game ID: ${cartStorage[1]}</p>
-                                       <p class="text-green">Price: ${cartStorage[4]}</p>
+                                       <p class="text-green">Price: ${cartStorage[3]}</p>
                                      </div>
                                    </div>`;
     }

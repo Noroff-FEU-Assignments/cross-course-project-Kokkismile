@@ -18,18 +18,14 @@ async function fetchGames() {
         
 
         for(i = 0; i < results.length; i++) {
-            
-            let game = results[i].name;
-            let gameId = results[i].id;
-            //console.log(gameId)
 
             gameCard.innerHTML += `<div class="store-card-wrap">
-                                       <button id="add-to-cart" data-product=${gameId}>
+                                       <button id="add-to-cart" data-product=${results[i].name}>
                                          <i class="fa-solid fa-cart-plus icon"></i>
                                          </button>
                                        <div class="card-styling">
-                                         <a href="store-details.html?id=${gameId}" class="card">
-                                         <h2 class="padding-10px">Game:${game}</h2>
+                                         <a href="store-details.html?id=${results[i].id}" class="card">
+                                         <h2 class="padding-10px">Game:${results[i].name}</h2>
                                          <div class="card-bg-img" style="background-image: url(${results[i].background_image});">
                                          </div>
                                          </a>
@@ -37,12 +33,15 @@ async function fetchGames() {
                                    </div>`;
 
             let cartArray = [];
+            cartArray.push(results[i].background_image + apiKey, results[i].name, results[i].released, "$50");
+
 
         const cart = document.querySelectorAll("#add-to-cart");
         
         cart.forEach(function(cart) {
-            cart.onclick = function(event) {
-                console.log(gameId)
+            cart.onclick = function() {
+                localStorage.setItem("cartArray", JSON.stringify(cartArray));
+                console.log(cartArray)
             }
         })
 
