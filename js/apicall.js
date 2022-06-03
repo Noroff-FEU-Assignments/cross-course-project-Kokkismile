@@ -41,7 +41,7 @@ async function fetchGames() {
 
             function cartFunction() {
             cartArray.push(results[i].id);
-            console.log("logging array" + cartArray);
+            console.log("logging id in array: " + cartArray);
             localStorage.setItem("cartArray", JSON.stringify(cartArray));
             //console.log("storage" + JSON.parse(localStorage.getItem("cartArray")))
         }
