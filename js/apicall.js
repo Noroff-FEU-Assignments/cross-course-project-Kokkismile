@@ -3,7 +3,7 @@ const gameUrl = "https://api.rawg.io/api/games?key=";
 
 const gameCard = document.querySelector(".game-cards");
 gameCard.innerHTML = `<h1>LOADING ⌛️</h1>`;
-
+let cartArray = [];
 async function fetchGames() {
 
     try {
@@ -32,7 +32,7 @@ async function fetchGames() {
                                        </div>
                                    </div>`;
 
-            let cartArray = [];
+            
             cartArray.push(results[i].background_image + apiKey, results[i].name, results[i].released, "$50");
 
 
@@ -40,7 +40,7 @@ async function fetchGames() {
         
         cart.forEach(function(cart) {
             cart.onclick = function(event) {
-                localStorage.setItem("cartArray", cartArray);
+                localStorage.setItem("cartArray", JSON.stringify(cartArray));
                 console.log(cartArray)
 
                 console.log(event.target.dataset.product);
