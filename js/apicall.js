@@ -19,6 +19,8 @@ async function fetchGames() {
 
         for(i = 0; i < results.length; i++) {
 
+            let resultArray; 
+
             gameCard.innerHTML += `<div class="store-card-wrap">
                                        <button id="add-to-cart" data-product=${results[i].name}>
                                          <i class="fa-solid fa-cart-plus icon"></i>
@@ -26,7 +28,7 @@ async function fetchGames() {
                                        <div class="card-styling">
                                          <a href="store-details.html?id=${results[i].id}" class="card">
                                          <h2 class="padding-10px">Game:${results[i].name}</h2>
-                                         <div class="card-bg-img" style="background-image: url(${results[i].background_image});">
+                                         <div class="card-bg-img" style="background-image: url(${results[i].background_image})">
                                          </div>
                                          </a>
                                        </div>
@@ -41,7 +43,7 @@ async function fetchGames() {
         cart.forEach(function(cart) {
             cart.onclick = function(event) {
 
-                console.log(event.target.dataset);
+                console.log(event.target.dataset.product);
 
                 //localStorage.setItem("cartArray", JSON.stringify(cartArray));
                 //console.log(cartArray)
