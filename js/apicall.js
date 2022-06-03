@@ -20,7 +20,7 @@ async function fetchGames() {
         for(i = 0; i < results.length; i++) {
 
             gameCard.innerHTML += `<div class="store-card-wrap">
-                                       <button id="add-to-cart" data-product=${results[i].name}>
+                                       <button id="add-to-cart" data-product-id=${results[i].id}>
                                          <i class="fa-solid fa-cart-plus icon"></i>
                                          </button>
                                        <div class="card-styling">
@@ -32,7 +32,6 @@ async function fetchGames() {
                                        </div>
                                    </div>`;
 
-            
             cartArray.push(results[i].background_image + apiKey, results[i].name, results[i].released, "$50");
 
 
@@ -41,17 +40,14 @@ async function fetchGames() {
         cart.forEach(function(cart) {
             cart.onclick = function(event) {
                 localStorage.setItem("cartArray", JSON.stringify(cartArray));
-                console.log(cartArray)
+                //console.log(cartArray)
 
-                console.log(event.target.dataset.product);
+                console.log(event.target.dataset.id);
+                console.log(event.target.dataset)
             }
         })
 
         }
-
-        
-
-
 
     } catch(error) {
         console.log(error);
