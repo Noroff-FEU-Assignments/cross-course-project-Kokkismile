@@ -9,7 +9,7 @@ const gameUrl = "https://api.rawg.io/api/games/";
 let cartIds = JSON.parse(localStorage.getItem("cartIdArray"))
 for(i = 0; i < cartIds.length; i++) {
   let gameId = cartIds[i];
-  console.log("id" + gameId)
+  console.log(gameId)
 }
 
 
@@ -29,7 +29,7 @@ async function getCartItems(gameId) {
                                </div>
                                </div>
                                
-                               `
+                               `;
   } catch(error) {
     console.log(error)
   }
