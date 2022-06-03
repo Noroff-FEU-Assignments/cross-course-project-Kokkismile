@@ -10,10 +10,16 @@
     margin: 2rem;
 }
 
+.about-text {
+    background-color: var(--grey);
+    padding: 10px;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
 .contact-us {
     margin: 2rem;
     background-color: var(--grey);
-    border: solid 1px var(--silver-grey);
 }
 
 .phone-img {
@@ -24,9 +30,16 @@
 }
 
 .contact-text-padding {
-    padding: 10px;
+    padding: 15px;
 }
 
 .contact-us-button {
-    margin-left: 10px;
+    margin-left: 15px;
+}
+
+.consoll-img {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid var(--silver-grey);
 }
