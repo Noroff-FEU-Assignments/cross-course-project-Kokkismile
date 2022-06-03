@@ -37,21 +37,20 @@ async function fetchGames() {
             let cartArray = [];
             
             const cart = document.querySelector(".add-to-cart");
-            cart.addEventListener("click", cartFunction);
+            cart.addEventListener("click", cartFunctionStore);
 
-            function cartFunction() {
+            function cartFunctionStore() {
             cartArray.push(results[i].id);
             console.log("logging id in array: " + cartArray);
-            localStorage.setItem("cartArray", JSON.stringify(cartArray));
+            localStorage.setItem("cartArrayStore", JSON.stringify(cartArray));
             //console.log("storage" + JSON.parse(localStorage.getItem("cartArray")))
         }
 
-        cartFunction();
+        cartFunctionStore();
         }
 
     } catch(error) {
         console.log(error);
     }
 }
-
 fetchGames();
