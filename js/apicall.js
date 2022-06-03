@@ -20,13 +20,15 @@ async function fetchGames() {
         for(i = 0; i < results.length; i++) {
             
             let game = results[i].name;
+            let gameId = results[i].id;
+            //console.log(gameId)
 
             gameCard.innerHTML += `<div class="store-card-wrap">
-                                       <button class="add-to-cart">
+                                       <button id="add-to-cart" data-product=${gameId}>
                                          <i class="fa-solid fa-cart-plus icon"></i>
                                          </button>
                                        <div class="card-styling">
-                                         <a href="store-details.html?id=${results[i].id}" class="card">
+                                         <a href="store-details.html?id=${gameId}" class="card">
                                          <h2 class="padding-10px">Game:${game}</h2>
                                          <div class="card-bg-img" style="background-image: url(${results[i].background_image});">
                                          </div>
@@ -35,22 +37,24 @@ async function fetchGames() {
                                    </div>`;
 
             let cartArray = [];
-            
-            const cart = document.querySelector(".add-to-cart");
-            cart.addEventListener("click", cartFunctionStore);
 
-            function cartFunctionStore() {
-            cartArray.push(results[i].id);
-            console.log("logging id in array: " + cartArray);
-            localStorage.setItem("cartArrayStore", JSON.stringify(cartArray));
-            //console.log("storage" + JSON.parse(localStorage.getItem("cartArray")))
+        const cart = document.querySelectorAll("#add-to-cart");
+        
+        cart.forEach(function(cart) {
+            cart.onclick = function(event) {
+                console.log(gameId)
+            }
+        })
+
         }
 
-        cartFunctionStore();
-        }
+        
+
+
 
     } catch(error) {
         console.log(error);
     }
 }
 fetchGames();
+
