@@ -9,6 +9,7 @@
 .icon:hover {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
+    cursor: pointer;
 }
 
 #profile-icon {
