@@ -32,3 +32,12 @@ function asembleCart() {
 }
 
 asembleCart();
+
+//Clear cart
+const clear = document.querySelector(".clear-cart");
+
+clear.onclick = function(event) {
+  console.log(event)
+  cartContainer.innerHTML = `<p>Cart is empty</p>`;
+  clear.style.display = "none"
+}
