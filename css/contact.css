@@ -43,7 +43,7 @@
 
 /* from other file */
 .error-form {
-    color: rgb(206, 0, 0);
+    color: var(--error);
     padding: 5px;
     font-weight: bold;
     margin: 0 0 5px 15px;
