@@ -36,7 +36,7 @@ function formValidation(event) {
 
     inputLengthValidation(userName, 0, nameError);
     inputLengthValidation(subject, 19, subjectError);
-    inputLengthValidation(address, 24, addressError);
+    inputLengthValidation(address, 9, addressError);
 
     if (subject.value.length > 500) {
         subjectError.style.display = "block";
