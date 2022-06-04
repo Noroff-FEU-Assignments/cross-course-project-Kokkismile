@@ -38,8 +38,8 @@ function formValidation(event) {
     inputLengthValidation(subject, 9, subjectError);
     inputLengthValidation(address, 24, addressError);
 
-    subject.value.trim().length === 0 ? subjectError.style.display = "none" : subjectError;
-    address.value.trim().length === 0 ? addressError.style.display = "none" : addressError;
+    //subject.value.trim().length === 0 ? subjectError.style.display = "none" : subjectError;
+    //address.value.trim().length === 0 ? addressError.style.display = "none" : addressError;
 
     if (emailValidation(email.value) === true) {
 
