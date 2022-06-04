@@ -35,10 +35,10 @@ function formValidation(event) {
     event.preventDefault();
 
     inputLengthValidation(userName, 0, nameError);
-    inputLengthValidation(subject, 9, subjectError);
+    inputLengthValidation(subject, 19, subjectError);
     inputLengthValidation(address, 24, addressError);
 
-    if (subject.value.length > 15) {
+    if (subject.value.length > 500) {
         subjectError.style.display = "block";
     }
 
