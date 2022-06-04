@@ -3,7 +3,6 @@ const gameUrl = "https://api.rawg.io/api/games?key=";
 
 const gameCard = document.querySelector(".game-cards");
 gameCard.innerHTML = `<h1>LOADING ⌛️</h1>`;
-//cant render details without: ??
 let cartArray = [];
 async function fetchGames() {
 
@@ -20,6 +19,9 @@ async function fetchGames() {
         for(i = 0; i < results.length; i++) {
 
             gameCard.innerHTML += `<div class="store-card-wrap">
+                                       <button id="add-to-cart" class="target-button" data-id=${results[i].id}>
+                                         <i class="fa-solid fa-cart-plus icon"></i>
+                                         </button>
                                        <div class="card-styling">
                                          <a href="store-details.html?id=${results[i].id}" class="card">
                                          <h2 class="padding-10px">Game:${results[i].name}</h2>
@@ -28,7 +30,27 @@ async function fetchGames() {
                                          </a>
                                        </div>
                                    </div>`;
+        
         }
+            //cartArray.push(results[i].background_image + apiKey, results[i].name, results[i].released, "$50");
+
+
+        const cart = document.querySelectorAll("#add-to-cart");
+            console.log(cart)
+        
+        cart.forEach(function(cart) {
+            cart.onclick = function(event) {
+                
+                //console.log(cartArray)
+
+                console.log(cart.dataset.id);
+                let addedId = cart.dataset.id;
+                cartArray.push(addedId)
+                console.log(cartArray)
+
+                localStorage.setItem("cartIdArray", JSON.stringify(cartArray));
+            }
+        })
         
 
     } catch(error) {
@@ -36,4 +58,3 @@ async function fetchGames() {
     }
 }
 fetchGames();
-
