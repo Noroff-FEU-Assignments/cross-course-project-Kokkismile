@@ -15,14 +15,13 @@ async function fetchGames() {
         gameCard.innerHTML = "";
         
         const results = json.results;
-        
 
         for(i = 0; i < results.length; i++) {
 
             gameCard.innerHTML += `<div class="store-card-wrap">
                                        <div class="card-styling">
                                          <a href="store-details.html?id=${results[i].id}" class="card">
-                                         <h2 class="padding-10px">Game:${results[i].name}</h2>
+                                         <h2 class="padding-10px">${results[i].name}</h2>
                                          <div class="card-bg-img" style="background-image: url(${results[i].background_image});">
                                          </div>
                                          </a>
