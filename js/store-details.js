@@ -48,9 +48,15 @@ async function fetchDetails() {
                                      </div>
                                  </div>`;
 
+		//Notification/CARTICON
+		let cartRemove = document.querySelector(".remove-fromcart");
+		let cartAdd = document.querySelector(".add-tocart");
+		let cartNotification = document.querySelector(".addedcart-message");
+		
+		//ADD TO CART
 		const cart = document.querySelector(".add-to-cart");
 		cart.addEventListener("click", cartFunction);
-		let cartArray = []  
+		let cartArray = [];
 		function cartFunction() {
 			const cartArray = getCart();
 
@@ -63,10 +69,19 @@ async function fetchDetails() {
 			console.log(gameExists);
 
 			if (!gameExists) {
+				cartAdd.style.display = "none";
+				cartRemove.style.display = "block";
+				cartNotification.style.display = "block";
+
 				const game = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "$50" };
 				cartArray.push(game);
 				saveCart(cartArray);
+
 			} else {
+				cartAdd.style.display = "block";
+				cartRemove.style.display = "none";
+				cartNotification.style.display = "none";
+
 				const newCart = cartArray.filter((game) => game.id !== Number(id));
 				saveCart(newCart);
 			}
@@ -78,9 +93,10 @@ async function fetchDetails() {
 
 		function buyNow() {
             const thisGame = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "$50" }
-			cartArray.push(thisGame)
+			cartArray.push(thisGame);
 			localStorage.setItem("cart", JSON.stringify(cartArray));
 		}
+
 	} catch (error) {
 		console.log(error);
 	}

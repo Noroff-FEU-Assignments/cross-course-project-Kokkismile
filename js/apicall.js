@@ -3,7 +3,7 @@ const gameUrl = "https://api.rawg.io/api/games?key=";
 
 const gameCard = document.querySelector(".game-cards");
 gameCard.innerHTML = `<h1>LOADING ⌛️</h1>`;
-//cant render details without: ??
+
 let cartArray = [];
 async function fetchGames() {
 
@@ -30,10 +30,10 @@ async function fetchGames() {
                                    </div>`;
         }
         
-
     } catch(error) {
         console.log(error);
     }
 }
+
 fetchGames();
 
