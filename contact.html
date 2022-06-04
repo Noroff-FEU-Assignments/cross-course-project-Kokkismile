@@ -55,24 +55,30 @@
         </div>
     </header>
     <main>
-        <div class="form-bg">
-            <h2>Create Account</h2>
-            <form class="login-form">
-                <div class="text-margin-1rem login-form-input-wrap">
-                  <label for="contact-username"><i class="fa-solid fa-circle-user login-icon"></i></label>
-                  <input type="text" id="contact-username" placeholder="name or username" class="login-form-input">
-                </div>
-                <div class="text-margin-1rem login-form-input-wrap">
-                  <label for="login-password"></label>
-                  <input form="login-password" placeholder="Create password" class="login-form-input">
-                </div>
-                <div class="text-margin-1rem login-form-input-wrap">
-                  <label for="login-password"></label>
-                  <input form="login-password" placeholder="Repeat password" class="login-form-input">
-                </div>
-                <a href="profile.html"><p class="action-button3 create-account-form-button">Create account</p></a>
-            </form>
-        </div>
+        <div class="form-success">Form submitted</div>
+        <form class="contact-form form-grey">
+            <label>
+                *Name:
+                <input type="text" class="name form-grey-input" placeholder="Your name">
+            </label>
+            <div class="error-form" id="error-name">Name required</div>
+            <label>
+                Subject:
+                <input type="text" class="subject form-grey-input" placeholder="Enter subject">
+            </label>
+            <div class="error-form" id="error-subject">Subject must be atleast 10 characters</div>
+            <label>
+                E-mail:
+                <input type="text" class="email form-grey-input" placeholder="Your E-mail">
+            </label>
+            <div class="error-form" id="error-email">Please enter a valid e-mail</div>
+            <label>
+                Address:
+                <input type="text" class="address form-grey-input" placeholder="Your address">
+            </label>
+            <div class="error-form" id="error-address">Address must be atleast 25 characters</div>
+            <button type="submit" class="form-submit">Submit</button>
+        </form>
     </main>
     <footer>
         <p class="copyright">© 2022, rights reserved</p>

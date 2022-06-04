@@ -1,6 +1,6 @@
 .contact-about-wrap {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: var(--dark-grey);
     margin-top: 2rem;
 }
@@ -14,7 +14,6 @@
     background-color: var(--grey);
     padding: 10px;
     margin-bottom: 2rem;
-    max-width: 600px;
 }
 
 .contact-us {
@@ -25,7 +24,6 @@
 .phone-img {
     height: auto;
     width: 100%;
-    max-width: 750px;
     border: 1px solid var(--silver-grey);
 }
 
@@ -40,6 +38,11 @@
 .consoll-img {
     height: auto;
     width: 100%;
-    max-width: 600px;
     border: 1px solid var(--silver-grey);
+}
+
+@media(max-width: 850px) {
+    .contact-about-wrap {
+        grid-template-columns: 1fr;
+    }
 }
