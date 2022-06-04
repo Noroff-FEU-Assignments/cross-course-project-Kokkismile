@@ -1,5 +1,4 @@
 //GET CART
-
 function getCart() {
 	const cart = localStorage.getItem("cart");
 
@@ -15,15 +14,11 @@ function clearCart() {
 	localStorage.removeItem("cart");
 }
 
-//Clear cart
 const clear = document.querySelector(".clear-cart");
 
 clear.onclick = function (event) {
 	clearCart();
 	assembleCart();
-	// console.log(event);
-	// cartContainer.innerHTML = `<p>Cart is empty</p>`;
-	// clear.style.display = "none";
 };
 
 //CREATE HTML
