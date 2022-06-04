@@ -40,6 +40,10 @@
     justify-content: space-around;
 }
 
+.empty-cart {
+    margin: 0 auto;
+}
+
 @media(max-width:850px) {
     .cart-items-container {
         grid-template-columns: 1fr 1fr;

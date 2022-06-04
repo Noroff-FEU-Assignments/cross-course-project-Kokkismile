@@ -2,6 +2,11 @@
     background-color: var(--dark-grey);
 }
 
+.store-h1 {
+    margin: 1rem;
+    color: var(--silver-grey);
+}
+
 .game-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -154,5 +159,6 @@
 @media(max-width: 600px) {
     .game-cards {
         grid-template-columns: 1fr;
+        column-gap: 0;
     }
 }

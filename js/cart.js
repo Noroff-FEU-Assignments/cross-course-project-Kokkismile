@@ -20,7 +20,7 @@ function assembleCart() {
 	const cartStorage = getCart();
 
 	if (cartStorage.length === 0) {
-		return (cartContainer.innerHTML = "<p>Cart is empty</p>");
+	return (cartContainer.innerHTML = `<p class="empty-cart">Cart is empty</p>`)
 	}
 
 	cartContainer.innerHTML = "";
@@ -56,4 +56,5 @@ clear.onclick = function (event) {
 	clearCart();
 	assembleCart();
 	total.innerHTML = "<p>Total: 0$</p>"
+	clear.style.display = "none";
 };
