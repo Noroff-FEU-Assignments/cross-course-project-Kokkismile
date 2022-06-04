@@ -1,8 +1,7 @@
 //GET CART
-const CART = "cart";
 
 function getCart() {
-	const cart = localStorage.getItem(CART);
+	const cart = localStorage.getItem("cart");
 
 	if (cart === null) {
 		return [];
@@ -13,7 +12,7 @@ function getCart() {
 
 //CLEAR CART
 function clearCart() {
-	localStorage.removeItem(CART);
+	localStorage.removeItem("cart");
 }
 
 //Clear cart
@@ -39,7 +38,6 @@ function assembleCart() {
 	}
 
 	cartContainer.innerHTML = "";
- 
 
 	cartStorage.forEach(function (game) {
 		cartContainer.innerHTML += `<div class="cart-items-bg">
@@ -49,7 +47,8 @@ function assembleCart() {
                                        <p>Game ID: ${game.id}</p>
                                        <p class="text-green">Price: ${game.price}</p>
                                      </div>
-                                   </div>`; console.log(game)
+                                   </div>`; 
+    console.log(game)
 	});
 }
 
