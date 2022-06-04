@@ -23,7 +23,7 @@ function emailValidation(email) {
     return patternMatches;
 };
 
-//VALIDATE LENGTH OF INPUT VALUE
+//VALIDATE LENGTH OF INPUT VALUE: If input > requirement
 function inputLengthValidation(inputLength, numberRequirement, selectedElement) {
     
     return inputLength.value.trim().length > numberRequirement ? selectedElement.style.display = "none" : selectedElement.style.display = "block";
@@ -37,6 +37,10 @@ function formValidation(event) {
     inputLengthValidation(userName, 0, nameError);
     inputLengthValidation(subject, 9, subjectError);
     inputLengthValidation(address, 24, addressError);
+
+    if (subject.value.length > 15) {
+        subjectError.style.display = "block";
+    }
 
     //subject.value.trim().length === 0 ? subjectError.style.display = "none" : subjectError;
     //address.value.trim().length === 0 ? addressError.style.display = "none" : addressError;

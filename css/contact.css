@@ -47,10 +47,6 @@
     display: none;
 }
 
-button {
-    margin: 0 auto;
-}
-
 .form-success {
     display: none;
     font-family: ocra;
@@ -61,6 +57,10 @@ button {
     width: fit-content;
 }
 /* from other file ends */
+
+.contact-subject {
+    font-size: 500px;
+}
 
 @media(max-width: 850px) {
     .contact-about-wrap {
