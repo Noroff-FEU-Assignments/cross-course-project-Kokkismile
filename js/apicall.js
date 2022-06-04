@@ -22,6 +22,7 @@ async function fetchGames() {
                                        <div class="card-styling">
                                          <a href="store-details.html?id=${results[i].id}" class="card">
                                          <h2 class="padding-10px">${results[i].name}</h2>
+                                         <p class="text-margin-1rem text-green padding-10px">$50</p>
                                          <div class="card-bg-img" style="background-image: url(${results[i].background_image});">
                                          </div>
                                          </a>
