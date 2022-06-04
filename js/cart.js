@@ -25,6 +25,8 @@ clear.onclick = function (event) {
 let cartContainer = document.querySelector(".cart-items-container");
 cartContainer.innerHTML = "<p>Cart is empty</p>";
 
+
+
 function assembleCart() {
 	const cartStorage = getCart();
 
@@ -44,7 +46,15 @@ function assembleCart() {
                                        <p class="text-green">Price: ${game.price}</p>
                                      </div>
                                    </div>`; 
-    console.log(game)
+
+		//SUM CART PRICE						   
+		let total = document.querySelector(".cart-total");
+		total.innerHTML = "<p>Total: </p>"
+								   
+		gamePrice = parseInt(game.price)
+		let sum = cartStorage.length * game.price;
+		total.innerHTML = `<p class="text-green">Total: ${sum}$</p>`
+
 	});
 }
 

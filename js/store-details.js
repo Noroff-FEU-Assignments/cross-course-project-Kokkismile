@@ -73,7 +73,7 @@ async function fetchDetails() {
 				cartRemove.style.display = "block";
 				cartNotification.style.display = "block";
 
-				const game = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "$50" };
+				const game = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "50" };
 				cartArray.push(game);
 				saveCart(cartArray);
 
@@ -92,7 +92,7 @@ async function fetchDetails() {
 		buyButton.addEventListener("click", buyNow);
 
 		function buyNow() {
-            const thisGame = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "$50" }
+            const thisGame = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "50" }
 			cartArray.push(thisGame);
 			localStorage.setItem("cart", JSON.stringify(cartArray));
 		}

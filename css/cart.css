@@ -33,6 +33,13 @@
     padding: 10px;
 }
 
+.cart-h1-checkout-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
 @media(max-width:850px) {
     .cart-items-container {
         grid-template-columns: 1fr 1fr;
