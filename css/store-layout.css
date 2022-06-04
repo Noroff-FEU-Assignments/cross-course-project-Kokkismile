@@ -36,6 +36,14 @@
 }
 
 /* Details page */
+.addedcart-message {
+    font-size: 30px;
+    margin-bottom: 40px;
+    border: solid 1px var(--green);
+    padding: 5px;
+    color: var(--green);
+    display: none;
+}
 .store-details-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
