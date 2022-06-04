@@ -15,18 +15,18 @@ const emailError = document.querySelector("#error-email");
 const address = document.querySelector(".address");
 const addressError = document.querySelector("#error-address");
 
-//VALIDATE LENGTH OF INPUT VALUE
-function inputLengthValidation(inputLength, numberRequirement, selectedElement) {
-    
-    return inputLength.value.trim().length > numberRequirement ? selectedElement.style.display = "none" : selectedElement.style.display = "block";
-};
-
 //VALIDATE E-MAIL
 function emailValidation(email) {
 
     const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(email);
     return patternMatches;
+};
+
+//VALIDATE LENGTH OF INPUT VALUE
+function inputLengthValidation(inputLength, numberRequirement, selectedElement) {
+    
+    return inputLength.value.trim().length > numberRequirement ? selectedElement.style.display = "none" : selectedElement.style.display = "block";
 };
 
 // FORM VALIDATION

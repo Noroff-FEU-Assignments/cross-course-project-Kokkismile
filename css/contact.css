@@ -19,16 +19,13 @@
 .contact-us {
     margin: 2rem;
     background-color: var(--grey);
+    padding: 10px;
 }
 
 .phone-img {
     height: auto;
     width: 100%;
     border: 1px solid var(--silver-grey);
-}
-
-.contact-text-padding {
-    padding: 15px;
 }
 
 .contact-us-button {
@@ -50,35 +47,17 @@
     display: none;
 }
 
-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 50px;
-    max-width: 500px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5%;
-}
-
-input, label {
-    margin: 5px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 button {
     margin: 0 auto;
 }
 
 .form-success {
     display: none;
+    font-family: ocra;
     font-size: 30px;
-    font-weight: bold;
     margin: 20px;
-    background-color: rgb(225, 243, 201);
+    background-color: var(--green);
     padding: 10px;
-    border: solid 1px;
     width: fit-content;
 }
 /* from other file ends */
