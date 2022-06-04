@@ -41,6 +41,48 @@
     border: 1px solid var(--silver-grey);
 }
 
+/* from other file */
+.error-form {
+    color: rgb(206, 0, 0);
+    padding: 5px;
+    font-weight: bold;
+    margin: 0 0 5px 15px;
+    display: none;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px;
+    max-width: 500px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+input, label {
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+button {
+    margin: 0 auto;
+}
+
+.form-success {
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    background-color: rgb(225, 243, 201);
+    padding: 10px;
+    border: solid 1px;
+    width: fit-content;
+}
+/* from other file ends */
+
 @media(max-width: 850px) {
     .contact-about-wrap {
         grid-template-columns: 1fr;
