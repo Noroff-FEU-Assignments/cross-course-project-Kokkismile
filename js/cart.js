@@ -35,7 +35,8 @@ function assembleCart() {
 	cartContainer.innerHTML = "";
 
 	cartStorage.forEach(function (game) {
-		cartContainer.innerHTML += `<div class="cart-items-bg">
+		cartContainer.innerHTML += `
+		                            <div class="cart-items-bg">
                                      <div class="cart-item-img" style="background-image: url(${game.image});"></div>
                                      <div class="cart-item-info">
                                        <p>${game.name}</p>
