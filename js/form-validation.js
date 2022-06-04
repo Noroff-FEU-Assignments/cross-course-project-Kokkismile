@@ -36,10 +36,7 @@ function formValidation(event) {
 
     inputLengthValidation(userName, 0, nameError);
     inputLengthValidation(subject, 19, subjectError);
-    inputLengthValidation(address, 9, addressError);
-
-    //subject.value.trim().length === 0 ? subjectError.style.display = "none" : subjectError;
-    //address.value.trim().length === 0 ? addressError.style.display = "none" : addressError;
+    //inputLengthValidation(address, 9, addressError);
 
     if (emailValidation(email.value) === true) {
 
