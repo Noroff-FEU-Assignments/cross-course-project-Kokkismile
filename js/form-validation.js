@@ -15,18 +15,18 @@ const emailError = document.querySelector("#error-email");
 const address = document.querySelector(".address");
 const addressError = document.querySelector("#error-address");
 
+//VALIDATE LENGTH OF INPUT VALUE
+function inputLengthValidation(inputLength, numberRequirement, selectedElement) {
+    
+    return inputLength.value.trim().length > numberRequirement ? selectedElement.style.display = "none" : selectedElement.style.display = "block";
+};
+
 //VALIDATE E-MAIL
 function emailValidation(email) {
 
     const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(email);
     return patternMatches;
-};
-
-//VALIDATE LENGTH OF INPUT VALUE: If input > requirement
-function inputLengthValidation(inputLength, numberRequirement, selectedElement) {
-    
-    return inputLength.value.trim().length > numberRequirement ? selectedElement.style.display = "none" : selectedElement.style.display = "block";
 };
 
 // FORM VALIDATION
@@ -38,16 +38,16 @@ function formValidation(event) {
     inputLengthValidation(subject, 19, subjectError);
     inputLengthValidation(address, 9, addressError);
 
-    if (subject.value.length > 500) {
-        subjectError.style.display = "block";
-    }
-
     //subject.value.trim().length === 0 ? subjectError.style.display = "none" : subjectError;
     //address.value.trim().length === 0 ? addressError.style.display = "none" : addressError;
 
     if (emailValidation(email.value) === true) {
 
         emailError.style.display = "none";
+    }
+
+    if (subject.value.length > 500) {
+        subjectError.style.display = "block";
     }
 
     else {

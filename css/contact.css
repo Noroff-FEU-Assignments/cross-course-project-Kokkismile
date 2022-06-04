@@ -28,40 +28,13 @@
     border: 1px solid var(--silver-grey);
 }
 
-.contact-us-button {
-    margin-left: 15px;
-}
-
 .consoll-img {
     height: auto;
     width: 100%;
     border: 1px solid var(--silver-grey);
 }
 
-/* from other file */
-.error-form {
-    color: var(--error);
-    padding: 5px;
-    font-weight: bold;
-    margin: 0 0 5px 15px;
-    display: none;
-}
-
-.form-success {
-    display: none;
-    font-family: ocra;
-    font-size: 30px;
-    margin: 20px;
-    background-color: var(--green);
-    padding: 10px;
-    width: fit-content;
-}
-/* from other file ends */
-
-.contact-subject {
-    font-size: 500px;
-}
-
+/* media */
 @media(max-width: 850px) {
     .contact-about-wrap {
         grid-template-columns: 1fr;
