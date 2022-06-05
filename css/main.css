@@ -94,9 +94,9 @@ a {
     text-decoration: none;
 }
 
-/* a:visited {
-    text-decoration:underline;
-} */
+a:is(:link, :active, :visited).active {
+    text-decoration: underline;
+}
 
 h1, h2, p {
     font-family: 'ocra', sans-serif;
