@@ -71,9 +71,20 @@
             <a href="account.html" class="account-nav-button" id="account-tab-open"><p>Account</p></a>
         </div>
         <div class="account-container">
-            <div class="forms-wrap">
-                <div>
-                    <h2 class="h2-form-account">Account details</h2>
+            <div class="account-wrap">
+                <div class="account-info-text">
+                    <h2>Account details</h2>
+                    <h3>E-mail:</h3>
+                    <p class="text-margin-1rem">user.example@mymail.com</p>
+                    <h3>Phone:</h3>
+                    <p class="text-margin-1rem">xxx xx xxx</p>
+                    <h3>Adress:</h3>
+                    <p class="text-margin-1rem">loremtune 89, 2974 Loremstead</p>
+                    <h3>Username:</h3>
+                    <p class="text-margin-1rem">Example User</p>
+                    <button><p class="action-button1 edit-details">Edit 🔧</p></button>
+                </div>
+                <div class="account-details-form">
                     <form class="user-details-form form-grey">
                         <label for="form-mail">E-mail:</label>
                         <input type="text" id="form-mail">
@@ -88,8 +99,7 @@
                         <button type="submit" class="form-submit action-button3 button-text-border">Save my information</button>
                     </form>
                 </div>
-                <div>
-                    <h2 class="h2-form-account">Payment option</h2>
+                <div  class="account-payment-form">
                     <form class="user-details-form form-grey">
                         <label for="form-full-name">Full name</label>
                         <input type="text" id="form-full-name">
@@ -105,6 +115,16 @@
                         <button type="submit" class="form-submit action-button3 button-text-border">Save payment method</button>
                     </form>
                 </div>
+                <div class="account-info-text">
+                    <h2>Saved payment option</h2>
+                    <h3>Full name:</h3>
+                    <p class="text-margin-1rem">Example User</p>
+                    <h3>Card</h3>
+                    <p class="text-margin-1rem">Visa</p>
+                    <h3>Card expire date</h3>
+                    <p class="text-margin-1rem">05.06.2022</p>
+                    <button><p class="action-button1 edit-payment">Edit 🔧</p></button>
+                </div>
             </div>
         </div>
     </main>
@@ -117,5 +137,6 @@
         </ul>
     </footer>
     <script src="/js/script.js"></script>
+    <script src="/js/edit-account.js"></script>
 </body>
 </html>

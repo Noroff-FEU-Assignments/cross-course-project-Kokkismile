@@ -139,10 +139,10 @@
     background-color: var(--blue);
 }
 
-.forms-wrap {
+.account-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    background-color: var(--dark-grey);
 }
 
 .user-details-form {
@@ -154,4 +154,22 @@
 .h2-form-account {
     margin-top: 20px;
     margin: 50px 30px;
+}
+
+.account-details-form {
+    display: none;
+}
+
+.account-payment-form {
+    display: none;
+}
+
+.account-info-text {
+    padding: 20px;
+    border: solid 1px var(--silver-grey);
+    margin-left: 20px;
+}
+
+.edit-payment, .edit-details, .form-submit {
+    cursor: pointer;
 }
