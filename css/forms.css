@@ -3,7 +3,6 @@
     border: solid 1px var(--silver-grey);
     background-color: rgb(10, 10, 10);
     border-radius: 15px;
-    width: fit-content;
     display: flex;
     flex-direction: column;
     margin: 50px 30px;

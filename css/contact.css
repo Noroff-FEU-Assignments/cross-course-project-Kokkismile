@@ -22,6 +22,10 @@
     padding: 10px;
 }
 
+.contact-text-wrap {
+    margin: 0 30px;
+}
+
 .phone-img {
     height: auto;
     width: 100%;
@@ -38,5 +42,17 @@
 @media(max-width: 850px) {
     .contact-about-wrap {
         grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .contact-text-wrap {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .form-grey {
+        margin: 0;
+    }
+    .contact-us, .about-us {
+        margin: 0;
+        background-color: var(--dark-grey);
     }
 }

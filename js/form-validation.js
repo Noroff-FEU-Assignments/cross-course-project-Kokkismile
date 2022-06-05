@@ -38,21 +38,20 @@ function formValidation(event) {
     inputLengthValidation(subject, 19, subjectError);
     //inputLengthValidation(address, 9, addressError);
 
-    if (emailValidation(email.value) === true) {
-
-        emailError.style.display = "none";
-    }
-
     if (subject.value.length > 500) {
         subjectError.style.display = "block";
     }
 
-    else {
+    if(email.value.trim().length === 0) {  
+        emailError.style.display = "none";
+    } else {
+        emailError.style.display = "block";
+    }
 
-        if(email.value.trim().length === 0) {
-            emailError.style.display = "none";
-        }
-    } 
+    if (emailValidation(email.value) === true) {
+
+        emailError.style.display = "none";
+    }
     
     if (nameError.style.display === "none" && subjectError.style.display === "none" && emailError.style.display === "none") {
         
