@@ -11,3 +11,13 @@ hamburgerIcon.onclick = function toogleHamburgerMenu() {
         mobileNavigation.style.display = "block";
     }
 };
+
+//Checkout success
+let checkoutSubmit = document.querySelector(".checkout-submit");
+let targetCheckoutForm = document.querySelector(".checkout-form");
+let success = document.querySelector(".form-success2");
+
+checkoutSubmit.onclick = function() {
+
+    success.style.display = "block";
+}
