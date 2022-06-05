@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your shopping cart. Adjust items or move on to checkout">
-    <title>GameHub/Cart</title>
+    <meta name="description" content="Adjust or change your profile and profile settings here">
+    <title>GameHub/User Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dela+Gothic+One&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/fontawsome/css/all.css">
     <link href="/css/main.css" rel="stylesheet">
@@ -53,19 +53,22 @@
         </div>
     </header>
     <main>
-        <div class="cart-wrap">
-            <div class="cart-back-wrap">
-                <a href="store.html" class="arrow-back">
-                    <i class="fa-solid fa-circle-arrow-left icon"></i>
-                </a>
-            </div>
-            <div class="cart-h1-checkout-wrap">
-                <h1 class="cart-h1">Cart</h1>
-                <p class="cart-total"></p>
-                <a class="checkout-btn" href="checkout.html"><p class="action-button3">$$ checkout</p></a>
-            </div>
-            <i class="fa-solid fa-circle-xmark icon text-error clear-cart"></i>
-                <div class="cart-items-container"></div>
+        <div  class="checkout-form">
+            <form class="user-details-form form-grey">
+                <label for="form-full-name">Full name</label>
+                <input type="text" id="form-full-name">
+                <label for="form-select-card">Card</label>
+                <select id="form-select-card">
+                    <option>Visa</option>
+                    <option>Mastercard</option>
+                </select>
+                <label for="form-card-date">Expire date:</label>
+                <input type="date" id="form-card-date">
+                <label for="form-cvc">CVC:</label>
+                <input type="number" id="form-cvc">
+                <p class="form-submit action-button3 button-text-border checkout-submit">SUBMIT</p>
+            </form>
+            <p class="form-success2">Payment was successfull</p>
         </div>
     </main>
     <footer>
@@ -76,8 +79,6 @@
             <li><a href="#"><i class="fa-brands fa-discord icon"></i></a></li>
         </ul>
     </footer>
-    <script src="/js/cart.js"></script>
-    <script src="/js/underline-active.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

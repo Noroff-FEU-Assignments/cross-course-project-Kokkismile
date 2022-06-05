@@ -37,6 +37,10 @@
     height: 60px;
 }
 
+.checkout-form {
+    max-width: 600px;
+}
+
 /* error/success */
 .error-form {
     color: var(--error);
@@ -44,7 +48,7 @@
     display: none;
 }
 
-.form-success {
+.form-success, .form-success2 {
     display: none;
     font-family: ocra;
     font-size: 30px;
