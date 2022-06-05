@@ -37,7 +37,7 @@ async function fetchDetails() {
 	try {
 		const getDetails = await fetch(detailsUrl);
 		const detailsJson = await getDetails.json();
-		console.log(detailsJson);
+
 		gameDetails.innerHTML = "";
 
 		gameDetails.innerHTML = `<div class="detail-card">
@@ -61,12 +61,8 @@ async function fetchDetails() {
 			const cartArray = getCart();
 
 			const gameExists = cartArray.find(function (game) {
-				console.log(typeof game.id);
-				console.log(typeof id);
 				return game.id === Number(id);
 			});
-
-			console.log(gameExists);
 
 			if (!gameExists) {
 				cartAdd.style.display = "none";
