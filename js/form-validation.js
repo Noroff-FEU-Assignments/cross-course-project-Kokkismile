@@ -49,10 +49,12 @@ function formValidation(event) {
 
     else {
 
-        email.value.trim().length === 0 ? emailError.style.display = "none" : emailError.style.display = "block";
+        if(email.value.trim().length === 0) {
+            emailError.style.display = "none";
+        }
     } 
     
-    if (nameError.style.display === "none" && subjectError.style.display === "none" && emailError.style.display === "none" && addressError.style.display === "none") {
+    if (nameError.style.display === "none" && subjectError.style.display === "none" && emailError.style.display === "none") {
         
         formSuccess.style.display = "block";
     }
