@@ -16,8 +16,8 @@ function saveCart(cartArray) {
 }
 
 //Get game details
-const apiKey = "?key=7e4f8935456c47bbb745861dedea99ef";
-const gameUrl = "https://api.rawg.io/api/games/";
+//const apiKey = "?key=7e4f8935456c47bbb745861dedea99ef";
+const gameUrl = "https://gamehub-wp-api.one/gamehub/wp-json/wc/store/products?id=";
 
 const queryString = document.location.search;
 const param = new URLSearchParams(queryString);
@@ -27,7 +27,7 @@ if (!id) {
 	location.href = "/store.html";
 }
 
-const detailsUrl = gameUrl + id + apiKey;
+const detailsUrl = gameUrl + id;
 
 const gameDetails = document.querySelector(".details-container");
 gameDetails.innerHTML = `<h1>LOADING ⌛️</h1>`;
