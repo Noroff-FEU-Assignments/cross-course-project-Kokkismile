@@ -21,7 +21,7 @@ async function fetchGames() {
 
             gameCard.innerHTML += `<div class="store-card-wrap">
                                        <div class="card-styling">
-                                         <a href="store-details.html?id=${json.name}" class="card">
+                                         <a href="store-details.html?id=${json[i].id}" class="card">
                                          <h2 class="padding-10px">${json[i].name}</h2>
                                          <p class="text-margin-1rem text-green padding-10px">${json[i].prices.price} kr</p>
                                          <div class="card-bg-img" style="background-image: url(${json[i].images[0].src});">
