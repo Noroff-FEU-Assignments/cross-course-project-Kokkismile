@@ -17,7 +17,7 @@ function saveCart(cartArray) {
 
 //Get game details
 //const apiKey = "?key=7e4f8935456c47bbb745861dedea99ef";
-const gameUrl = "https://gamehub-wp-api.one/gamehub/wp-json/wc/store/products?id=";
+const gameUrl = "https://gamehub-wp-api.one/gamehub/wp-json/wc/store/products/";
 
 const queryString = document.location.search;
 const param = new URLSearchParams(queryString);
@@ -41,7 +41,7 @@ async function fetchDetails() {
 		gameDetails.innerHTML = "";
 
 		gameDetails.innerHTML = `<div class="detail-card">
-                                     <img src="${detailsJson.images}" class="card-img detail-img">
+                                     <img src="${detailsJson.images[0].src}" class="card-img detail-img">
                                      <div class="detail-info-text-wrap">
                                      <h1>${detailsJson.name}</h1>
                                      <p>${detailsJson.description}</p>
