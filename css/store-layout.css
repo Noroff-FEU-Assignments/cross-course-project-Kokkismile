@@ -36,6 +36,10 @@
     margin: 10px;
 }
 
+.card-styling:hover {
+    box-shadow: 5px 5px 30px var(--silver-grey);
+}
+
 .card-img {
     height: auto;
     width: 100%;
