@@ -91,7 +91,7 @@ async function fetchDetails() {
 		buyButton.addEventListener("click", buyNow);
 
 		function buyNow() {
-            const thisGame = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "50" }
+            const thisGame = { image: imageUrl, name: detailsJson.name, id: detailsJson.id, price: detailsJson.prices.price }
 			cartArray.push(thisGame);
 			localStorage.setItem("cart", JSON.stringify(cartArray));
 		}
