@@ -24,7 +24,7 @@
 
 .game-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--dark-grey);
     padding: 20px;
 }
@@ -160,6 +160,12 @@
 
 .review-submit {
     background-color: var(--dark-grey);
+}
+
+@media(max-width: 1500px) {
+    .game-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media(max-width: 1000px) {
