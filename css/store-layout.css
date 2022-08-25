@@ -1,17 +1,23 @@
 .store-main {
     background-color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
 }
 
 .store-h1 {
-    margin: 1rem;
     color: var(--green);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.store-h1-tags-wrap {
+    border-left: solid 1px var(--silver-grey);
+    border-right: solid 1px var(--silver-grey);
 }
 
 .game-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
     background-color: var(--dark-grey);
     padding: 20px;
 }
@@ -24,8 +30,10 @@
 .card-styling {
     background-color: var(--dark-grey);
     border: solid 1px var(--silver-grey);
+    border-radius: 5%;
     max-width: 400px;
     height: 400px;
+    margin: 10px;
 }
 
 .card-img {
@@ -159,6 +167,5 @@
 @media(max-width: 600px) {
     .game-cards {
         grid-template-columns: 1fr;
-        column-gap: 0;
     }
 }
