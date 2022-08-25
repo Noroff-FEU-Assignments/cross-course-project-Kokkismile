@@ -14,7 +14,7 @@ let cartContainer = document.querySelector(".cart-items-container");
 cartContainer.innerHTML = "<p>Cart is empty</p>";
 
 let total = document.querySelector(".cart-total");
-		total.innerHTML = "<p>Total: 0$</p>"
+		total.innerHTML = "<p class=text-green>Total: 0 kr</p>"
 
 function assembleCart() {
 	const cartStorage = getCart();
@@ -55,6 +55,6 @@ const clear = document.querySelector(".clear-cart");
 clear.onclick = function (event) {
 	clearCart();
 	assembleCart();
-	total.innerHTML = "<p>Total: 0$</p>"
+	total.innerHTML = "<p class=text-green>Total: 0 kr</p>"
 	clear.style.display = "none";
 };
