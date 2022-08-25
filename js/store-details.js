@@ -1,4 +1,4 @@
-//storage
+//CART (storage)
 const CART = "cart";
 
 function getCart() {
@@ -9,7 +9,7 @@ function getCart() {
 	} else {
 		return JSON.parse(cart);
 	}
-}
+};
 
 function saveCart(cartArray) {
 	localStorage.setItem(CART, JSON.stringify(cartArray));
@@ -38,10 +38,11 @@ async function fetchDetails() {
 		const getDetails = await fetch(detailsUrl);
 		const detailsJson = await getDetails.json();
 
+		let imageUrl = detailsJson.images[0].src;
 		gameDetails.innerHTML = "";
 
 		gameDetails.innerHTML = `<div class="detail-card">
-                                     <img src="${detailsJson.images[0].src}" class="card-img detail-img">
+                                     <img src="${imageUrl}" class="card-img detail-img">
                                      <div class="detail-info-text-wrap">
                                      <h1>${detailsJson.name}</h1>
                                      <p>${detailsJson.description}</p>
@@ -56,6 +57,7 @@ async function fetchDetails() {
 		//ADD TO CART
 		const cart = document.querySelector(".add-to-cart");
 		cart.addEventListener("click", cartFunction);
+
 		let cartArray = [];
 		function cartFunction() {
 			const cartArray = getCart();
@@ -69,7 +71,8 @@ async function fetchDetails() {
 				cartRemove.style.display = "block";
 				cartNotification.style.display = "block";
 
-				const game = { image: detailsJson.background_image + apiKey, name: detailsJson.name, id: detailsJson.id, price: "50" };
+				//SAVE GAME TO CART
+				const game = { image: imageUrl, name: detailsJson.name, id: detailsJson.id, price: detailsJson.prices.price };
 				cartArray.push(game);
 				saveCart(cartArray);
 

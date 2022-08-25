@@ -36,9 +36,9 @@ function assembleCart() {
                                      </div>
                                    </div>`; 
 
-		//SUM CART PRICE						   					   
-		let sum = cartStorage.length * game.price;
-		total.innerHTML = `<p class="text-green">Total: ${sum}$</p>`;
+		//SUM CART PRICE				   					   
+		let totalPrice = cartStorage.length * game.price;
+		total.innerHTML = `<p class="text-green">Total: ${totalPrice} kr</p>`;
 
 	});
 }
