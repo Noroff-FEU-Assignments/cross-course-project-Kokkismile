@@ -22,9 +22,9 @@ async function fetchGames() {
                                        <div class="card-styling">
                                          <a href="store-details.html?id=${json[i].id}" class="card">
                                          <h2 class="padding-10px">${json[i].name}</h2>
-                                         <p class="text-margin-1rem text-green padding-10px">${json[i].prices.price} kr</p>
                                          <div class="card-bg-img" style="background-image: url(${json[i].images[0].src});">
                                          </div>
+                                         <p class="text-margin-1rem text-green padding-10px">${json[i].prices.price} kr</p>
                                          </a>
                                        </div>
                                    </div>`;
