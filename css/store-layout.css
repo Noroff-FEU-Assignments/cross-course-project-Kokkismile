@@ -6,7 +6,7 @@
 
 .store-h1 {
     color: var(--silver-grey);
-    margin: 10px;
+    margin: 10px 10px 70px 10px;
 }
 
 .store-h1-tags-wrap {
@@ -16,10 +16,16 @@
 }
 
 .store-tags {
+    color: var(--silver-grey);
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
+}
+
+.glow:hover {
+    text-shadow: 5px 5px 30px var(--silver-grey);
+    cursor: pointer;
 }
 
 .game-cards {
