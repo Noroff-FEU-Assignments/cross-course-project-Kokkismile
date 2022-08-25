@@ -71,7 +71,7 @@ async function fetchDetails() {
 				cartRemove.style.display = "block";
 				cartNotification.style.display = "block";
 
-				//SAVE GAME TO CART
+				//ADD GAME TO CART
 				const game = { image: imageUrl, name: detailsJson.name, id: detailsJson.id, price: detailsJson.prices.price };
 				cartArray.push(game);
 				saveCart(cartArray);
