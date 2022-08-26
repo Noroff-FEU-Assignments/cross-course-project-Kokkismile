@@ -31,7 +31,7 @@
 .game-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .card {
@@ -65,8 +65,10 @@
 }
 
 .store-card-name {
-    padding: 5px;
+    padding: 10px;
     margin: 0;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
     background-color: var(--grey);
 }
 
@@ -180,13 +182,13 @@
     background-color: var(--dark-grey);
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1900px) {
     .game-cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1300px) {
     .game-cards {
         grid-template-columns: 1fr 1fr;
     }
