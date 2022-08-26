@@ -18,7 +18,7 @@ async function fetchGames() {
         for(i = 0; i < json.length; i++) {
 
             let gameTags = [];
-            for(index = 0; index < json[i].categories.length; index++) {gameTags.push(json[i].categories[index].name); console.log("tags: " + gameTags)}
+            for(index = 0; index < json[i].categories.length; index++) {gameTags.push(json[i].categories[index].name);}
 
             gameCard.innerHTML += `<div class="store-card-wrap">
                                        <div class="card-styling">

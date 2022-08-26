@@ -40,8 +40,7 @@
 }
 
 .card-styling {
-    /* background-color: var(--dark-grey); */
-    background-image: linear-gradient(var(--grey) 40%, var(--dark-grey) 60%);
+    background-color: var(--dark-grey);
     border: solid 1px var(--silver-grey);
     border-radius: 5%;
     max-width: 400px;
