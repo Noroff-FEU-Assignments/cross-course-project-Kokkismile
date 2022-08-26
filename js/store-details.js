@@ -58,7 +58,9 @@ async function fetchDetails() {
 		const cart = document.querySelector(".add-to-cart");
 		cart.addEventListener("click", cartFunction);
 
+		//CARTFUNCTION
 		let cartArray = [];
+
 		function cartFunction() {
 			const cartArray = getCart();
 

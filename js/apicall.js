@@ -21,10 +21,10 @@ async function fetchGames() {
             gameCard.innerHTML += `<div class="store-card-wrap">
                                        <div class="card-styling">
                                          <a href="store-details.html?id=${json[i].id}" class="card">
-                                         <h2 class="padding-10px">${json[i].name}</h2>
+                                         <h2 class="store-card-name">${json[i].name}</h2>
                                          <div class="card-bg-img" style="background-image: url(${json[i].images[0].src});">
                                          </div>
-                                         <p class="text-margin-1rem text-green padding-10px">${json[i].prices.price} kr</p>
+                                         <p class="store-card-info">${json[i].prices.price} kr</p>
                                          </a>
                                        </div>
                                    </div>`;

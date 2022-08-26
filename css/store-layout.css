@@ -63,6 +63,19 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
+.store-card-name {
+    padding: 5px;
+    margin: 0;
+    background-color: var(--grey);
+}
+
+.store-card-info {
+    padding: 5px;
+    margin: 0;
+    background-color: var(--grey);
+}
+
 /* Notifications */
 .addedcart-message {
     font-size: 30px;
