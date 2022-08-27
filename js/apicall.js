@@ -14,12 +14,17 @@ async function fetchGames() {
 
         gameCard.innerHTML = "";
 
-
+        //Looping json result from api call.
         for(i = 0; i < json.length; i++) {
 
+            //Looping through categories inside json result to get categories tags on each game.
             let gameTags = [];
-            for(index = 0; index < json[i].categories.length; index++) {gameTags.push(json[i].categories[index].name);}
+            for(index = 0; index < json[i].categories.length; index++) {
 
+                gameTags.push(json[i].categories[index].name);
+            };
+
+            //Creating game-cards for store page.
             gameCard.innerHTML += `<div class="store-card-wrap">
                                        <div class="card-styling">
                                          <a href="store-details.html?id=${json[i].id}" class="card">
@@ -31,12 +36,12 @@ async function fetchGames() {
                                          </a>
                                        </div>
                                    </div>`;
-        }
+        };
         
     } catch(error) {
         console.log(error);
-    }
-}
+    };
+};
 
 fetchGames();
 
