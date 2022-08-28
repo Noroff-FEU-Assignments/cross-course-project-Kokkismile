@@ -42,9 +42,13 @@ async function fetchDetails() {
 		function getCart() {
 
 			const cart = localStorage.getItem(CART);
+
 			if (cart === null) {
+
 				return [];
+
 			} else {
+
 				return JSON.parse(cart);
 			}
 		};
@@ -59,6 +63,7 @@ async function fetchDetails() {
 		cart.addEventListener("click", cartFunction);
 
 		let cartArray = [];
+		
 		function cartFunction() {
 
 			const cartArray = getCart();
