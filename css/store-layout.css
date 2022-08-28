@@ -194,6 +194,12 @@
     }
 }
 
+@media(max-width: 950px) {
+    .game-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media(max-width: 850px) {
     .store-details-wrap {
         display: flex;
@@ -201,8 +207,3 @@
     }
 }
 
-@media(max-width: 950px) {
-    .game-cards {
-        grid-template-columns: 1fr;
-    }
-}

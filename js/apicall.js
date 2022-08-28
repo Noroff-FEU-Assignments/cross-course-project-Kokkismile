@@ -15,7 +15,7 @@ async function fetchGames() {
         gameCard.innerHTML = "";
 
         //Looping json result from api call.
-        for(i = 0; i < json.length; i++) {
+        for(i = 0; i < json.length; i++) { 
 
             //Looping through categories inside json result to get categories tags on each game.
             let gameTags = [];
