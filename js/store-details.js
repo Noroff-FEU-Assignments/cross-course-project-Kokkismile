@@ -1,22 +1,3 @@
-//CART (storage)
-const CART = "cart";
-
-function getCart() {
-	const cart = localStorage.getItem(CART);
-
-	if (cart === null) {
-		return [];
-	} else {
-		return JSON.parse(cart);
-	}
-};
-
-function saveCart(cartArray) {
-	localStorage.setItem(CART, JSON.stringify(cartArray));
-}
-
-//Get game details
-//const apiKey = "?key=7e4f8935456c47bbb745861dedea99ef";
 const gameUrl = "https://gamehub-wp-api.one/gamehub/wp-json/wc/store/products/";
 
 const queryString = document.location.search;
@@ -49,26 +30,46 @@ async function fetchDetails() {
                                      </div>
                                  </div>`;
 
+		
 		//Notification/CARTICON
 		let cartRemove = document.querySelector(".remove-fromcart");
 		let cartAdd = document.querySelector(".add-tocart");
 		let cartNotification = document.querySelector(".addedcart-message");
+
+		//CART (storage)
+		const CART = "cart";
+
+		function getCart() {
+
+			const cart = localStorage.getItem(CART);
+			if (cart === null) {
+				return [];
+			} else {
+				return JSON.parse(cart);
+			}
+		};
+		
+		function saveCart(cartArray) {
+
+			localStorage.setItem(CART, JSON.stringify(cartArray));
+		};
 		
 		//ADD TO CART
 		const cart = document.querySelector(".add-to-cart");
 		cart.addEventListener("click", cartFunction);
 
-		//CARTFUNCTION
 		let cartArray = [];
-
 		function cartFunction() {
+
 			const cartArray = getCart();
 
 			const gameExists = cartArray.find(function (game) {
+
 				return game.id === Number(id);
 			});
 
 			if (!gameExists) {
+
 				cartAdd.style.display = "none";
 				cartRemove.style.display = "block";
 				cartNotification.style.display = "block";
@@ -79,28 +80,31 @@ async function fetchDetails() {
 				saveCart(cartArray);
 
 			} else {
+
 				cartAdd.style.display = "block";
 				cartRemove.style.display = "none";
 				cartNotification.style.display = "none";
 
 				const newCart = cartArray.filter((game) => game.id !== Number(id));
 				saveCart(newCart);
-			}
-		}
+			};
+		};
 
 		//BUY NOW BUTTON
 		const buyButton = document.querySelector(".buy");
 		buyButton.addEventListener("click", buyNow);
 
 		function buyNow() {
-            const thisGame = { image: imageUrl, name: detailsJson.name, id: detailsJson.id, price: detailsJson.prices.price }
+
+            const thisGame = { image: imageUrl, name: detailsJson.name, id: detailsJson.id, price: detailsJson.prices.price };
 			cartArray.push(thisGame);
 			localStorage.setItem("cart", JSON.stringify(cartArray));
-		}
+		};
 
 	} catch (error) {
+
 		console.log(error);
-	}
-}
+	};
+};
 
 fetchDetails();
