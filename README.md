@@ -6,7 +6,7 @@
 
 ## Description
 
-Game Hub is a project I built for my first year at Noroff, studying front end development. It is imitating a online game store, listing products from Wordpress REST API.
+Game Hub is a project I built for my first year course assignment at Noroff, studying front end development. It is imitating a online game store, listing products from Wordpress REST API.
 
 ## Built With
 
