@@ -2,36 +2,28 @@
 
 ![gamehub-sample](https://user-images.githubusercontent.com/91562336/195551932-95547c22-2576-40e3-a608-1c0f3e78d680.jpg)
 
-A simple overview of the use/purpose of the project.
+-Wordpress Powered game store made with Html, CSS and vanilla JavaScrip.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+Game Hub is a project I built for my first year at Noroff, studying front end development. It is imitating a online game store, listing products from Wordpress REST API.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- Vanilla JavaScript
+- Vanilla CSS
+- Html
 
 ## Getting Started
 
 ### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
 ```bash
 git clone git@github.com:NoroffFEU/portfolio-1-example.git
 ```
+-or open with GitHub desctop. Download from: https://desktop.github.com/  
 
 2. Install the dependencies:
 
