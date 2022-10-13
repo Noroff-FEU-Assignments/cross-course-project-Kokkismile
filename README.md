@@ -1,6 +1,6 @@
 # Your project title
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![gamehub-sample](https://user-images.githubusercontent.com/91562336/195551932-95547c22-2576-40e3-a608-1c0f3e78d680.jpg)
 
 A simple overview of the use/purpose of the project.
 
