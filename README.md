@@ -1,4 +1,4 @@
-# Your project title
+# Game Hub
 
 ![gamehub-sample](https://user-images.githubusercontent.com/91562336/195551932-95547c22-2576-40e3-a608-1c0f3e78d680.jpg)
 
@@ -30,5 +30,6 @@ git clone git@github.com:NoroffFEU/portfolio-1-example.git
 
 ## Contact
 
-Send me an email at trine.marie.sandberg@gmail.com
+Email me at trine.marie.sandberg@gmail.com
+
 [My LinkedIn page](https://www.linkedin.com/in/trine-sandberg-5aa86b206/)
