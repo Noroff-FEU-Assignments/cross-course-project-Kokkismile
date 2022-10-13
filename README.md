@@ -30,6 +30,5 @@ git clone git@github.com:NoroffFEU/portfolio-1-example.git
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
+Send me an email at trine.marie.sandberg@gmail.com
 [My LinkedIn page](https://www.linkedin.com/in/trine-sandberg-5aa86b206/)
