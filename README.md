@@ -26,7 +26,7 @@ git clone git@github.com:NoroffFEU/portfolio-1-example.git
 -or open with GitHub desctop. Download from: https://desktop.github.com/  
 
 2. Install the dependencies:
-3. No external dependencies.
+-No external dependencies.
 
 ### Running
 
