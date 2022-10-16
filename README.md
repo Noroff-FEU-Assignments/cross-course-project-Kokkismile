@@ -22,7 +22,8 @@ Game Hub is a project I built for my first year course assignment at Noroff, stu
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:Noroff-FEU-Assignments
+/cross-course-project-Kokkismile.git
 ```
 -or open with GitHub desctop. 
 
